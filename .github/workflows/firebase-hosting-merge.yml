@@ -26,7 +26,7 @@ jobs:
 
       # Build the Hugo site
       - name: Build site with Hugo
-        run: hugo deploy  # Adjust this command if you have additional build options
+        run: hugo && firebase deploy  # Adjust this command if you have additional build options
 
       # Deploy to Firebase Hosting
       - uses: FirebaseExtended/action-hosting-deploy@v0

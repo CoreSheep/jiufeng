@@ -10,11 +10,28 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
+      # Check out the code
       - uses: actions/checkout@v4
-      - run: npm ci && npm run build
+
+      # Set up Hugo
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'   # You can specify a version if needed
+          extended: true
+
+      # Install npm dependencies (if necessary)
+      - name: Install npm dependencies
+        run: npm ci
+
+      # Build the Hugo site
+      - name: Build site with Hugo
+        run: hugo --minify  # Adjust this command if you have additional build options
+
+      # Deploy to Firebase Hosting
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JIUFENGBLOG }}
           channelId: live
-          projectId: jiufengblog
+          projectId: jiufengblog 

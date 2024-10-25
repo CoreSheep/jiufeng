@@ -2,156 +2,156 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:61551/collections/</loc>
+    <loc>http://localhost:53026/collections/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/collections/2023/collections/</loc>
+    <loc>http://localhost:53026/collections/2023/collections/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/collections/2023/collections2/</loc>
+    <loc>http://localhost:53026/collections/2023/collections2/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/collections/2023/collections3/</loc>
+    <loc>http://localhost:53026/collections/2023/collections3/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/collections/2023/collections4/</loc>
+    <loc>http://localhost:53026/collections/2023/collections4/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/collections/2023/collections5/</loc>
+    <loc>http://localhost:53026/collections/2023/collections5/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/collections/2023/collections6/</loc>
+    <loc>http://localhost:53026/collections/2023/collections6/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/</loc>
+    <loc>http://localhost:53026/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/tags/newsletter/</loc>
+    <loc>http://localhost:53026/tags/newsletter/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/tags/</loc>
+    <loc>http://localhost:53026/tags/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/post/</loc>
+    <loc>http://localhost:53026/post/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/tags/blog/</loc>
+    <loc>http://localhost:53026/tags/blog/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/post/2020/jan/use-this-theme/</loc>
+    <loc>http://localhost:53026/post/2020/jan/use-this-theme/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/tags/hugo/</loc>
+    <loc>http://localhost:53026/tags/hugo/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/post/2020/jan/build-hugo-blog/</loc>
+    <loc>http://localhost:53026/post/2020/jan/build-hugo-blog/</loc>
     <lastmod>2021-01-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/notes/2020/change/</loc>
+    <loc>http://localhost:53026/notes/2020/change/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/notes/2020/change2/</loc>
+    <loc>http://localhost:53026/notes/2020/change2/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/notes/2020/change3/</loc>
+    <loc>http://localhost:53026/notes/2020/change3/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/notes/</loc>
+    <loc>http://localhost:53026/notes/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/tags/markdown/</loc>
+    <loc>http://localhost:53026/tags/markdown/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/post/2020/jan/markdown/</loc>
+    <loc>http://localhost:53026/post/2020/jan/markdown/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/post/2020/jan/syntax/</loc>
+    <loc>http://localhost:53026/post/2020/jan/syntax/</loc>
     <lastmod>2020-01-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/tags/syntax/</loc>
+    <loc>http://localhost:53026/tags/syntax/</loc>
     <lastmod>2020-01-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/post/2020/jan/rich-content/</loc>
+    <loc>http://localhost:53026/post/2020/jan/rich-content/</loc>
     <lastmod>2020-01-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/tags/shortcodes/</loc>
+    <loc>http://localhost:53026/tags/shortcodes/</loc>
     <lastmod>2020-01-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/post/2020/jan/netlify-conf/</loc>
+    <loc>http://localhost:53026/post/2020/jan/netlify-conf/</loc>
     <lastmod>2020-01-04T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/tags/netlify/</loc>
+    <loc>http://localhost:53026/tags/netlify/</loc>
     <lastmod>2020-01-04T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/tags/stoicism/</loc>
+    <loc>http://localhost:53026/tags/stoicism/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/post/2020/jan/who-am-i/</loc>
+    <loc>http://localhost:53026/post/2020/jan/who-am-i/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/about/</loc>
+    <loc>http://localhost:53026/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:61551/categories/</loc>
+    <loc>http://localhost:53026/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

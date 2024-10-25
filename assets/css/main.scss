@@ -355,11 +355,12 @@ img {
 .search {
   display: inline-flex;
   align-items: baseline;
-  border: 1px solid #344854;
+  border: 2px solid #c2cacf;
   min-width: 2em;
   line-height: 1;
-  border-radius: 1em;
+  border-radius: 2em;
   padding: 0.25em;
+  margin: 0.4em;
 }
 
 .search .search-icon {

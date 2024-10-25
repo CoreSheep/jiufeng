@@ -1,0 +1,109 @@
+baseURL = "https://lightbi-hugo-theme.netlify.app/"
+DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+languageCode = "en-us"
+title = "Jiufeng"
+theme = "lightbi-hugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+#pygmentsUseClasses = true
+#pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+enableRobotsTXT = true
+enableGitInfo = false
+
+summaryLength  = "30"
+
+[pagination]
+pagerSize = 6
+
+[Params]
+selfHosted = true
+mainSections = ["post","posts"]
+dateFormat = "02 January 2006"
+comments = false
+readingTime = true
+wordCount = true
+useHLJS = true
+socialShare = true
+delayDisqus = true
+showRelatedPosts = true
+summaryLength  = "9"
+lunrSearch = true
+gcse = false
+lastmod = false
+rss = false
+pagination = "10"
+hideAuthor = false
+description="Your can add your website description here."
+previewCardImagePlacement = "bottom"
+
+
+[Params.Author]
+  name = "Jiufeng Li"
+  website = "https://www.binovarghese.com/"
+  authorInfo = "Build yourself and believe in yourself."
+  authorPostImage = "/img/author/author_signature_pic.jpg"
+    email = "lijiufeng97@gmail.com"
+  facebook = "username"
+  instagram = "jiufeng.li"
+  youtube = "user/username" # or channel/channelname
+  twitter = "username"
+  linkedin = "jiufeng"
+  github = "username"
+  threads = "username"
+  gitlab = "username"
+  reddit = "username"
+  stackoverflow = "users/XXXXXXX/username"
+  snapchat = "username"
+  spotify = "username"
+  paypal = "username"
+  telegram = "username"
+  mastodon = "url"
+  slack = "username"
+  #bandcamp = "username"
+  #itchio = "username"
+  #vk = "username"
+  #500px = "username"
+  #kaggle = "username"
+  #weibo = "username"
+  #xing = "username"
+  #bitbucket = "username"
+  #soundcloud = "username"
+  # codepen = "username"
+
+
+#Menu configuration 
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Notes"
+    url = "/notes/"
+    weight = 2
+
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+[[menu.main]]
+    name = "Collections"
+    url = "/collections/"
+    weight = 4
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 5
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"

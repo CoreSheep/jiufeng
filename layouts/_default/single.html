@@ -60,13 +60,18 @@
           {{ if .Site.Params.Author.authorPostImage }}
           <div class="col-md-2 ">
             <div class="card-body ">
-              {{- $authorPostImage := "" -}}
-              {{ $authorPostImage = .Site.Params.Author.authorPostImage }}
+              {{- $authorPostImage := .Site.Params.Author.authorPostImage -}}
+              <!-- {{ $authorPostImage = .Site.Params.Author.authorPostImage }} -->
               {{ $image := resources.Get $authorPostImage }}
-              <img src="{{ $image.RelPermalink }}" class="img-responsive img-50 img-round" alt="">
+              {{ if $image }} <!-- Check if $image exists -->
+                <img src="{{ $image.RelPermalink }}" class="img-responsive img-50 img-round" alt="">
+              {{ else }}
+              <!-- Optional: Fallback content if image is not found -->
+              <p>Image not available</p>
+             {{ end }}
             </div>
           </div>
-          {{ end }}
+         {{ end }}
 
 
           <div class="col-md-10">

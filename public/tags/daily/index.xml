@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daily on Jiufeng</title>
+    <link>http://localhost:50026/tags/daily/</link>
+    <description>Recent content in Daily on Jiufeng</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
+    <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
+    <lastBuildDate>Thu, 27 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:50026/tags/daily/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golden hour</title>
+      <link>http://localhost:50026/notes/2023/2_golden_hour/</link>
+      <pubDate>Thu, 27 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:50026/notes/2023/2_golden_hour/</guid>
+      <description>&lt;p&gt;Always bear in mind: enjoy your golden hours.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

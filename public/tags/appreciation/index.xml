@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Appreciation on Jiufeng</title>
+    <link>http://localhost:50026/tags/appreciation/</link>
+    <description>Recent content in Appreciation on Jiufeng</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
+    <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
+    <lastBuildDate>Wed, 26 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:50026/tags/appreciation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Five things I felt grateful for today</title>
+      <link>http://localhost:50026/notes/2023/1_5things/</link>
+      <pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:50026/notes/2023/1_5things/</guid>
+      <description>&lt;ol start=&#34;0&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Grateful for the continuous rainy days in Heidelberg; the weather is great, and I’ve been sleeping really well.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Grateful to my roommate for making me a Captain Morgan drink. It has a bit of a herbal medicine taste, but it’s not bad.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

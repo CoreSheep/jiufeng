@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About me on Jiufeng</title>
-    <link>http://localhost:57717/about/</link>
+    <link>http://localhost:50289/about/</link>
     <description>Recent content in About me on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
-    <atom:link href="http://localhost:57717/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:50289/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

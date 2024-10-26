@@ -2,5 +2,5 @@
 type : "tags"
 layout : "notes"
 title: "Notes"
-subtitle : "Your musings or reading notes"
+subtitle : "Some random thoughts and feelings about life & love."
 ---

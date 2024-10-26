@@ -2,68 +2,222 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jiufeng</title>
-    <link>http://localhost:53141/tags/</link>
+    <link>http://localhost:56476/tags/</link>
     <description>Recent content in Tags on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:53141/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:56476/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily</title>
+      <link>http://localhost:56476/tags/daily/</link>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/daily/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gym</title>
+      <link>http://localhost:56476/tags/gym/</link>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/gym/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thoughts</title>
+      <link>http://localhost:56476/tags/thoughts/</link>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/thoughts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hirokazukore-Eda</title>
+      <link>http://localhost:56476/tags/hirokazukore-eda/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/hirokazukore-eda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Internship</title>
+      <link>http://localhost:56476/tags/internship/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/internship/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Japanesemovie</title>
+      <link>http://localhost:56476/tags/japanesemovie/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/japanesemovie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Movie</title>
+      <link>http://localhost:56476/tags/movie/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/movie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work</title>
+      <link>http://localhost:56476/tags/work/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/work/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Goodbyechandler</title>
+      <link>http://localhost:56476/tags/goodbyechandler/</link>
+      <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/goodbyechandler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Friendship</title>
+      <link>http://localhost:56476/tags/friendship/</link>
+      <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/friendship/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vibe</title>
+      <link>http://localhost:56476/tags/vibe/</link>
+      <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/vibe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Altay</title>
+      <link>http://localhost:56476/tags/altay/</link>
+      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/altay/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Heidelberg</title>
+      <link>http://localhost:56476/tags/heidelberg/</link>
+      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/heidelberg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lijuan</title>
+      <link>http://localhost:56476/tags/lijuan/</link>
+      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/lijuan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Exam</title>
+      <link>http://localhost:56476/tags/exam/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/exam/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rain</title>
+      <link>http://localhost:56476/tags/rain/</link>
+      <pubDate>Sat, 29 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/rain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Positivemindset</title>
+      <link>http://localhost:56476/tags/positivemindset/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/positivemindset/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Innerpeace</title>
+      <link>http://localhost:56476/tags/innerpeace/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/innerpeace/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reading</title>
+      <link>http://localhost:56476/tags/reading/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/reading/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Confidence</title>
+      <link>http://localhost:56476/tags/confidence/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/confidence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>http://localhost:56476/tags/travel/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/travel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ocean</title>
+      <link>http://localhost:56476/tags/ocean/</link>
+      <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/ocean/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poetry</title>
+      <link>http://localhost:56476/tags/poetry/</link>
+      <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/poetry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Paris</title>
+      <link>http://localhost:56476/tags/paris/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/paris/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Culture</title>
+      <link>http://localhost:56476/tags/culture/</link>
+      <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/culture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Companionship</title>
+      <link>http://localhost:56476/tags/companionship/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/companionship/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Love</title>
+      <link>http://localhost:56476/tags/love/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/love/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Relationships</title>
+      <link>http://localhost:56476/tags/relationships/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/relationships/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Books</title>
+      <link>http://localhost:56476/tags/books/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/books/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Newsletter</title>
-      <link>http://localhost:53141/tags/newsletter/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/tags/newsletter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Blog</title>
-      <link>http://localhost:53141/tags/blog/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/tags/blog/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hugo</title>
-      <link>http://localhost:53141/tags/hugo/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Markdown</title>
-      <link>http://localhost:53141/tags/markdown/</link>
-      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/tags/markdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Syntax</title>
-      <link>http://localhost:53141/tags/syntax/</link>
-      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/tags/syntax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Shortcodes</title>
-      <link>http://localhost:53141/tags/shortcodes/</link>
-      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Netlify</title>
-      <link>http://localhost:53141/tags/netlify/</link>
-      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/tags/netlify/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Stoicism</title>
-      <link>http://localhost:53141/tags/stoicism/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/tags/stoicism/</guid>
+      <link>http://localhost:56476/tags/newsletter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/tags/newsletter/</guid>
       <description></description>
     </item>
   </channel>

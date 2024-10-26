@@ -2,174 +2,153 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jiufeng</title>
-    <link>http://localhost:53141/</link>
+    <link>http://localhost:56476/</link>
     <description>Recent content on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:53141/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:56476/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Collections No.1</title>
-      <link>http://localhost:53141/collections/2023/collections/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/collections/2023/collections/</guid>
-      <description>&lt;p&gt;Articles about learn in public, brag document and free stuffs.&lt;/p&gt;&#xA;&lt;h3 id=&#34;learn-in-public&#34;&gt;Learn In Public&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If there’s a golden rule, it’s this one, so I put it first. All the other rules are more or less elaborations of this rule #1.&lt;br&gt;&#xA;A habit of creating learning exhaust:&lt;/p&gt;</description>
+      <title>Clips of last week</title>
+      <link>http://localhost:56476/post/2024/sep/piece_of_last_week/</link>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/post/2024/sep/piece_of_last_week/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Spent the morning replying to a couple of emails, listening to some favorite tunes, and tidying up. Pretty chill, haha.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Been making progress at the gym lately—weight’s creeping up in a good way, and I’m eating pretty healthy too. I’m experimenting with recipes that balance fitness, health, and taste. Next week, I’ll try some new dishes. Even though I’m a bit tired after work, cooking every day feels like a win.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Collections No.1</title>
-      <link>http://localhost:53141/collections/2024/collections/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/collections/2024/collections/</guid>
-      <description>&lt;p&gt;Articles about learn in public, brag document and free stuffs.&lt;/p&gt;&#xA;&lt;h3 id=&#34;learn-in-public&#34;&gt;Learn In Public&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If there’s a golden rule, it’s this one, so I put it first. All the other rules are more or less elaborations of this rule #1.&lt;br&gt;&#xA;A habit of creating learning exhaust:&lt;/p&gt;</description>
+      <title>Monster</title>
+      <link>http://localhost:56476/post/2024/may/monster/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/post/2024/may/monster/</guid>
+      <description>&lt;p&gt;I watched &lt;a href=&#34;https://en.wikipedia.org/wiki/Hirokazu_Kore-eda&#34;&gt;Hirokazu Kore-eda&lt;/a&gt;’s &lt;a href=&#34;https://en.wikipedia.org/wiki/Monster_(2023_film)&#34;&gt;&lt;em&gt;Monster&lt;/em&gt;&lt;/a&gt; tonight, and I started to feel that there must be a kind, innocent boy in Kore-eda’s heart—otherwise, he couldn’t create such delicate stories. Now I’m itching to travel to Japan, to see Mount Fuji and cherry blossoms, and ride the Shinkansen.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Collections No.2</title>
-      <link>http://localhost:53141/collections/2023/collections2/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/collections/2023/collections2/</guid>
-      <description>&lt;p&gt;Articles about learn in public, brag document and free stuffs.&lt;/p&gt;&#xA;&lt;h3 id=&#34;learn-in-public&#34;&gt;Learn In Public&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If there’s a golden rule, it’s this one, so I put it first. All the other rules are more or less elaborations of this rule #1.&lt;br&gt;&#xA;A habit of creating learning exhaust:&lt;/p&gt;</description>
+      <title>My first month working at Mercedes-Benz</title>
+      <link>http://localhost:56476/post/2024/jul/1_first_day_in_mb/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/post/2024/jul/1_first_day_in_mb/</guid>
+      <description>&lt;p&gt;I’m part of a Data &amp;amp; AI team within Marketing &amp;amp; Sales, focusing primarily on personalized recommendation systems based on user data and applications of Generative AI. After nearly a month, I’ve familiarized myself with the team’s core operations—how we gather user data, perform data cleaning, and use Databricks for in-depth data cleansing and classification. I’ve also learned how to set up API endpoints, manage in-memory operations with Redis, and leverage MLflow for streamlined MLOps and DevOps, including CI/CD. Of course, this also includes optimizing models and refining feature selection.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Collections No.3</title>
-      <link>http://localhost:53141/collections/2023/collections3/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/collections/2023/collections3/</guid>
-      <description>&lt;p&gt;Articles about learn in public, brag document and free stuffs.&lt;/p&gt;&#xA;&lt;h3 id=&#34;learn-in-public&#34;&gt;Learn In Public&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If there’s a golden rule, it’s this one, so I put it first. All the other rules are more or less elaborations of this rule #1.&lt;br&gt;&#xA;A habit of creating learning exhaust:&lt;/p&gt;</description>
+      <title>Goodbye Chandler</title>
+      <link>http://localhost:56476/notes/2023/oct/note10/</link>
+      <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/notes/2023/oct/note10/</guid>
+      <description>&lt;p&gt;Goodbye Chandler, goodbye my FRIENDS.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Collections No.4</title>
-      <link>http://localhost:53141/collections/2023/collections4/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/collections/2023/collections4/</guid>
-      <description>&lt;p&gt;Articles about learn in public, brag document and free stuffs.&lt;/p&gt;&#xA;&lt;h3 id=&#34;learn-in-public&#34;&gt;Learn In Public&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If there’s a golden rule, it’s this one, so I put it first. All the other rules are more or less elaborations of this rule #1.&lt;br&gt;&#xA;A habit of creating learning exhaust:&lt;/p&gt;</description>
+      <title>Vibe</title>
+      <link>http://localhost:56476/notes/2023/sep/note10/</link>
+      <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/notes/2023/sep/note10/</guid>
+      <description>&lt;p&gt;The vibe between friends is so important. When you mention a movie, a book, or a rock band, and they instantly get it—then the conversation just flows like rapid-fire. It’s as if the distance between hearts shrinks down to nanometers. At the end of the day, I realize I’m a sapiosexual, craving that deep resonance of minds and souls.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Collections No.5</title>
-      <link>http://localhost:53141/collections/2023/collections5/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/collections/2023/collections5/</guid>
-      <description>&lt;p&gt;Articles about learn in public, brag document and free stuffs.&lt;/p&gt;&#xA;&lt;h3 id=&#34;learn-in-public&#34;&gt;Learn In Public&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If there’s a golden rule, it’s this one, so I put it first. All the other rules are more or less elaborations of this rule #1.&lt;br&gt;&#xA;A habit of creating learning exhaust:&lt;/p&gt;</description>
+      <title>Heidelberg and Altay</title>
+      <link>http://localhost:56476/post/2023/aug/heidelberg_and_atlay/</link>
+      <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/post/2023/aug/heidelberg_and_atlay/</guid>
+      <description>&lt;p&gt;Compared to other big cities like Berlin or Hamburg, Heidelberg might feel like a small village, but there’s no denying its beauty. It’s a beauty steeped in cultural heritage and rich history. It reminds me of the Altay in &lt;a href=&#34;https://bcaf.org.cn/Li-Juan-A-Writer-s-Journey-to-the-Altay-Northern-Xinjiang&#34;&gt;Li Juan&lt;/a&gt;’s writing—although there are no pastures or grasslands here, I can still find my own little piece of tranquility.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Collections No.6</title>
-      <link>http://localhost:53141/collections/2023/collections6/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/collections/2023/collections6/</guid>
-      <description>&lt;p&gt;Articles about learn in public, brag document and free stuffs.&lt;/p&gt;&#xA;&lt;h3 id=&#34;learn-in-public&#34;&gt;Learn In Public&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;If there’s a golden rule, it’s this one, so I put it first. All the other rules are more or less elaborations of this rule #1.&lt;br&gt;&#xA;A habit of creating learning exhaust:&lt;/p&gt;</description>
+      <title>Friendship</title>
+      <link>http://localhost:56476/notes/2023/aug/note9/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/notes/2023/aug/note9/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Daily Thoughts&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Sometimes, I still feel that friendship is an incredibly beautiful thing. Right now, I even rank the bond between friends above love and family—it brings a unique sense of relaxation and joy. As I grow older, I find myself cherishing my friends more and more!&lt;/p&gt;</description>
     </item>
     <item>
-      <title>How to use this Hugo theme ?</title>
-      <link>http://localhost:53141/post/2020/jan/use-this-theme-copy/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/post/2020/jan/use-this-theme-copy/</guid>
-      <description>&lt;p&gt;After downloding the theme, uzip the file and go to the &amp;rsquo;lightbi-hugo-master&amp;rsquo; folder. Open the folder in you editor and run the hugo build command as below.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It will create a folder named &amp;lsquo;public&amp;rsquo; and in the same you can find the website created by Hugo from the contents from &amp;lsquo;content&amp;rsquo; folder and the theme.&#xA;To check the website you can run the below command,&lt;/p&gt;</description>
+      <title>Thoughts in the Night 2</title>
+      <link>http://localhost:56476/notes/2023/jul/note8/</link>
+      <pubDate>Mon, 31 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/notes/2023/jul/note8/</guid>
+      <description>&lt;p&gt;There are still so many goals in life—like graduating on time, finding an internship in Germany, getting a job, moving into my own place, and having a calico cat, an orange tabby, and a golden retriever. I&amp;rsquo;d like to own a home with a bedroom featuring floor-to-ceiling windows, a living room with a large balcony, and a study designed by me. A home gym and a swimming pool would be great too. Some concrete goals. And I’ll need a large wine cabinet—my tolerance has definitely gone up since moving here.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>How to use this Hugo theme ?</title>
-      <link>http://localhost:53141/post/2020/jan/use-this-theme/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/post/2020/jan/use-this-theme/</guid>
-      <description>&lt;p&gt;After downloding the theme, uzip the file and go to the &amp;rsquo;lightbi-hugo-master&amp;rsquo; folder. Open the folder in you editor and run the hugo build command as below.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It will create a folder named &amp;lsquo;public&amp;rsquo; and in the same you can find the website created by Hugo from the contents from &amp;lsquo;content&amp;rsquo; folder and the theme.&#xA;To check the website you can run the below command,&lt;/p&gt;</description>
+      <title>Late-night study sessions</title>
+      <link>http://localhost:56476/notes/2023/jul/note7/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/notes/2023/jul/note7/</guid>
+      <description>&lt;p&gt;Who would&amp;rsquo;ve thought that at my age, I&amp;rsquo;d still be taking exams. :(&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Build a Hugo Blog</title>
-      <link>http://localhost:53141/post/2020/jan/build-hugo-blog/</link>
-      <pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/post/2020/jan/build-hugo-blog/</guid>
-      <description>&lt;h3 id=&#34;hugo&#34;&gt;Hugo?&lt;/h3&gt;&#xA;&lt;p&gt;It’s a fast and static website generator written in the Go language. Websites built with Hugo can be hosted anywhere from GitHub Pages to Amazon S3 without any database or other language dependencies.&lt;/p&gt;</description>
+      <title>Thoughts in the Night 1</title>
+      <link>http://localhost:56476/notes/2023/jul/note6/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/notes/2023/jul/note6/</guid>
+      <description>&lt;p&gt;I need to read more books, meet more people, make more friends, embrace diverse cultures, listen, acknowledge others, and see myself through their perspectives. It’s wonderful—lately, I feel I’ve gained a fresh understanding of life and the true meaning of friendship. This clarity brought me out of my dreams to jot down these notes.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Note 3</title>
-      <link>http://localhost:53141/notes/2020/change3/</link>
-      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/notes/2020/change3/</guid>
-      <description>&lt;p&gt;Journaling is not just a little thing you do to pass the time, to write down your memories—though it can be—it’s a strategy that has helped brilliant, powerful and wise people become better at what they do.&lt;/p&gt;</description>
+      <title>Rainy days</title>
+      <link>http://localhost:56476/notes/2023/jul/note5/</link>
+      <pubDate>Sat, 29 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/notes/2023/jul/note5/</guid>
+      <description>&lt;p&gt;Before this summer ends, I hope to go camping in the rain with friends. I love rainy days—it feels like time stands still when the rain falls. There’s a peacefulness amidst the noise, a kind of serene joy that’s truly delightful.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Note 1</title>
-      <link>http://localhost:53141/notes/2020/change-copy/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/notes/2020/change-copy/</guid>
-      <description>&lt;p&gt;Journaling is not just a little thing you do to pass the time, to write down your memories—though it can be—it’s a strategy that has helped brilliant, powerful and wise people become better at what they do.&lt;/p&gt;</description>
+      <title>Positive mindset</title>
+      <link>http://localhost:56476/notes/2023/jul/note4/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/notes/2023/jul/note4/</guid>
+      <description>&lt;p&gt;I believe that no matter what, as long as we maintain a positive and optimistic mindset, everything will work out in the end.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Note 1</title>
-      <link>http://localhost:53141/notes/2020/change/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/notes/2020/change/</guid>
-      <description>&lt;p&gt;Journaling is not just a little thing you do to pass the time, to write down your memories—though it can be—it’s a strategy that has helped brilliant, powerful and wise people become better at what they do.&lt;/p&gt;</description>
+      <title>Inner peace</title>
+      <link>http://localhost:56476/notes/2023/note1/</link>
+      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/notes/2023/note1/</guid>
+      <description>&lt;p&gt;I’m gradually realizing that inner peace can overcome all trivial disturbances. Reading is the axe that shatters the frozen sea within us.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Note 1</title>
-      <link>http://localhost:53141/notes/2020/change4md-copy/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/notes/2020/change4md-copy/</guid>
-      <description>&lt;p&gt;Journaling is not just a little thing you do to pass the time, to write down your memories—though it can be—it’s a strategy that has helped brilliant, powerful and wise people become better at what they do.&lt;/p&gt;</description>
+      <title>Confidence</title>
+      <link>http://localhost:56476/notes/2023/note2/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/notes/2023/note2/</guid>
+      <description>&lt;ol start=&#34;0&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;I appreciate the confidence I’ve built and radiate—it’s something I’ve accumulated step by step on my own, something I’ve given myself rather than received from others. So, I’m grateful to myself.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Note 2</title>
-      <link>http://localhost:53141/notes/2020/change2/</link>
-      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/notes/2020/change2/</guid>
-      <description>&lt;p&gt;Journaling is not just a little thing you do to pass the time, to write down your memories—though it can be—it’s a strategy that has helped brilliant, powerful and wise people become better at what they do.&lt;/p&gt;</description>
+      <title>The meaning of traveling</title>
+      <link>http://localhost:56476/notes/2023/note3/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/notes/2023/note3/</guid>
+      <description>&lt;p&gt;&amp;ldquo;I gradually understand the meaning of traveling.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Hamburg, 10th April 2023&lt;/p&gt;</description>
     </item>
     <item>
-      <title>What is Markdown ?</title>
-      <link>http://localhost:53141/post/2020/jan/markdown-copy/</link>
-      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/post/2020/jan/markdown-copy/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;What is Markdown?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The Markdown Guide is a free and open-source reference guide that explains how to use Markdown, the simple and easy-to-use markup language you can use to format virtually any document.&lt;/p&gt;</description>
+      <title>Oh! The Ocean!</title>
+      <link>http://localhost:56476/post/2023/apr/ocean/</link>
+      <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/post/2023/apr/ocean/</guid>
+      <description>&lt;p&gt;The ocean truly has the power to heal.&lt;/p&gt;&#xA;&lt;p&gt;One day, he said he wanted to see the sea.&lt;br&gt;&#xA;There was no particular reason; he just missed the ocean.&lt;br&gt;&#xA;He took the train overnight, enduring a long journey.&lt;br&gt;&#xA;Before dawn arrived, he finally got his wish.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>What is Markdown ?</title>
-      <link>http://localhost:53141/post/2020/jan/markdown/</link>
-      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/post/2020/jan/markdown/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;What is Markdown?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The Markdown Guide is a free and open-source reference guide that explains how to use Markdown, the simple and easy-to-use markup language you can use to format virtually any document.&lt;/p&gt;</description>
+      <title>Paris</title>
+      <link>http://localhost:56476/collections/2023/collections/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/collections/2023/collections/</guid>
+      <description>&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/saine.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;The Seine River&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/Tour_Eiffel.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;Tour Eiffel&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/Louvre_Museum.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;Musée du Louvre&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/Jardin_des_Tuileries.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;Jardin des Tuileries&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/Mus%c3%a9e_d%27Orsay.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;Musée d&amp;#39;Orsay&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/Ch%c3%a2teau_de_Versailles.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;Château de Versailles&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/Montmartre.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;Montmartre&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/puppy.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;The puppy&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/Abbesses.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;Abbesses&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/Basilique_du_Sacr%c3%a9-C%c5%93ur.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;Basilique du Sacré-Cœur&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/Van_Gogh%27s_Self-Portraits.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;Van Gogh&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/Starry_Night.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;Starry Night&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure &gt;&#xA;&#xA;  &#xA;&#xA;    &lt;img class=&#34;rounded&#34; src=&#34;http://localhost:56476/img/collections/paris/cat.JPG&#34; alt=&#34;Paris travel photo&#34; /&gt;&#xA;    &#xA;    &#xA;      &lt;figcaption class=&#34;text-center&#34;&gt;&#xA;        &#xA;        &lt;h5&gt;猫咪和手风琴艺人&lt;/h5&gt;&#xA;        &#xA;      &lt;/figcaption&gt;&#xA;  &#xA;&lt;/figure&gt;</description>
     </item>
     <item>
-      <title>Basic Syntax</title>
-      <link>http://localhost:53141/post/2020/jan/syntax-copy/</link>
-      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/post/2020/jan/syntax-copy/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Headings&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use should correspond to the heading level. For example, to create a heading level three (h3), use three number signs (e.g., ### My Header).&#xA; &lt;/p&gt;</description>
+      <title>Bonjour, Paris!</title>
+      <link>http://localhost:56476/post/2023/apr/paris/</link>
+      <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/post/2023/apr/paris/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Bonjour, Paris!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;My four-day, three-night solo trip in Paris has come to a perfect end. The only slight regret is not being able to visit the Louvre since I didn’t make a reservation (oh, my Mona Lisa!). Other than that, I stuck to my itinerary and checked off every spot with photos: the Eiffel Tower, the banks of the Seine, the Musée d’Orsay, the Orangerie, Versailles, Montmartre, and Sacré-Cœur.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Basic Syntax</title>
-      <link>http://localhost:53141/post/2020/jan/syntax/</link>
-      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/post/2020/jan/syntax/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Headings&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;To create a heading, add number signs (#) in front of a word or phrase. The number of number signs you use should correspond to the heading level. For example, to create a heading level three (h3), use three number signs (e.g., ### My Header).&#xA; &lt;/p&gt;</description>
+      <title>The Right to Redefine Love</title>
+      <link>http://localhost:56476/post/2023/feb/redefine_love/</link>
+      <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/post/2023/feb/redefine_love/</guid>
+      <description>&lt;p&gt;Recently, I went through a few things that gave me a new perspective on love. After studying for my finals all morning and afternoon, I decided to jot down some of these thoughts.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Rich Content</title>
-      <link>http://localhost:53141/post/2020/jan/rich-content/</link>
-      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/post/2020/jan/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Host in Netlify</title>
-      <link>http://localhost:53141/post/2020/jan/netlify-conf-copy/</link>
-      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/post/2020/jan/netlify-conf-copy/</guid>
-      <description>&lt;p&gt;You can host your static website wth zero cost in &lt;a href=&#34;https://www.netlify.com/&#34;&gt;Netlify&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Add the below netlify.toml in the root folder.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;[build]&#xA;publish = &amp;quot;public&amp;quot;&#xA;command = &amp;quot;hugo --gc --minify&amp;quot;&#xA;&#xA;[context.production.environment]&#xA;HUGO_VERSION = &amp;quot;0.82.0&amp;quot;&#xA;HUGO_ENV = &amp;quot;production&amp;quot;&#xA;HUGO_ENABLEGITINFO = &amp;quot;true&amp;quot;&#xA;&#xA;[context.split1]&#xA;command = &amp;quot;hugo --gc --minify --enableGitInfo&amp;quot;&#xA;&#xA;[context.split1.environment]&#xA;HUGO_VERSION = &amp;quot;0.82.0&amp;quot;&#xA;HUGO_ENV = &amp;quot;production&amp;quot;&#xA;&#xA;[context.deploy-preview]&#xA;command = &amp;quot;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&amp;quot;&#xA;&#xA;[context.deploy-preview.environment]&#xA;HUGO_VERSION = &amp;quot;0.82.0&amp;quot;&#xA;&#xA;[context.branch-deploy]&#xA;command = &amp;quot;hugo -b $DEPLOY_PRIME_URL&amp;quot;&#xA;&#xA;[context.branch-deploy.environment]&#xA;HUGO_VERSION = &amp;quot;0.82.0&amp;quot;&#xA;&#xA;[context.next.environment]&#xA;HUGO_ENABLEGITINFO = &amp;quot;true&amp;quot;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;And you can upload the public folder directly to Netlify or integrate your GitHub accout with Netlify to host your website.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Host in Netlify</title>
-      <link>http://localhost:53141/post/2020/jan/netlify-conf/</link>
-      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/post/2020/jan/netlify-conf/</guid>
-      <description>&lt;p&gt;You can host your static website wth zero cost in &lt;a href=&#34;https://www.netlify.com/&#34;&gt;Netlify&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Add the below netlify.toml in the root folder.&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;[build]&#xA;publish = &amp;quot;public&amp;quot;&#xA;command = &amp;quot;hugo --gc --minify&amp;quot;&#xA;&#xA;[context.production.environment]&#xA;HUGO_VERSION = &amp;quot;0.82.0&amp;quot;&#xA;HUGO_ENV = &amp;quot;production&amp;quot;&#xA;HUGO_ENABLEGITINFO = &amp;quot;true&amp;quot;&#xA;&#xA;[context.split1]&#xA;command = &amp;quot;hugo --gc --minify --enableGitInfo&amp;quot;&#xA;&#xA;[context.split1.environment]&#xA;HUGO_VERSION = &amp;quot;0.82.0&amp;quot;&#xA;HUGO_ENV = &amp;quot;production&amp;quot;&#xA;&#xA;[context.deploy-preview]&#xA;command = &amp;quot;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&amp;quot;&#xA;&#xA;[context.deploy-preview.environment]&#xA;HUGO_VERSION = &amp;quot;0.82.0&amp;quot;&#xA;&#xA;[context.branch-deploy]&#xA;command = &amp;quot;hugo -b $DEPLOY_PRIME_URL&amp;quot;&#xA;&#xA;[context.branch-deploy.environment]&#xA;HUGO_VERSION = &amp;quot;0.82.0&amp;quot;&#xA;&#xA;[context.next.environment]&#xA;HUGO_ENABLEGITINFO = &amp;quot;true&amp;quot;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;And you can upload the public folder directly to Netlify or integrate your GitHub accout with Netlify to host your website.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Who am I ?!</title>
-      <link>http://localhost:53141/post/2020/jan/who-am-i/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:53141/post/2020/jan/who-am-i/</guid>
-      <description>&lt;p&gt;Who am I ?! This is the most asked question in my life. Yet no clear answer has yet been found.&lt;/p&gt;&#xA;&lt;p&gt;As a child, the answer to this question was simple. Say my name to the question of who. Aha ..! Simple and beautiful. In that answer, parents and siblings in adolescence. I thought to myself that the answer was too clear.&lt;/p&gt;</description>
+      <title>On Reading: Advice for Young People in Their Twenties</title>
+      <link>http://localhost:56476/post/2022/may/on_reading/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:56476/post/2022/may/on_reading/</guid>
+      <description>&lt;p&gt;When it comes to reading, giving advice feels almost unnecessary; true lovers of reading will naturally develop their own methods and preferences. One book often leads us to another, effortlessly drawing us into new ideas and stories. I imagine many of you have had a similar experience. But here, I’d like to share a few thoughts on how young people in their twenties might approach reading.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

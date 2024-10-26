@@ -2,176 +2,171 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:50289/collections/</loc>
+    <loc>https://jiufengblog.web.app/collections/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/collections/2023/collections/</loc>
+    <loc>https://jiufengblog.web.app/collections/2023/collections/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/collections/2024/collections/</loc>
+    <loc>https://jiufengblog.web.app/collections/2024/collections/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/collections/2023/collections2/</loc>
+    <loc>https://jiufengblog.web.app/collections/2023/collections2/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/collections/2023/collections3/</loc>
+    <loc>https://jiufengblog.web.app/collections/2023/collections3/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/collections/2023/collections4/</loc>
+    <loc>https://jiufengblog.web.app/collections/2023/collections4/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/collections/2023/collections5/</loc>
+    <loc>https://jiufengblog.web.app/collections/2023/collections5/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/collections/2023/collections6/</loc>
+    <loc>https://jiufengblog.web.app/collections/2023/collections6/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/</loc>
+    <loc>https://jiufengblog.web.app/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/tags/newsletter/</loc>
+    <loc>https://jiufengblog.web.app/tags/newsletter/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/tags/</loc>
+    <loc>https://jiufengblog.web.app/tags/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/post/</loc>
+    <loc>https://jiufengblog.web.app/post/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/tags/blog/</loc>
+    <loc>https://jiufengblog.web.app/tags/blog/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/post/2020/jan/use-this-theme/</loc>
+    <loc>https://jiufengblog.web.app/post/2020/jan/use-this-theme/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/tags/hugo/</loc>
+    <loc>https://jiufengblog.web.app/tags/hugo/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/post/2020/jan/build-hugo-blog-copy/</loc>
+    <loc>https://jiufengblog.web.app/post/2020/jan/build-hugo-blog/</loc>
     <lastmod>2021-01-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/post/2020/jan/build-hugo-blog/</loc>
-    <lastmod>2021-01-31T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:50289/notes/2020/change3/</loc>
+    <loc>https://jiufengblog.web.app/notes/2020/change3/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/notes/</loc>
+    <loc>https://jiufengblog.web.app/notes/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/notes/2020/change-copy/</loc>
+    <loc>https://jiufengblog.web.app/notes/2020/change-copy/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/notes/2020/change/</loc>
+    <loc>https://jiufengblog.web.app/notes/2020/change/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/notes/2020/change4md-copy/</loc>
+    <loc>https://jiufengblog.web.app/notes/2020/change4md-copy/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/notes/2020/change2/</loc>
+    <loc>https://jiufengblog.web.app/notes/2020/change2/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/tags/markdown/</loc>
+    <loc>https://jiufengblog.web.app/tags/markdown/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/post/2020/jan/markdown/</loc>
+    <loc>https://jiufengblog.web.app/post/2020/jan/markdown/</loc>
     <lastmod>2020-01-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/post/2020/jan/syntax/</loc>
+    <loc>https://jiufengblog.web.app/post/2020/jan/syntax/</loc>
     <lastmod>2020-01-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/tags/syntax/</loc>
+    <loc>https://jiufengblog.web.app/tags/syntax/</loc>
     <lastmod>2020-01-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/post/2020/jan/rich-content/</loc>
+    <loc>https://jiufengblog.web.app/post/2020/jan/rich-content/</loc>
     <lastmod>2020-01-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/tags/shortcodes/</loc>
+    <loc>https://jiufengblog.web.app/tags/shortcodes/</loc>
     <lastmod>2020-01-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/post/2020/jan/netlify-conf/</loc>
+    <loc>https://jiufengblog.web.app/post/2020/jan/netlify-conf/</loc>
     <lastmod>2020-01-04T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/tags/netlify/</loc>
+    <loc>https://jiufengblog.web.app/tags/netlify/</loc>
     <lastmod>2020-01-04T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/tags/stoicism/</loc>
+    <loc>https://jiufengblog.web.app/tags/stoicism/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/post/2020/jan/who-am-i/</loc>
+    <loc>https://jiufengblog.web.app/post/2020/jan/who-am-i/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/about/</loc>
+    <loc>https://jiufengblog.web.app/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:50289/categories/</loc>
+    <loc>https://jiufengblog.web.app/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

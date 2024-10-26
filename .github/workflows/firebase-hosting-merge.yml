@@ -29,8 +29,8 @@ jobs:
         run: hugo
 
       # Deploy the Hugo site using Hugo's deploy command
-      - name: Hugo Deploy
-        run: hugo deploy --confirm
+      - name: Hugo and Firebase Deploy
+        run: hugo && firebase deploy
 
       # Deploy to Firebase Hosting
       - uses: FirebaseExtended/action-hosting-deploy@v0

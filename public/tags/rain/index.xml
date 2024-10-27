@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rain on Jiufeng</title>
-    <link>http://localhost:56476/tags/rain/</link>
+    <link>https://jiufengblog.web.app/tags/rain/</link>
     <description>Recent content in Rain on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Sat, 29 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:56476/tags/rain/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.web.app/tags/rain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rainy days</title>
-      <link>http://localhost:56476/notes/2023/jul/note5/</link>
+      <link>https://jiufengblog.web.app/notes/2023/jul/note5/</link>
       <pubDate>Sat, 29 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:56476/notes/2023/jul/note5/</guid>
+      <guid>https://jiufengblog.web.app/notes/2023/jul/note5/</guid>
       <description>&lt;p&gt;Before this summer ends, I hope to go camping in the rain with friends. I love rainy days—it feels like time stands still when the rain falls. There’s a peacefulness amidst the noise, a kind of serene joy that’s truly delightful.&lt;/p&gt;</description>
     </item>
   </channel>

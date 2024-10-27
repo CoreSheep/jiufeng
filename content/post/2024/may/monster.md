@@ -1,9 +1,9 @@
 ---
 title: "Monster"
-date: 2024-07-01
+date: 2024-05-09
 tags: ["movie", "japanesemovie", "hirokazukore-eda"]
 image : "/img/posts/p3.jpg"
-Description  : 'I watched Hirokazu Kore-eda’s *Monster* tonight, and I started to feel that there must be a kind, innocent boy in Kore-eda’s heart—otherwise ...'
+Description  : 'I watched Hirokazu Kore-eda’s Monster tonight, and I started to feel that there must be a kind, innocent boy in Kore-eda’s heart—otherwise ...'
 featured: true
 ---
 I watched [Hirokazu Kore-eda](https://en.wikipedia.org/wiki/Hirokazu_Kore-eda)’s [*Monster*](https://en.wikipedia.org/wiki/Monster_(2023_film)) tonight, and I started to feel that there must be a kind, innocent boy in Kore-eda’s heart—otherwise, he couldn’t create such delicate stories. Now I’m itching to travel to Japan, to see Mount Fuji and cherry blossoms, and ride the Shinkansen.

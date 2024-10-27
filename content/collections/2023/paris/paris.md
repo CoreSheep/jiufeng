@@ -89,7 +89,7 @@ Just steps from Abbesses, you’ll find the iconic [**Café des 2 Moulins**](htt
 
 {{< figure 
     src="/img/collections/paris/Amelie_Abbesses.JPG" 
-    title="Abbesses" 
+    title="Abbesses in Amélie" 
     alt="Paris travel photo" 
     caption="The Abbesses metro station in the moive Amélie."
     >}}

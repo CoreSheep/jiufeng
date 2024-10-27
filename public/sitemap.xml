@@ -37,27 +37,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jiufengblog.web.app/tags/hirokazukore-eda/</loc>
-    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://jiufengblog.web.app/tags/internship/</loc>
-    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.web.app/tags/japanesemovie/</loc>
-    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.web.app/post/2024/may/monster/</loc>
-    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.web.app/tags/movie/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -69,6 +49,26 @@
   </url><url>
     <loc>https://jiufengblog.web.app/tags/work/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.web.app/tags/hirokazukore-eda/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.web.app/tags/japanesemovie/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.web.app/post/2024/may/monster/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.web.app/tags/movie/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -227,7 +227,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jiufengblog.web.app/collections/2023/collections/</loc>
+    <loc>https://jiufengblog.web.app/collections/2023/paris/paris/</loc>
     <lastmod>2023-04-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

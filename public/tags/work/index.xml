@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Work on Jiufeng</title>
-    <link>https://jiufengblog.web.app/tags/work/</link>
+    <link>http://localhost:61175/tags/work/</link>
     <description>Recent content in Work on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jiufengblog.web.app/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61175/tags/work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My first month working at Mercedes-Benz</title>
-      <link>https://jiufengblog.web.app/post/2024/jul/1_first_day_in_mb/</link>
+      <link>http://localhost:61175/post/2024/jul/1_first_day_in_mb/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/post/2024/jul/1_first_day_in_mb/</guid>
+      <guid>http://localhost:61175/post/2024/jul/1_first_day_in_mb/</guid>
       <description>&lt;p&gt;I’m part of a Data &amp;amp; AI team within Marketing &amp;amp; Sales, focusing primarily on personalized recommendation systems based on user data and applications of Generative AI. After nearly a month, I’ve familiarized myself with the team’s core operations—how we gather user data, perform data cleaning, and use Databricks for in-depth data cleansing and classification. I’ve also learned how to set up API endpoints, manage in-memory operations with Redis, and leverage MLflow for streamlined MLOps and DevOps, including CI/CD. Of course, this also includes optimizing models and refining feature selection.&lt;/p&gt;</description>
     </item>
   </channel>

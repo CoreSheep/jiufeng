@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Collections on Jiufeng</title>
-    <link>https://jiufengblog.web.app/collections/</link>
+    <link>http://localhost:61175/collections/</link>
     <description>Recent content in Collections on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Thu, 06 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jiufengblog.web.app/collections/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61175/collections/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Paris</title>
-      <link>https://jiufengblog.web.app/collections/2023/paris/paris/</link>
+      <link>http://localhost:61175/collections/2023/paris/paris/</link>
       <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/collections/2023/paris/paris/</guid>
+      <guid>http://localhost:61175/collections/2023/paris/paris/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Alongside the Banks of the Seine&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The sky turns gray and dark,&lt;br&gt;&#xA;as waves on the Seine reflect the light from the Eiffel Tower.&lt;/p&gt;&#xA;&lt;p&gt;I feel the wind, so soft and tender;&lt;br&gt;&#xA;standing on the boat, I can see all of Paris—&lt;br&gt;&#xA;noisy, seductive, artistic, shining in the darkness.&lt;/p&gt;</description>
     </item>
   </channel>

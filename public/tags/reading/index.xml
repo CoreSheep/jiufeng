@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reading on Jiufeng</title>
-    <link>http://localhost:1313/tags/reading/</link>
+    <link>https://jiufengblog.web.app/tags/reading/</link>
     <description>Recent content in Reading on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Sun, 23 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.web.app/tags/reading/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inner peace</title>
-      <link>http://localhost:1313/notes/2023/note1/</link>
+      <link>https://jiufengblog.web.app/notes/2023/note1/</link>
       <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/notes/2023/note1/</guid>
+      <guid>https://jiufengblog.web.app/notes/2023/note1/</guid>
       <description>&lt;p&gt;I’m gradually realizing that inner peace can overcome all trivial disturbances. Reading is the axe that shatters the frozen sea within us.&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Reading: Advice for Young People in Their Twenties</title>
-      <link>http://localhost:1313/post/2022/may/on_reading/</link>
+      <link>https://jiufengblog.web.app/post/2022/may/on_reading/</link>
       <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/post/2022/may/on_reading/</guid>
+      <guid>https://jiufengblog.web.app/post/2022/may/on_reading/</guid>
       <description>&lt;p&gt;When it comes to reading, giving advice feels almost unnecessary; true lovers of reading will naturally develop their own methods and preferences. One book often leads us to another, effortlessly drawing us into new ideas and stories. I imagine many of you have had a similar experience. But here, I’d like to share a few thoughts on how young people in their twenties might approach reading.&lt;/p&gt;</description>
     </item>
   </channel>

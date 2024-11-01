@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jiufeng</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://jiufengblog.web.app/post/</link>
     <description>Recent content on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Fri, 01 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.web.app/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Song -- Labi Siffre</title>
-      <link>http://localhost:1313/post/2024/nov/mysong/</link>
+      <link>https://jiufengblog.web.app/post/2024/nov/mysong/</link>
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/post/2024/nov/mysong/</guid>
-      <description>&lt;p&gt;This is my song&#xA;And no one can take it away&#xA;It&amp;rsquo;s been so long&#xA;But now you&amp;rsquo;re here&#xA;Here to stay&lt;/p&gt;&#xA;&lt;p&gt;And I wonder&#xA;If you know what it means&#xA;To find your dreams come true&lt;/p&gt;</description>
+      <guid>https://jiufengblog.web.app/post/2024/nov/mysong/</guid>
+      <description>&lt;p&gt;This is my song&lt;br&gt;&#xA;And no one can take it away&lt;br&gt;&#xA;It&amp;rsquo;s been so long&lt;br&gt;&#xA;But now you&amp;rsquo;re here&lt;br&gt;&#xA;Here to stay&lt;/p&gt;&#xA;&lt;p&gt;And I wonder&lt;br&gt;&#xA;If you know what it means&lt;br&gt;&#xA;To find your dreams come true&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clips of last week</title>
-      <link>http://localhost:1313/post/2024/sep/piece_of_last_week/</link>
+      <link>https://jiufengblog.web.app/post/2024/sep/piece_of_last_week/</link>
       <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/post/2024/sep/piece_of_last_week/</guid>
+      <guid>https://jiufengblog.web.app/post/2024/sep/piece_of_last_week/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Spent the whole morning replying to a couple of emails, listening to some favorite music, and tidying up. Pretty chill, haha.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Been making progress at the gym lately and shaping my body in a good way, and I’m eating pretty healthy too. I’m trying to come up with more recipes that balance fitness, health, and taste. Next week, I’ll try to make some new chinese food. Even though I’m a bit tired after work recently, cooking every day still makes me feels like more comfortable and calm.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My first month working at Mercedes-Benz</title>
-      <link>http://localhost:1313/post/2024/jul/1_first_day_in_mb/</link>
+      <link>https://jiufengblog.web.app/post/2024/jul/1_first_day_in_mb/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/post/2024/jul/1_first_day_in_mb/</guid>
+      <guid>https://jiufengblog.web.app/post/2024/jul/1_first_day_in_mb/</guid>
       <description>&lt;p&gt;I’m part of a Data &amp;amp; AI team within Marketing &amp;amp; Sales, focusing primarily on personalized recommendation systems based on user data and applications of Generative AI. After nearly a month, I’ve familiarized myself with the team’s core operations—how we gather user data, perform data cleaning, and use Databricks for in-depth data cleansing and classification. I’ve also learned how to set up API endpoints, manage in-memory operations with Redis, and leverage MLflow for streamlined MLOps and DevOps, including CI/CD. Of course, this also includes optimizing models and refining feature selection.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monster</title>
-      <link>http://localhost:1313/post/2024/may/monster/</link>
+      <link>https://jiufengblog.web.app/post/2024/may/monster/</link>
       <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/post/2024/may/monster/</guid>
+      <guid>https://jiufengblog.web.app/post/2024/may/monster/</guid>
       <description>&lt;p&gt;I watched &lt;a href=&#34;https://en.wikipedia.org/wiki/Hirokazu_Kore-eda&#34;&gt;Hirokazu Kore-eda&lt;/a&gt;’s &lt;a href=&#34;https://en.wikipedia.org/wiki/Monster_(2023_film)&#34;&gt;&lt;em&gt;Monster&lt;/em&gt;&lt;/a&gt; tonight, and I started to feel that there must be a kind, innocent boy in Kore-eda’s heart—otherwise, he couldn’t create such delicate stories. Now I’m itching to travel to Japan, to see Mount Fuji and cherry blossoms, and ride the Shinkansen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Heidelberg and Altay</title>
-      <link>http://localhost:1313/post/2023/aug/heidelberg_and_atlay/</link>
+      <link>https://jiufengblog.web.app/post/2023/aug/heidelberg_and_atlay/</link>
       <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/post/2023/aug/heidelberg_and_atlay/</guid>
+      <guid>https://jiufengblog.web.app/post/2023/aug/heidelberg_and_atlay/</guid>
       <description>&lt;p&gt;Compared to other big cities like Berlin or Hamburg, Heidelberg might feel like a small village, but there’s no denying its beauty. It’s a beauty steeped in cultural heritage and rich history. It reminds me of the Altay in &lt;a href=&#34;https://bcaf.org.cn/Li-Juan-A-Writer-s-Journey-to-the-Altay-Northern-Xinjiang&#34;&gt;Li Juan&lt;/a&gt;’s writing—although there are no pastures or grasslands here, I can still find my own little piece of tranquility.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Oh! The Ocean!</title>
-      <link>http://localhost:1313/post/2023/apr/ocean/</link>
+      <link>https://jiufengblog.web.app/post/2023/apr/ocean/</link>
       <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/post/2023/apr/ocean/</guid>
+      <guid>https://jiufengblog.web.app/post/2023/apr/ocean/</guid>
       <description>&lt;p&gt;The ocean truly has the power to heal.&lt;/p&gt;&#xA;&lt;p&gt;One day, he said he wanted to see the sea.&lt;br&gt;&#xA;There was no particular reason; he just missed the ocean.&lt;br&gt;&#xA;He took the train overnight, enduring a long journey.&lt;br&gt;&#xA;Before dawn arrived, he finally got his wish.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bonjour, Paris!</title>
-      <link>http://localhost:1313/post/2023/apr/paris/</link>
+      <link>https://jiufengblog.web.app/post/2023/apr/paris/</link>
       <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/post/2023/apr/paris/</guid>
+      <guid>https://jiufengblog.web.app/post/2023/apr/paris/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Bonjour, Paris!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;My four-day, three-night solo trip in Paris has come to a perfect end. The only slight regret is not being able to visit the Louvre since I didn’t make a reservation (oh, my Mona Lisa!). Other than that, I stuck to my itinerary and checked off every spot with photos: the Eiffel Tower, the banks of the Seine, the Musée d’Orsay, the Orangerie, Versailles, Montmartre, and Sacré-Cœur.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Right to Redefine Love</title>
-      <link>http://localhost:1313/post/2023/feb/redefine_love/</link>
+      <link>https://jiufengblog.web.app/post/2023/feb/redefine_love/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/post/2023/feb/redefine_love/</guid>
+      <guid>https://jiufengblog.web.app/post/2023/feb/redefine_love/</guid>
       <description>&lt;p&gt;Recently, I went through a few things that gave me a new perspective on love. After studying for my finals all morning and afternoon, I decided to jot down some of these thoughts.&lt;/p&gt;</description>
     </item>
     <item>
       <title>On Reading: Advice for Young People in Their Twenties</title>
-      <link>http://localhost:1313/post/2022/may/on_reading/</link>
+      <link>https://jiufengblog.web.app/post/2022/may/on_reading/</link>
       <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/post/2022/may/on_reading/</guid>
+      <guid>https://jiufengblog.web.app/post/2022/may/on_reading/</guid>
       <description>&lt;p&gt;When it comes to reading, giving advice feels almost unnecessary; true lovers of reading will naturally develop their own methods and preferences. One book often leads us to another, effortlessly drawing us into new ideas and stories. I imagine many of you have had a similar experience. But here, I’d like to share a few thoughts on how young people in their twenties might approach reading.&lt;/p&gt;</description>
     </item>
   </channel>

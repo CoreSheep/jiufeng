@@ -2,222 +2,229 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jiufeng</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://jiufengblog.web.app/tags/</link>
     <description>Recent content in Tags on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Fri, 01 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.web.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Gym</title>
-      <link>http://localhost:1313/tags/gym/</link>
+      <title>Labisiffre</title>
+      <link>https://jiufengblog.web.app/tags/labisiffre/</link>
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/gym/</guid>
+      <guid>https://jiufengblog.web.app/tags/labisiffre/</guid>
       <description></description>
     </item>
     <item>
-      <title>Musicshare</title>
-      <link>http://localhost:1313/tags/musicshare/</link>
+      <title>Music</title>
+      <link>https://jiufengblog.web.app/tags/music/</link>
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/musicshare/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Thoughts</title>
-      <link>http://localhost:1313/tags/thoughts/</link>
-      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/thoughts/</guid>
+      <guid>https://jiufengblog.web.app/tags/music/</guid>
       <description></description>
     </item>
     <item>
       <title>Daily</title>
-      <link>http://localhost:1313/tags/daily/</link>
+      <link>https://jiufengblog.web.app/tags/daily/</link>
       <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/daily/</guid>
+      <guid>https://jiufengblog.web.app/tags/daily/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gym</title>
+      <link>https://jiufengblog.web.app/tags/gym/</link>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>https://jiufengblog.web.app/tags/gym/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thoughts</title>
+      <link>https://jiufengblog.web.app/tags/thoughts/</link>
+      <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>https://jiufengblog.web.app/tags/thoughts/</guid>
       <description></description>
     </item>
     <item>
       <title>Internship</title>
-      <link>http://localhost:1313/tags/internship/</link>
+      <link>https://jiufengblog.web.app/tags/internship/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/internship/</guid>
+      <guid>https://jiufengblog.web.app/tags/internship/</guid>
       <description></description>
     </item>
     <item>
       <title>Work</title>
-      <link>http://localhost:1313/tags/work/</link>
+      <link>https://jiufengblog.web.app/tags/work/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/work/</guid>
+      <guid>https://jiufengblog.web.app/tags/work/</guid>
       <description></description>
     </item>
     <item>
       <title>Hirokazukore-Eda</title>
-      <link>http://localhost:1313/tags/hirokazukore-eda/</link>
+      <link>https://jiufengblog.web.app/tags/hirokazukore-eda/</link>
       <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/hirokazukore-eda/</guid>
+      <guid>https://jiufengblog.web.app/tags/hirokazukore-eda/</guid>
       <description></description>
     </item>
     <item>
       <title>Japanesemovie</title>
-      <link>http://localhost:1313/tags/japanesemovie/</link>
+      <link>https://jiufengblog.web.app/tags/japanesemovie/</link>
       <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/japanesemovie/</guid>
+      <guid>https://jiufengblog.web.app/tags/japanesemovie/</guid>
       <description></description>
     </item>
     <item>
       <title>Movie</title>
-      <link>http://localhost:1313/tags/movie/</link>
+      <link>https://jiufengblog.web.app/tags/movie/</link>
       <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/movie/</guid>
+      <guid>https://jiufengblog.web.app/tags/movie/</guid>
       <description></description>
     </item>
     <item>
       <title>Goodbyechandler</title>
-      <link>http://localhost:1313/tags/goodbyechandler/</link>
+      <link>https://jiufengblog.web.app/tags/goodbyechandler/</link>
       <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/goodbyechandler/</guid>
+      <guid>https://jiufengblog.web.app/tags/goodbyechandler/</guid>
       <description></description>
     </item>
     <item>
       <title>Friendship</title>
-      <link>http://localhost:1313/tags/friendship/</link>
+      <link>https://jiufengblog.web.app/tags/friendship/</link>
       <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/friendship/</guid>
+      <guid>https://jiufengblog.web.app/tags/friendship/</guid>
       <description></description>
     </item>
     <item>
       <title>Vibe</title>
-      <link>http://localhost:1313/tags/vibe/</link>
+      <link>https://jiufengblog.web.app/tags/vibe/</link>
       <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/vibe/</guid>
+      <guid>https://jiufengblog.web.app/tags/vibe/</guid>
       <description></description>
     </item>
     <item>
       <title>Altay</title>
-      <link>http://localhost:1313/tags/altay/</link>
+      <link>https://jiufengblog.web.app/tags/altay/</link>
       <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/altay/</guid>
+      <guid>https://jiufengblog.web.app/tags/altay/</guid>
       <description></description>
     </item>
     <item>
       <title>Heidelberg</title>
-      <link>http://localhost:1313/tags/heidelberg/</link>
+      <link>https://jiufengblog.web.app/tags/heidelberg/</link>
       <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/heidelberg/</guid>
+      <guid>https://jiufengblog.web.app/tags/heidelberg/</guid>
       <description></description>
     </item>
     <item>
       <title>Lijuan</title>
-      <link>http://localhost:1313/tags/lijuan/</link>
+      <link>https://jiufengblog.web.app/tags/lijuan/</link>
       <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/lijuan/</guid>
+      <guid>https://jiufengblog.web.app/tags/lijuan/</guid>
       <description></description>
     </item>
     <item>
       <title>Exam</title>
-      <link>http://localhost:1313/tags/exam/</link>
+      <link>https://jiufengblog.web.app/tags/exam/</link>
       <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/exam/</guid>
+      <guid>https://jiufengblog.web.app/tags/exam/</guid>
       <description></description>
     </item>
     <item>
       <title>Rain</title>
-      <link>http://localhost:1313/tags/rain/</link>
+      <link>https://jiufengblog.web.app/tags/rain/</link>
       <pubDate>Sat, 29 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/rain/</guid>
+      <guid>https://jiufengblog.web.app/tags/rain/</guid>
       <description></description>
     </item>
     <item>
       <title>Positivemindset</title>
-      <link>http://localhost:1313/tags/positivemindset/</link>
+      <link>https://jiufengblog.web.app/tags/positivemindset/</link>
       <pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/positivemindset/</guid>
+      <guid>https://jiufengblog.web.app/tags/positivemindset/</guid>
       <description></description>
     </item>
     <item>
       <title>Innerpeace</title>
-      <link>http://localhost:1313/tags/innerpeace/</link>
+      <link>https://jiufengblog.web.app/tags/innerpeace/</link>
       <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/innerpeace/</guid>
+      <guid>https://jiufengblog.web.app/tags/innerpeace/</guid>
       <description></description>
     </item>
     <item>
       <title>Reading</title>
-      <link>http://localhost:1313/tags/reading/</link>
+      <link>https://jiufengblog.web.app/tags/reading/</link>
       <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/reading/</guid>
+      <guid>https://jiufengblog.web.app/tags/reading/</guid>
       <description></description>
     </item>
     <item>
       <title>Confidence</title>
-      <link>http://localhost:1313/tags/confidence/</link>
+      <link>https://jiufengblog.web.app/tags/confidence/</link>
       <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/confidence/</guid>
+      <guid>https://jiufengblog.web.app/tags/confidence/</guid>
       <description></description>
     </item>
     <item>
       <title>Travel</title>
-      <link>http://localhost:1313/tags/travel/</link>
+      <link>https://jiufengblog.web.app/tags/travel/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/travel/</guid>
+      <guid>https://jiufengblog.web.app/tags/travel/</guid>
       <description></description>
     </item>
     <item>
       <title>Ocean</title>
-      <link>http://localhost:1313/tags/ocean/</link>
+      <link>https://jiufengblog.web.app/tags/ocean/</link>
       <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/ocean/</guid>
+      <guid>https://jiufengblog.web.app/tags/ocean/</guid>
       <description></description>
     </item>
     <item>
       <title>Poetry</title>
-      <link>http://localhost:1313/tags/poetry/</link>
+      <link>https://jiufengblog.web.app/tags/poetry/</link>
       <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/poetry/</guid>
+      <guid>https://jiufengblog.web.app/tags/poetry/</guid>
       <description></description>
     </item>
     <item>
       <title>Paris</title>
-      <link>http://localhost:1313/tags/paris/</link>
+      <link>https://jiufengblog.web.app/tags/paris/</link>
       <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/paris/</guid>
+      <guid>https://jiufengblog.web.app/tags/paris/</guid>
       <description></description>
     </item>
     <item>
       <title>Culture</title>
-      <link>http://localhost:1313/tags/culture/</link>
+      <link>https://jiufengblog.web.app/tags/culture/</link>
       <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/culture/</guid>
+      <guid>https://jiufengblog.web.app/tags/culture/</guid>
       <description></description>
     </item>
     <item>
       <title>Companionship</title>
-      <link>http://localhost:1313/tags/companionship/</link>
+      <link>https://jiufengblog.web.app/tags/companionship/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/companionship/</guid>
+      <guid>https://jiufengblog.web.app/tags/companionship/</guid>
       <description></description>
     </item>
     <item>
       <title>Love</title>
-      <link>http://localhost:1313/tags/love/</link>
+      <link>https://jiufengblog.web.app/tags/love/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/love/</guid>
+      <guid>https://jiufengblog.web.app/tags/love/</guid>
       <description></description>
     </item>
     <item>
       <title>Relationships</title>
-      <link>http://localhost:1313/tags/relationships/</link>
+      <link>https://jiufengblog.web.app/tags/relationships/</link>
       <pubDate>Fri, 03 Feb 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/relationships/</guid>
+      <guid>https://jiufengblog.web.app/tags/relationships/</guid>
       <description></description>
     </item>
     <item>
       <title>Books</title>
-      <link>http://localhost:1313/tags/books/</link>
+      <link>https://jiufengblog.web.app/tags/books/</link>
       <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1313/tags/books/</guid>
+      <guid>https://jiufengblog.web.app/tags/books/</guid>
       <description></description>
     </item>
   </channel>

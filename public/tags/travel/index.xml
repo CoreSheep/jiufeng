@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Travel on Jiufeng</title>
-    <link>http://localhost:61175/tags/travel/</link>
+    <link>http://localhost:1313/tags/travel/</link>
     <description>Recent content in Travel on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:61175/tags/travel/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/travel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The meaning of traveling</title>
-      <link>http://localhost:61175/notes/2023/note3/</link>
+      <link>http://localhost:1313/notes/2023/note3/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:61175/notes/2023/note3/</guid>
+      <guid>http://localhost:1313/notes/2023/note3/</guid>
       <description>&lt;p&gt;&amp;ldquo;I gradually understand the meaning of traveling.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Hamburg, 10th April 2023&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paris</title>
-      <link>http://localhost:61175/collections/2023/paris/paris/</link>
+      <link>http://localhost:1313/collections/2023/paris/paris/</link>
       <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:61175/collections/2023/paris/paris/</guid>
+      <guid>http://localhost:1313/collections/2023/paris/paris/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Alongside the Banks of the Seine&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The sky turns gray and dark,&lt;br&gt;&#xA;as waves on the Seine reflect the light from the Eiffel Tower.&lt;/p&gt;&#xA;&lt;p&gt;I feel the wind, so soft and tender;&lt;br&gt;&#xA;standing on the boat, I can see all of Paris—&lt;br&gt;&#xA;noisy, seductive, artistic, shining in the darkness.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bonjour, Paris!</title>
-      <link>http://localhost:61175/post/2023/apr/paris/</link>
+      <link>http://localhost:1313/post/2023/apr/paris/</link>
       <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:61175/post/2023/apr/paris/</guid>
+      <guid>http://localhost:1313/post/2023/apr/paris/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Bonjour, Paris!&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;My four-day, three-night solo trip in Paris has come to a perfect end. The only slight regret is not being able to visit the Louvre since I didn’t make a reservation (oh, my Mona Lisa!). Other than that, I stuck to my itinerary and checked off every spot with photos: the Eiffel Tower, the banks of the Seine, the Musée d’Orsay, the Orangerie, Versailles, Montmartre, and Sacré-Cœur.&lt;/p&gt;</description>
     </item>
   </channel>

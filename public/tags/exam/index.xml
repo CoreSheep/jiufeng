@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exam on Jiufeng</title>
-    <link>http://localhost:61175/tags/exam/</link>
+    <link>http://localhost:1313/tags/exam/</link>
     <description>Recent content in Exam on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Sun, 30 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:61175/tags/exam/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/exam/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Late-night study sessions</title>
-      <link>http://localhost:61175/notes/2023/jul/note7/</link>
+      <link>http://localhost:1313/notes/2023/jul/note7/</link>
       <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:61175/notes/2023/jul/note7/</guid>
+      <guid>http://localhost:1313/notes/2023/jul/note7/</guid>
       <description>&lt;p&gt;Who would&amp;rsquo;ve thought that at my age, I&amp;rsquo;d still be taking exams. :(&lt;/p&gt;</description>
     </item>
   </channel>

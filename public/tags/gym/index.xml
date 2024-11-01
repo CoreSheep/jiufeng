@@ -2,19 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gym on Jiufeng</title>
-    <link>http://localhost:61175/tags/gym/</link>
+    <link>http://localhost:1313/tags/gym/</link>
     <description>Recent content in Gym on Jiufeng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
-    <lastBuildDate>Sat, 07 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:61175/tags/gym/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/gym/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Song -- Labi Siffre</title>
+      <link>http://localhost:1313/post/2024/nov/mysong/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>http://localhost:1313/post/2024/nov/mysong/</guid>
+      <description>&lt;p&gt;This is my song&#xA;And no one can take it away&#xA;It&amp;rsquo;s been so long&#xA;But now you&amp;rsquo;re here&#xA;Here to stay&lt;/p&gt;&#xA;&lt;p&gt;And I wonder&#xA;If you know what it means&#xA;To find your dreams come true&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Clips of last week</title>
-      <link>http://localhost:61175/post/2024/sep/piece_of_last_week/</link>
+      <link>http://localhost:1313/post/2024/sep/piece_of_last_week/</link>
       <pubDate>Sat, 07 Sep 2024 00:00:00 +0000</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:61175/post/2024/sep/piece_of_last_week/</guid>
+      <guid>http://localhost:1313/post/2024/sep/piece_of_last_week/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Spent the whole morning replying to a couple of emails, listening to some favorite music, and tidying up. Pretty chill, haha.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Been making progress at the gym lately and shaping my body in a good way, and I’m eating pretty healthy too. I’m trying to come up with more recipes that balance fitness, health, and taste. Next week, I’ll try to make some new chinese food. Even though I’m a bit tired after work recently, cooking every day still makes me feels like more comfortable and calm.&lt;/p&gt;</description>
     </item>
   </channel>

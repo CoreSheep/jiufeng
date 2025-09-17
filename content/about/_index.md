@@ -8,7 +8,7 @@ title: "About me"
 
 I'm **Jiufeng** from China, you can also call me **FENG**! Welcome to my personal website. :D
 
-I have recently completed my master's degree in Data & Computer Science at [Heidelberg University](https://www.uni-heidelberg.de/en). Previously, I worked as a Data Scientist intern and working student at [Mercedes-Benz](https://www.mercedes-benz.com/en/). I'm fascinated by data science, machine learning, and AI, especially the advancements in Generative AI and Large Language Models. I'm also diving into the startup world with a small AI-focused team, aiming to create products that are truly valuable to people.
+I have recently completed my master's degree in Data & Computer Science at [Heidelberg University](https://www.uni-heidelberg.de/en) and successfully finished my Data Scientist internship and working student position at [Mercedes-Benz](https://www.mercedes-benz.com/en/). I'm fascinated by data science, machine learning, and AI, especially the advancements in Generative AI and Large Language Models. I'm also diving into the startup world with a small AI-focused team, aiming to create products that are truly valuable to people.
 
 My journey in AI and machine learning spans over several years, with hands-on experience ranging from computer vision and neural network quantization to large-scale recommender systems and LLM applications. I have a solid foundation in both theoretical research and practical implementation, having published academic work and been granted invention patents in multimodal AI systems.
 

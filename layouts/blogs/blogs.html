@@ -1,28 +1,150 @@
 {{ define "main" }}
 
-<div class="container" role="main">
-  <div class="row justify-content-md-center">
-    {{ with .Content }}
-    <div class="well">
-      {{.}}
+<!-- Blog Hero Section -->
+<div class="blog-hero py-5 mb-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 class="display-4 fw-bold mb-3">My Blog</h1>
+        <p class="lead">Thoughts on AI, machine learning, technology, and life</p>
+        {{ with .Content }}
+        <div class="blog-description">
+          {{ . }}
+        </div>
+        {{ end }}
+      </div>
+      <div class="col-lg-4 text-end">
+        <div class="blog-stats mt-3">
+          <div class="stat-item d-inline-block text-center mx-3">
+            <h3 class="h2 mb-1">{{ len .Site.RegularPages }}</h3>
+            <small class="opacity-75">Total Posts</small>
+          </div>
+          <div class="stat-item d-inline-block text-center mx-3">
+            <h3 class="h2 mb-1">{{ len .Site.Taxonomies.tags }}</h3>
+            <small class="opacity-75">Topics</small>
+          </div>
+        </div>
+      </div>
     </div>
-    {{ end }}
-
-    {{ range .Paginator.Pages }}
-    {{ partial "post_preview_card.html" .}}
-    {{end}}
-
   </div>
 </div>
 
-<div class="container">
-  <div class="row font-sans">
-    <div class="col-md-12 mt-10">
-      <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-end">
-          {{ template "_internal/pagination.html" . }}
-        </ul>
-      </nav>
+<!-- Blog Content -->
+<div class="container" role="main">
+  <div class="row">
+    <!-- Main Content -->
+    <div class="col-lg-8">
+      <!-- Filter/Search Section -->
+      <div class="blog-filters mb-4">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <h5 class="mb-0">
+                  <i class="bi bi-funnel me-2"></i>Filter Posts
+                </h5>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex gap-2 justify-content-md-end">
+                  <span class="badge bg-light text-dark">All Categories</span>
+                  <span class="badge bg-primary">AI Research</span>
+                  <span class="badge bg-success">Technology</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Posts Grid -->
+      <div class="row g-4">
+        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blogs") 6 }}
+        {{ range $paginator.Pages }}
+        <div class="col-md-6">
+          <div class="blog-post-card h-100">
+            {{ partial "post_preview_card.html" . }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- Pagination -->
+      {{ if gt $paginator.TotalPages 1 }}
+      <div class="pagination-wrapper mt-5">
+        <nav aria-label="Blog pagination">
+          <ul class="pagination justify-content-center">
+            {{ template "_internal/pagination.html" . }}
+          </ul>
+        </nav>
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col-lg-4">
+      <div class="blog-sidebar">
+        
+        <!-- About Widget -->
+        <div class="widget mb-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              {{ $image := resources.Get "/img/author/author_profile_pic.jpg" }}
+              {{ if $image }}
+              <img src="{{ $image.RelPermalink }}" alt="Jiufeng Li" 
+                   class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+              {{ end }}
+              <h5 class="mb-2">Jiufeng Li</h5>
+              <p class="text-muted small mb-3">Data Scientist & AI Researcher sharing insights on technology and innovation</p>
+              <a href="/about/" class="btn btn-outline-primary btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Posts Widget -->
+        <div class="widget mb-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-header bg-transparent border-0 pt-4">
+              <h5 class="mb-0">
+                <i class="bi bi-clock me-2"></i>Recent Posts
+              </h5>
+            </div>
+            <div class="card-body">
+              {{ range first 5 (where .Site.RegularPages "Section" "blogs") }}
+              <div class="recent-post-item mb-3 pb-3 border-bottom">
+                <h6 class="mb-1">
+                  <a href="{{ .Permalink }}" class="text-decoration-none">{{ .Title }}</a>
+                </h6>
+                <small class="text-muted">{{ .Date.Format "Jan 2, 2006" }}</small>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+
+        <!-- Tags Widget -->
+        {{ if .Site.Taxonomies.tags }}
+        <div class="widget mb-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-header bg-transparent border-0 pt-4">
+              <h5 class="mb-0">
+                <i class="bi bi-tags me-2"></i>Popular Tags
+              </h5>
+            </div>
+            <div class="card-body">
+              <div class="tag-cloud">
+                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" 
+                   class="badge bg-light text-dark text-decoration-none me-2 mb-2">
+                  {{ $name }} ({{ $taxonomy.Count }})
+                </a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+
+      </div>
     </div>
   </div>
 </div>

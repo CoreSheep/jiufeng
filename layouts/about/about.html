@@ -1,17 +1,64 @@
 {{ define "main" }}
 
+<!-- About Hero Section -->
+<div class="about-hero py-5 mb-5" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h1 class="display-4 fw-bold mb-3">About Me</h1>
+        <p class="lead">Get to know more about my journey, interests, and aspirations</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Content -->
 <div class="about-section">
   <div class="container">
-    <div class="row flex-lg-row-reverse align-items-start">
-      <div class="col-md-8 col-lg-4">
-        {{ $image := resources.Get "/img/author/author_profile_pic.jpg" }}
-        <img src="{{ $image.RelPermalink }}" alt="Image of Bino Kochumol Varghese"
-          class="dd-block mx-lg-auto img-fluid img-rounded img-80">
+    <div class="row">
+      <!-- Profile Image -->
+      <div class="col-lg-4 mb-5">
+        <div class="sticky-top" style="top: 2rem;">
+          <div class="card shadow-sm border-0">
+            <div class="card-body text-center p-4">
+              {{ $image := resources.Get "/img/author/author_profile_pic.jpg" }}
+              {{ if $image }}
+              <img src="{{ $image.RelPermalink }}" alt="Jiufeng Li"
+                   class="rounded-circle img-fluid shadow mb-3" 
+                   style="width: 200px; height: 200px; object-fit: cover;">
+              {{ end }}
+              <h3 class="h4 mb-2">Jiufeng Li</h3>
+              <p class="text-muted mb-3">Data Scientist & AI Researcher</p>
+              
+              <!-- Social Links -->
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="https://www.linkedin.com/in/jiufeng-li-520040273/" class="btn btn-outline-primary btn-sm">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/CoreSheep" class="btn btn-outline-dark btn-sm">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.instagram.com/jiufeng.li/" class="btn btn-outline-danger btn-sm">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+              
+              <!-- CV Download -->
+              <a href="/JiufengLi_CV.pdf" class="btn btn-primary w-100">
+                <i class="bi bi-download me-2"></i>Download CV
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-8 col-lg-8">
-        <div class="col-12">
+
+      <!-- Content -->
+      <div class="col-lg-8">
+        <div class="about-content">
           {{ with .Content }}
-          {{.}}
+          <div class="prose">
+            {{ . }}
+          </div>
           {{ end }}
         </div>
       </div>
@@ -19,5 +66,69 @@
   </div>
 </div>
 
+<!-- Skills Section -->
+<div class="skills-section py-5" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="display-6 fw-bold">Skills & Expertise</h2>
+        <p class="text-muted">Technologies and areas I'm passionate about</p>
+      </div>
+    </div>
+    
+    <div class="row g-4">
+      <!-- Technical Skills -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+            <h4>Technical Skills</h4>
+            <div class="mt-3">
+              <span class="badge bg-primary me-2 mb-2">Python</span>
+              <span class="badge bg-success me-2 mb-2">Machine Learning</span>
+              <span class="badge bg-info me-2 mb-2">Deep Learning</span>
+              <span class="badge bg-warning text-dark me-2 mb-2">Data Science</span>
+              <span class="badge bg-secondary me-2 mb-2">TensorFlow</span>
+              <span class="badge bg-dark me-2 mb-2">PyTorch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Areas -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <i class="bi bi-lightbulb display-4 text-success mb-3"></i>
+            <h4>Research Areas</h4>
+            <div class="mt-3">
+              <span class="badge bg-primary me-2 mb-2">LLMs</span>
+              <span class="badge bg-success me-2 mb-2">Generative AI</span>
+              <span class="badge bg-info me-2 mb-2">Recommender Systems</span>
+              <span class="badge bg-warning text-dark me-2 mb-2">Neural Networks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interests -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <i class="bi bi-heart display-4 text-danger mb-3"></i>
+            <h4>Interests</h4>
+            <div class="mt-3">
+              <span class="badge bg-primary me-2 mb-2">Movies</span>
+              <span class="badge bg-success me-2 mb-2">Music</span>
+              <span class="badge bg-info me-2 mb-2">Fitness</span>
+              <span class="badge bg-warning text-dark me-2 mb-2">Reading</span>
+              <span class="badge bg-secondary me-2 mb-2">Travel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {{ end }}

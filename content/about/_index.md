@@ -8,7 +8,7 @@ title: "About me"
 
 I'm **Jiufeng** from China, you can also call me **FENG**! Welcome to my personal website. :D
 
-Currently, I'm pursuing a master's degree in Data & Computer Science at [Heidelberg University](https://www.uni-heidelberg.de/en) and working as a Data Scientist intern at [Mercedes-Benz](https://www.mercedes-benz.com/en/). I'm fascinated by data science, machine learning, and AI, especially the advancements in Generative AI and Large Language Models. I'm also diving into the startup world with a small AI-focused team, aiming to create products that are truly valuable to people.
+I have recently completed my master's degree in Data & Computer Science at [Heidelberg University](https://www.uni-heidelberg.de/en) and am currently working as a Data Scientist at [Mercedes-Benz](https://www.mercedes-benz.com/en/). I'm fascinated by data science, machine learning, and AI, especially the advancements in Generative AI and Large Language Models. I'm also diving into the startup world with a small AI-focused team, aiming to create products that are truly valuable to people.
 
 My journey in AI and machine learning spans over several years, with hands-on experience ranging from computer vision and neural network quantization to large-scale recommender systems and LLM applications. I have a solid foundation in both theoretical research and practical implementation, having published academic work and been granted invention patents in multimodal AI systems.
 
@@ -23,7 +23,7 @@ When I'm not coding or working on projects, you'll often find me reading and doi
 ### **M.Sc. Data and Computer Science**
 **Heidelberg University** | *October 2022 - August 2025*
 
-Currently pursuing my master's degree with a focus on advanced machine learning, neural network optimization, and AI systems. My thesis research centers on **"Mix-Precision Stochastic Quantization of Activations during Backpropagation"** — a cutting-edge approach to optimizing deep neural networks for improved efficiency and performance.
+Graduated with a master's degree focused on advanced machine learning, neural network optimization, and AI systems. My thesis research centered on **"Mix-Precision Stochastic Quantization of Activations during Backpropagation"** — a cutting-edge approach to optimizing deep neural networks for improved efficiency and performance.
 
 **Key Coursework**: Advanced Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Statistical Learning Theory, High-Performance Computing
 
@@ -82,10 +82,10 @@ Graduated from a prestigious 211 & 985 project university (ESI Rank Top 1‰). M
 - **Travel & Photography**: Love exploring new places with my camera, capturing moments and cultures
 
 ### Goals & Aspirations
-- **Academic**: Complete my master's thesis and contribute meaningful research to the AI community
+- **Professional**: Leverage my advanced AI education to drive innovation and become a leading expert in AI optimization
 - **Entrepreneurial**: Launch an AI startup that creates real value for people and pushes the boundaries of what's possible
 - **Personal**: Travel to 25+ countries, experience diverse cultures, and continue learning from the world
-- **Professional**: Become a leading expert in AI optimization and help shape the future of artificial intelligence
+- **Impact**: Help shape the future of artificial intelligence and contribute to meaningful technological advancement
 
 ### Connect With Me
 - **Email**: lijiufeng97 at gmail dot com

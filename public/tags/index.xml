@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Feng</title>
-    <link>https://jiufengblog.web.app/tags/</link>
+    <link>https://jiufengblog.firebaseapp.com/tags/</link>
     <description>Recent content in Tags on Feng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Tue, 17 Sep 2024 10:00:00 +0100</lastBuildDate>
-    <atom:link href="https://jiufengblog.web.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.firebaseapp.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Determinism</title>
-      <link>https://jiufengblog.web.app/tags/determinism/</link>
+      <link>https://jiufengblog.firebaseapp.com/tags/determinism/</link>
       <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/tags/determinism/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/tags/determinism/</guid>
       <description></description>
     </item>
     <item>
       <title>Llm</title>
-      <link>https://jiufengblog.web.app/tags/llm/</link>
+      <link>https://jiufengblog.firebaseapp.com/tags/llm/</link>
       <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/tags/llm/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/tags/llm/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine-Learning</title>
-      <link>https://jiufengblog.web.app/tags/machine-learning/</link>
+      <link>https://jiufengblog.firebaseapp.com/tags/machine-learning/</link>
       <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/tags/machine-learning/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Reproducibility</title>
-      <link>https://jiufengblog.web.app/tags/reproducibility/</link>
+      <link>https://jiufengblog.firebaseapp.com/tags/reproducibility/</link>
       <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/tags/reproducibility/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/tags/reproducibility/</guid>
       <description></description>
     </item>
     <item>
       <title>Research</title>
-      <link>https://jiufengblog.web.app/tags/research/</link>
+      <link>https://jiufengblog.firebaseapp.com/tags/research/</link>
       <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/tags/research/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/tags/research/</guid>
       <description></description>
     </item>
     <item>
       <title>Blog</title>
-      <link>https://jiufengblog.web.app/tags/blog/</link>
+      <link>https://jiufengblog.firebaseapp.com/tags/blog/</link>
       <pubDate>Mon, 16 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/tags/blog/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/tags/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Sample</title>
-      <link>https://jiufengblog.web.app/tags/sample/</link>
+      <link>https://jiufengblog.firebaseapp.com/tags/sample/</link>
       <pubDate>Mon, 16 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/tags/sample/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/tags/sample/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>https://jiufengblog.web.app/tags/hugo/</link>
+      <link>https://jiufengblog.firebaseapp.com/tags/hugo/</link>
       <pubDate>Sun, 15 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/tags/hugo/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Test</title>
-      <link>https://jiufengblog.web.app/tags/test/</link>
+      <link>https://jiufengblog.firebaseapp.com/tags/test/</link>
       <pubDate>Sun, 15 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/tags/test/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/tags/test/</guid>
       <description></description>
     </item>
   </channel>

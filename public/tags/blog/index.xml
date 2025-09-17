@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Feng</title>
-    <link>https://jiufengblog.web.app/tags/blog/</link>
+    <link>https://jiufengblog.firebaseapp.com/tags/blog/</link>
     <description>Recent content in Blog on Feng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Mon, 16 Sep 2024 10:00:00 +0100</lastBuildDate>
-    <atom:link href="https://jiufengblog.web.app/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.firebaseapp.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sample Blog Post</title>
-      <link>https://jiufengblog.web.app/blogs/2024/sample-blog/</link>
+      <link>https://jiufengblog.firebaseapp.com/blogs/2024/sample-blog/</link>
       <pubDate>Mon, 16 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/blogs/2024/sample-blog/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/blogs/2024/sample-blog/</guid>
       <description>&lt;p&gt;This is a sample blog post to test the new Blogs section.&lt;/p&gt;&#xA;&lt;p&gt;The Blogs section has been successfully added to replace the old Notes section.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Clean blog layout&lt;/li&gt;&#xA;&lt;li&gt;Proper navigation&lt;/li&gt;&#xA;&lt;li&gt;Tag support&lt;/li&gt;&#xA;&lt;li&gt;Category support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This demonstrates that the Blogs section is working correctly.&lt;/p&gt;</description>
     </item>
     <item>
       <title>测试博客文章：验证主页显示功能</title>
-      <link>https://jiufengblog.web.app/blogs/2024/sep/test-blog/</link>
+      <link>https://jiufengblog.firebaseapp.com/blogs/2024/sep/test-blog/</link>
       <pubDate>Sun, 15 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/blogs/2024/sep/test-blog/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/blogs/2024/sep/test-blog/</guid>
       <description>&lt;h1 id=&#34;测试博客文章验证主页显示功能&#34;&gt;测试博客文章：验证主页显示功能&lt;/h1&gt;&#xA;&lt;p&gt;这是一篇测试文章，用于验证主页是否能正确显示多篇博客文章。&lt;/p&gt;&#xA;&lt;h2 id=&#34;测试目的&#34;&gt;测试目的&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;验证主页能正确显示多篇博客文章&lt;/li&gt;&#xA;&lt;li&gt;测试文章的排序和显示逻辑&lt;/li&gt;&#xA;&lt;li&gt;确保点击Home后文章不会消失&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;测试内容&#34;&gt;测试内容&lt;/h2&gt;&#xA;&lt;h3 id=&#34;文章结构&#34;&gt;文章结构&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;正确的front matter配置&lt;/li&gt;&#xA;&lt;li&gt;适当的日期设置&lt;/li&gt;&#xA;&lt;li&gt;相关的标签和分类&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;技术要点&#34;&gt;技术要点&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hugo页面生成&lt;/li&gt;&#xA;&lt;li&gt;主页布局逻辑&lt;/li&gt;&#xA;&lt;li&gt;文章过滤机制&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;预期结果&#34;&gt;预期结果&lt;/h2&gt;&#xA;&lt;p&gt;这篇文章应该与其他博客文章一起显示在主页上，并且点击Home后应该保持可见。&lt;/p&gt;&#xA;&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;&#xA;&lt;p&gt;通过创建这篇测试文章，我们可以验证主页的文章显示功能是否正常工作。&lt;/p&gt;</description>
     </item>
   </channel>

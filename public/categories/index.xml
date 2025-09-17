@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Feng</title>
-    <link>https://jiufengblog.web.app/categories/</link>
+    <link>https://jiufengblog.firebaseapp.com/categories/</link>
     <description>Recent content in Categories on Feng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Tue, 17 Sep 2024 10:00:00 +0100</lastBuildDate>
-    <atom:link href="https://jiufengblog.web.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.firebaseapp.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Research</title>
-      <link>https://jiufengblog.web.app/categories/ai-research/</link>
+      <link>https://jiufengblog.firebaseapp.com/categories/ai-research/</link>
       <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/categories/ai-research/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/categories/ai-research/</guid>
       <description></description>
     </item>
     <item>
       <title>General</title>
-      <link>https://jiufengblog.web.app/categories/general/</link>
+      <link>https://jiufengblog.firebaseapp.com/categories/general/</link>
       <pubDate>Mon, 16 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/categories/general/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/categories/general/</guid>
       <description></description>
     </item>
     <item>
       <title>Testing</title>
-      <link>https://jiufengblog.web.app/categories/testing/</link>
+      <link>https://jiufengblog.firebaseapp.com/categories/testing/</link>
       <pubDate>Sun, 15 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/categories/testing/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/categories/testing/</guid>
       <description></description>
     </item>
   </channel>

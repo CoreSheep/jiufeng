@@ -8,8 +8,43 @@
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
-    <lastBuildDate>Mon, 01 Jan 2024 10:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2024 10:00:00 +0100</lastBuildDate>
     <atom:link href="https://jiufengblog.web.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Determinism</title>
+      <link>https://jiufengblog.web.app/tags/determinism/</link>
+      <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>https://jiufengblog.web.app/tags/determinism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Llm</title>
+      <link>https://jiufengblog.web.app/tags/llm/</link>
+      <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>https://jiufengblog.web.app/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine-Learning</title>
+      <link>https://jiufengblog.web.app/tags/machine-learning/</link>
+      <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>https://jiufengblog.web.app/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reproducibility</title>
+      <link>https://jiufengblog.web.app/tags/reproducibility/</link>
+      <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>https://jiufengblog.web.app/tags/reproducibility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>https://jiufengblog.web.app/tags/research/</link>
+      <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>https://jiufengblog.web.app/tags/research/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blog</title>
       <link>https://jiufengblog.web.app/tags/blog/</link>

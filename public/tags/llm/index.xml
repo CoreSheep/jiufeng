@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Feng</title>
-    <link>https://jiufengblog.web.app/</link>
-    <description>Recent content on Feng</description>
+    <title>Llm on Feng</title>
+    <link>https://jiufengblog.web.app/tags/llm/</link>
+    <description>Recent content in Llm on Feng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Tue, 17 Sep 2024 10:00:00 +0100</lastBuildDate>
-    <atom:link href="https://jiufengblog.web.app/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.web.app/tags/llm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>击败LLM推理中的非确定性：深度学习系统可重现性的突破</title>
       <link>https://jiufengblog.web.app/blogs/2024/sep/defeating-llm-nondeterminism/</link>
       <pubDate>Tue, 17 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
       <guid>https://jiufengblog.web.app/blogs/2024/sep/defeating-llm-nondeterminism/</guid>
       <description>&lt;h1 id=&#34;击败llm推理中的非确定性深度学习系统可重现性的突破&#34;&gt;击败LLM推理中的非确定性：深度学习系统可重现性的突破&lt;/h1&gt;&#xA;&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;&#xA;&lt;p&gt;在科学研究的基石中，&lt;strong&gt;可重现性&lt;/strong&gt;占据着至关重要的地位。然而，当我们面对大语言模型（LLM）时，获得可重现的结果却异常困难。即使我们将温度参数调整到0（贪心采样），理论上应该产生确定性的结果，但LLM推理仍然表现出非确定性行为。&lt;/p&gt;&#xA;&lt;p&gt;最近，Thinking Machines团队在&lt;a href=&#34;https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/&#34;&gt;这篇开创性研究&lt;/a&gt;中深入探讨了LLM推理非确定性的根本原因，并提出了有效的解决方案。本文将深入解析这项研究的核心原理和方法。&lt;/p&gt;&#xA;&lt;h2 id=&#34;问题的本质浮点数非结合性&#34;&gt;问题的本质：浮点数非结合性&lt;/h2&gt;&#xA;&lt;h3 id=&#34;浮点数运算的原罪&#34;&gt;浮点数运算的&amp;quot;原罪&amp;quot;&lt;/h3&gt;&#xA;&lt;p&gt;要理解非确定性的根源，我们首先需要了解&lt;strong&gt;浮点数非结合性&lt;/strong&gt;的概念。在浮点数运算中：&lt;/p&gt;&#xA;&lt;p&gt;$$(a + b) + c \neq a + (b + c)$$&lt;/p&gt;&#xA;&lt;p&gt;这个看似简单的数学性质实际上是大语言模型推理非确定性的根本原因。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;# 浮点数非结合性的简单示例&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;(&lt;span style=&#34;color:#099&#34;&gt;0.1&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#099&#34;&gt;1e20&lt;/span&gt;) &lt;span style=&#34;font-weight:bold&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#099&#34;&gt;1e20&lt;/span&gt;  &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;# 结果: 0&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#099&#34;&gt;0.1&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#099&#34;&gt;1e20&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#099&#34;&gt;1e20&lt;/span&gt;)  &lt;span style=&#34;color:#998;font-style:italic&#34;&gt;# 结果: 0.1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;动态精度与信息丢失&#34;&gt;动态精度与信息丢失&lt;/h3&gt;&#xA;&lt;p&gt;浮点数系统通过&amp;quot;动态精度&amp;quot;来平衡数值范围和精度。当我们相加两个具有不同指数的浮点数时，系统必须丢弃一些精度信息：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sample Blog Post</title>
-      <link>https://jiufengblog.web.app/blogs/2024/sample-blog/</link>
-      <pubDate>Mon, 01 Jan 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/blogs/2024/sample-blog/</guid>
-      <description>&lt;p&gt;This is a sample blog post to test the new Blogs section.&lt;/p&gt;&#xA;&lt;p&gt;The Blogs section has been successfully added to replace the old Notes section.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Clean blog layout&lt;/li&gt;&#xA;&lt;li&gt;Proper navigation&lt;/li&gt;&#xA;&lt;li&gt;Tag support&lt;/li&gt;&#xA;&lt;li&gt;Category support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This demonstrates that the Blogs section is working correctly.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

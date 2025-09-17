@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>击败LLM推理中的非确定性：深度学习系统可重现性的突破 - Feng</title>
+<meta name="description" content="深入解析Thinking Machines团队如何解决大语言模型推理中的非确定性问题，实现真正的可重现推理">
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Feng",
+    
+    "url": "https:\/\/jiufengblog.web.app\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/jiufengblog.web.app\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/jiufengblog.web.app\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/jiufengblog.web.app\/blogs\/2024\/sep\/defeating-llm-nondeterminism\/",
+          "name": "击败 llm推理中的非确定性：深度学习系统可重现性的突破"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : ""
+  },
+  "headline": "击败LLM推理中的非确定性：深度学习系统可重现性的突破",
+  "description" : "深入解析Thinking Machines团队如何解决大语言模型推理中的非确定性问题，实现真正的可重现推理",
+  "inLanguage" : "en",
+  "wordCount":  208 ,
+  "datePublished" : "2024-09-17T10:00:00",
+  "dateModified" : "2024-09-17T10:00:00",
+  "image" : "https:\/\/jiufengblog.web.app\/",
+  "keywords" : [ "machine-learning, llm, determinism, reproducibility, research" ],
+  "mainEntityOfPage" : "https:\/\/jiufengblog.web.app\/blogs\/2024\/sep\/defeating-llm-nondeterminism\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/jiufengblog.web.app\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/jiufengblog.web.app\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="击败LLM推理中的非确定性：深度学习系统可重现性的突破" />
+<meta property="og:description" content="深入解析Thinking Machines团队如何解决大语言模型推理中的非确定性问题，实现真正的可重现推理">
+<meta property="og:url" content="https://jiufengblog.web.app/blogs/2024/sep/defeating-llm-nondeterminism/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Feng" />
+<link rel="apple-touch-icon" sizes="180x180" href=" https://jiufengblog.web.app/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jiufengblog.web.app/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jiufengblog.web.app/favicon/favicon-16x16.png">
+
+
+<meta name="generator" content="Hugo 0.136.5">
+<link rel="alternate" href="https://jiufengblog.web.app/index.xml" type="application/rss+xml" title="Feng">
+<script src="https://jiufengblog.web.app/js/dark-mode.js"></script><script src="https://jiufengblog.web.app/vendor/lunr/lunr.min.js"></script><script src="https://jiufengblog.web.app/js/lunr-search.js" data-index="/search.json"></script><link rel="stylesheet" href="/style.min.css">
+
+
+
+
+
+
+
+  </head>
+  <body>
+    
+<div class="container fixed-top mw-100">
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
+        <div class="container">
+
+          <a class="navbar-brand fw-bold" href="https://jiufengblog.web.app/">Feng</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-baseline">
+              
+              
+
+              <li class="nav-item">
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Home"
+                  href="/"> Home</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+                
+                
+                
+                
+                
+
+                <a class="nav-link  active " title="Blogs"
+                  href="/blogs/"> Blogs</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Collections"
+                  href="/collections/"> Collections</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="About"
+                  href="/about/"> About</a>
+              </li>
+
+              
+              
+
+
+                
+            
+
+            
+              <li class="nav-item nav-link">
+                <a id="dark-mode-toggle" class="bi bi-moon-stars" role="button"></a>
+              </li>
+
+              
+              
+              <li class="nav-item search-item">
+                <form id="search" class="search" role="search">
+                  <label for="search-input" class="bi bi-search search-icon"></label>
+                  <input type="search" id="search-input" class="search-input">
+                </form>
+              </li>
+              
+            </ul>
+
+            
+            <template id="search-heading" hidden data-results-none=""
+              data-results-one=""
+              data-results-many="">
+              <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+                  <h1 id="search-title" class="search-title"></h1>
+                </div>
+              </div>
+            </template>
+
+            <template id="search-result" hidden>
+              <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+                  <article class="content post">
+                    <h2><a class="summary-title-link"></a></h2>
+                    <div class="post-entry"></div>
+                    <div class="read-more-section">
+                      <h6 class="text-muted link-underline">
+                        <a class="read-more-link">
+                          Read More
+                          <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </h6>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </template>
+            
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+    
+
+
+
+
+
+
+
+
+
+<header class="header-section ">
+
+  <div class="intro-header no-img mt-10">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+
+          
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            
+
+            <div class="blogs-heading">
+              
+
+              
+
+              
+              <h1 class="fw-semibold display-5 lh-1 mb-3"> 
+                击败LLM推理中的非确定性：深度学习系统可重现性的突破
+                
+              </h1>
+              
+              
+
+              
+
+              
+              
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        
+    </div>
+  </div>
+</header>
+
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+
+      <div class="card-image card-image-blog p-0">
+        
+        
+
+
+        
+      </div>
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      <article role="main" class="blog-post">
+        <h1 id="击败llm推理中的非确定性深度学习系统可重现性的突破">击败LLM推理中的非确定性：深度学习系统可重现性的突破</h1>
+<h2 id="引言">引言</h2>
+<p>在科学研究的基石中，<strong>可重现性</strong>占据着至关重要的地位。然而，当我们面对大语言模型（LLM）时，获得可重现的结果却异常困难。即使我们将温度参数调整到0（贪心采样），理论上应该产生确定性的结果，但LLM推理仍然表现出非确定性行为。</p>
+<p>最近，Thinking Machines团队在<a href="https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/">这篇开创性研究</a>中深入探讨了LLM推理非确定性的根本原因，并提出了有效的解决方案。本文将深入解析这项研究的核心原理和方法。</p>
+<h2 id="问题的本质浮点数非结合性">问题的本质：浮点数非结合性</h2>
+<h3 id="浮点数运算的原罪">浮点数运算的&quot;原罪&quot;</h3>
+<p>要理解非确定性的根源，我们首先需要了解<strong>浮点数非结合性</strong>的概念。在浮点数运算中：</p>
+<p>$$(a + b) + c \neq a + (b + c)$$</p>
+<p>这个看似简单的数学性质实际上是大语言模型推理非确定性的根本原因。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 浮点数非结合性的简单示例</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#099">0.1</span> <span style="font-weight:bold">+</span> <span style="color:#099">1e20</span>) <span style="font-weight:bold">-</span> <span style="color:#099">1e20</span>  <span style="color:#998;font-style:italic"># 结果: 0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0.1</span> <span style="font-weight:bold">+</span> (<span style="color:#099">1e20</span> <span style="font-weight:bold">-</span> <span style="color:#099">1e20</span>)  <span style="color:#998;font-style:italic"># 结果: 0.1</span>
+</span></span></code></pre></div><h3 id="动态精度与信息丢失">动态精度与信息丢失</h3>
+<p>浮点数系统通过&quot;动态精度&quot;来平衡数值范围和精度。当我们相加两个具有不同指数的浮点数时，系统必须丢弃一些精度信息：</p>
+<ul>
+<li>1230 ($1.23 \times 10^2$) + 23.4 ($2.34 \times 10^1$) = 1253.4</li>
+<li>但由于只能保持3位精度，结果被截断为 1250 ($1.25 \times 10^2$)</li>
+</ul>
+<p>这意味着<strong>每次以不同顺序相加浮点数时，都可能得到完全不同的结果</strong>。</p>
+<h2 id="传统解释的局限性">传统解释的局限性</h2>
+<h3 id="并发浮点数假设的不足">&ldquo;并发+浮点数&quot;假设的不足</h3>
+<p>长期以来，学术界普遍认为LLM推理的非确定性源于&quot;并发+浮点数&quot;假设：</p>
+<blockquote>
+<p>由于GPU的并行计算特性，不同线程的完成顺序是非确定性的，导致浮点数累加顺序的不一致。</p>
+</blockquote>
+<p>然而，这项研究揭示了这一假设的局限性：</p>
+<ol>
+<li><strong>GPU矩阵乘法是确定性的</strong>：即使是高度并行的矩阵乘法操作，在相同数据上重复执行也能产生位级相同的结果</li>
+<li><strong>并非所有并发操作都导致非确定性</strong>：关键在于具体的实现方式，而非并发本身</li>
+</ol>
+<h2 id="真正的罪魁祸首批处理非不变性">真正的罪魁祸首：批处理非不变性</h2>
+<h3 id="核心发现">核心发现</h3>
+<p>研究团队发现，LLM推理非确定性的真正根源是<strong>批处理非不变性</strong>（batch non-invariance）。具体表现为：</p>
+<ul>
+<li>相同的数据在不同的批处理大小下会产生不同的数值结果</li>
+<li>这种差异会随着推理过程的进行而累积放大</li>
+<li>最终导致完全不同的输出序列</li>
+</ul>
+<h3 id="分片归约策略的问题">分片归约策略的问题</h3>
+<p>在注意力机制的计算中，当查询长度较小时（如解码阶段），需要采用分片归约策略来充分利用GPU并行性。问题在于：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 问题示例：动态分片策略</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># KV长度 = 1000，需要4个分片</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 每个核心处理250个元素</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 但分片数量依赖于批处理大小和查询长度</span>
+</span></span></code></pre></div><p>这种动态分片策略破坏了批处理不变性，因为：</p>
+<ul>
+<li>分片策略依赖于当前处理的查询数量</li>
+<li>不同请求可能触发不同的分片策略</li>
+<li>导致浮点数累加顺序的差异</li>
+</ul>
+<h2 id="解决方案批处理不变性内核">解决方案：批处理不变性内核</h2>
+<h3 id="固定大小分片策略">固定大小分片策略</h3>
+<p>研究团队提出的核心解决方案是采用<strong>固定大小分片策略</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 解决方案：固定大小分片</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 无论KV长度如何，每个分片固定为256个元素</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># KV长度 = 1000 → 3个256分片 + 1个232分片</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># KV长度 = 512  → 2个256分片</span>
+</span></span></code></pre></div><p>这种策略的优势：</p>
+<ul>
+<li><strong>批处理不变性</strong>：无论处理多少token，都执行相同的归约顺序</li>
+<li><strong>可重现性</strong>：相同输入总是产生相同输出</li>
+<li><strong>性能保持</strong>：仍然能够充分利用GPU并行性</li>
+</ul>
+<h3 id="实现细节">实现细节</h3>
+<p>团队通过以下技术实现了确定性推理：</p>
+<ol>
+<li><strong>torch.Library集成</strong>：以非侵入方式替换PyTorch操作符</li>
+<li><strong>FlexAttention后端</strong>：基于vLLM的FlexAttention实现</li>
+<li><strong>批处理不变内核</strong>：专门设计的内核确保数值稳定性</li>
+</ol>
+<h2 id="实验结果与验证">实验结果与验证</h2>
+<h3 id="非确定性程度评估">非确定性程度评估</h3>
+<p>使用Qwen/Qwen3-235B模型进行测试：</p>
+<ul>
+<li><strong>传统方法</strong>：1000次相同提示生成80个不同的结果</li>
+<li><strong>确定性方法</strong>：1000次相同提示生成完全相同的结果</li>
+</ul>
+<p>值得注意的是，即使是非确定性方法，前102个token也是完全相同的，差异从第103个token开始出现。</p>
+<h3 id="性能影响">性能影响</h3>
+<table>
+  <thead>
+      <tr>
+          <th>配置</th>
+          <th>时间（秒）</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>vLLM默认</td>
+          <td>26</td>
+      </tr>
+      <tr>
+          <td>未优化确定性vLLM</td>
+          <td>55</td>
+      </tr>
+      <tr>
+          <td>改进注意力内核</td>
+          <td>42</td>
+      </tr>
+  </tbody>
+</table>
+<p>虽然确定性推理会有一定的性能开销，但仍在可接受范围内。</p>
+<h3 id="强化学习的突破">强化学习的突破</h3>
+<p>更重要的是，这项研究解决了强化学习中的一个关键问题：</p>
+<ul>
+<li><strong>传统问题</strong>：训练和推理的数值差异导致&quot;假在线策略&quot;强化学习</li>
+<li><strong>解决方案</strong>：确定性推理使得真正的在线策略强化学习成为可能</li>
+<li><strong>验证结果</strong>：在RLVR实验中，确定性方法实现了0 KL散度，表明训练和采样策略完全一致</li>
+</ul>
+<h2 id="技术实现与开源贡献">技术实现与开源贡献</h2>
+<h3 id="开源资源">开源资源</h3>
+<p>研究团队提供了完整的实现：</p>
+<ul>
+<li><strong>批处理不变操作库</strong>：<a href="https://github.com/thinking-machines-lab/batch-invariant-ops">thinking-machines-lab/batch-invariant-ops</a></li>
+<li><strong>vLLM确定性模式示例</strong>：可直接运行的代码演示</li>
+</ul>
+<h3 id="核心代码结构">核心代码结构</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 批处理不变性内核的核心思想</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">def</span> <span style="color:#900;font-weight:bold">batch_invariant_reduction</span>(data, reduction_dim):
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># 固定分片大小，而非固定分片数量</span>
+</span></span><span style="display:flex;"><span>    fixed_chunk_size <span style="font-weight:bold">=</span> <span style="color:#099">256</span>
+</span></span><span style="display:flex;"><span>    chunks <span style="font-weight:bold">=</span> split_into_fixed_size_chunks(data, fixed_chunk_size)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># 确保归约顺序的一致性</span>
+</span></span><span style="display:flex;"><span>    result <span style="font-weight:bold">=</span> deterministic_reduce(chunks)
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">return</span> result
+</span></span></code></pre></div><h2 id="对ai研究的意义">对AI研究的意义</h2>
+<h3 id="科学严谨性的提升">科学严谨性的提升</h3>
+<p>这项研究的价值不仅在于技术突破，更在于对AI研究科学严谨性的贡献：</p>
+<ol>
+<li><strong>可重现性</strong>：研究者可以完全重现实验结果</li>
+<li><strong>调试能力</strong>：能够精确定位和修复数值问题</li>
+<li><strong>系统理解</strong>：深入理解现代GPU计算系统的复杂性</li>
+</ol>
+<h3 id="实际应用价值">实际应用价值</h3>
+<ul>
+<li><strong>模型部署</strong>：确保生产环境中的一致性行为</li>
+<li><strong>A/B测试</strong>：消除随机性对实验结果的影响</li>
+<li><strong>强化学习</strong>：实现真正的在线策略学习</li>
+</ul>
+<h2 id="结论与展望">结论与展望</h2>
+<p>Thinking Machines团队的研究为我们揭示了LLM推理非确定性的真正根源，并提供了切实可行的解决方案。这项工作不仅解决了技术问题，更重要的是提升了整个AI研究领域的科学严谨性。</p>
+<h3 id="关键启示">关键启示</h3>
+<ol>
+<li><strong>不要接受&quot;这是正常的&rdquo;</strong>：面对非确定性问题，我们应该深入挖掘根本原因</li>
+<li><strong>系统思维的重要性</strong>：理解多层抽象系统中的交互效应</li>
+<li><strong>工程与科学的结合</strong>：通过工程实践验证科学假设</li>
+</ol>
+<h3 id="未来方向">未来方向</h3>
+<ul>
+<li><strong>性能优化</strong>：进一步优化确定性内核的性能</li>
+<li><strong>更广泛的适用性</strong>：将方法扩展到更多模型架构</li>
+<li><strong>标准化推广</strong>：推动确定性推理成为行业标准</li>
+</ul>
+<p>这项研究提醒我们，在AI快速发展的今天，我们仍然需要保持对基础问题的关注，通过严谨的科学方法来解决看似复杂的工程问题。确定性推理的实现不仅是一个技术成就，更是对科学方法论的坚持和践行。</p>
+<hr>
+<p><em>参考文献：</em></p>
+<ul>
+<li><a href="https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/">He, Horace and Thinking Machines Lab, &ldquo;Defeating Nondeterminism in LLM Inference&rdquo;, Thinking Machines Lab: Connectionism, Sep 2025</a></li>
+<li><a href="https://github.com/thinking-machines-lab/batch-invariant-ops">GitHub: batch-invariant-ops</a></li>
+</ul>
+
+      </article>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+      <hr class="m-0"/>
+    </div>
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
+      
+      <div class="blog-tags">
+        
+        <a href="https://jiufengblog.web.app/tags/machine-learning/">machine-learning</a>
+        
+        <a href="https://jiufengblog.web.app/tags/llm/">llm</a>
+        
+        <a href="https://jiufengblog.web.app/tags/determinism/">determinism</a>
+        
+        <a href="https://jiufengblog.web.app/tags/reproducibility/">reproducibility</a>
+        
+        <a href="https://jiufengblog.web.app/tags/research/">research</a>
+        
+      </div>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      
+      <section id="social-share">
+        <div class="list-inline footer-links">
+          
+
+<div>
+  <p>Share with friends</p>
+</div>
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+
+    
+    <li>
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjiufengblog.web.app%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f" target="_blank" title="Share on Facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+        </svg>
+      </a>
+    </li>
+    
+    <li>
+      <a href="//twitter.com/share?url=https%3a%2f%2fjiufengblog.web.app%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&amp;text=%e5%87%bb%e8%b4%a5LLM%e6%8e%a8%e7%90%86%e4%b8%ad%e7%9a%84%e9%9d%9e%e7%a1%ae%e5%ae%9a%e6%80%a7%ef%bc%9a%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e7%b3%bb%e7%bb%9f%e5%8f%af%e9%87%8d%e7%8e%b0%e6%80%a7%e7%9a%84%e7%aa%81%e7%a0%b4&amp;via=map%5b%5d"
+        target="_blank" title="Share on Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-twitter-x" viewBox="0 0 16 16">
+          <path
+            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+        </svg>
+      </a>
+    </li>
+
+
+    
+    <li>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjiufengblog.web.app%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&amp;title=%e5%87%bb%e8%b4%a5LLM%e6%8e%a8%e7%90%86%e4%b8%ad%e7%9a%84%e9%9d%9e%e7%a1%ae%e5%ae%9a%e6%80%a7%ef%bc%9a%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e7%b3%bb%e7%bb%9f%e5%8f%af%e9%87%8d%e7%8e%b0%e6%80%a7%e7%9a%84%e7%aa%81%e7%a0%b4"
+        target="_blank" title="Share on LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+        </svg>
+      </a>
+    </li>
+
+    <li>
+      <a target="_blank" rel="noopener noreferrer" aria-label="share 击败LLM推理中的非确定性：深度学习系统可重现性的突破 on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fjiufengblog.web.app%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&title=%e5%87%bb%e8%b4%a5LLM%e6%8e%a8%e7%90%86%e4%b8%ad%e7%9a%84%e9%9d%9e%e7%a1%ae%e5%ae%9a%e6%80%a7%ef%bc%9a%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e7%b3%bb%e7%bb%9f%e5%8f%af%e9%87%8d%e7%8e%b0%e6%80%a7%e7%9a%84%e7%aa%81%e7%a0%b4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-reddit"
+          viewBox="0 0 16 16">
+          <path
+            d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z" />
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z" />
+        </svg>
+      </a>
+    </li>
+
+    
+    
+
+
+    
+    <li>
+      <a href="whatsapp://send?text=https%3a%2f%2fjiufengblog.web.app%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&amp;description=%e5%87%bb%e8%b4%a5LLM%e6%8e%a8%e7%90%86%e4%b8%ad%e7%9a%84%e9%9d%9e%e7%a1%ae%e5%ae%9a%e6%80%a7%ef%bc%9a%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e7%b3%bb%e7%bb%9f%e5%8f%af%e9%87%8d%e7%8e%b0%e6%80%a7%e7%9a%84%e7%aa%81%e7%a0%b4" target="_blank" rel="noopener"
+        title="Share on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-whatsapp" viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+        </div>
+      </section>
+      
+    </div>
+
+    
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 mt-3">
+      <div class="card">
+        <div class="row no-gutters">
+
+          
+          <div class="col-md-2 ">
+            <div class="card-body ">
+              
+               
+                <img src="/img/author/author_bottom.jpg" class="img-responsive img-50 img-round" alt="">
+              
+            </div>
+          </div>
+         
+
+
+          <div class="col-md-10">
+            <div class="card-body p-1.1">
+              <p class="p-0 m-0"><small class="text-muted">Written By</small></p>
+              <p class="card-text fs-5 m-0">
+                 
+                
+                Jiufeng Li
+                
+
+              </p>
+
+               
+                <p class="card-text fs-6  m-0">Build yourself and believe in yourself.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-1 pt-4">
+      
+      <ul class="list-group list-group-horizontal" style="flex-direction: row">
+        
+        <li class="list-group-item b-0 p-0">
+
+          <a type="button" class="btn btn-dark" role="button" href="https://jiufengblog.web.app/blogs/2024/sample-blog/"
+            data-toggle="tooltip" data-placement="top" title="Sample Blog Post">&larr;
+            Previous Post</a>
+        </li>
+        
+
+
+        
+      </ul>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+    </div>
+  </div>
+  
+</div>
+
+<div class="">
+  
+  
+  
+
+  
+  
+
+  
+
+</div>
+
+    
+
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul
+          class="list-inline list-group list-group-horizontal text-center footer-links d-flex justify-content-center flex-row">
+
+          
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&nbsp;&copy;
+          
+          2024
+          
+
+          
+          &nbsp;&bull;&nbsp;
+          <a href="https://jiufengblog.web.app/">Feng</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/binokochumolvarghese/lightbi-hugo">Lightbi</a>&nbsp;and <a href="https://firebase.google.com/?_gl=1*iwdk9w*_up*MQ..&gclid=CjwKCAjwg-24BhB_EiwA1ZOx8unyg5rIWPOxlt7co1MF6j3y9dvE6akQQylntoWf7XjIi7nUHhyRSRoCuFAQAvD_BwE&gclsrc=aw.ds">Google Firebase</a>&nbsp; 
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://jiufengblog.web.app/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://jiufengblog.web.app/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function () { $("pre.chroma").css("padding", "0"); }); </script>
+
+    
+  </body>
+</html>
+

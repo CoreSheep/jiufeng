@@ -41,9 +41,11 @@
 </div>
 
 <style>
-/* Small Square Blog Card Styles */
+/* Small Square Blog Card Styles - Homepage Consistent Display */
 .small-blog-card {
   height: 100%;
+  /* Force cache refresh for consistency */
+  will-change: transform;
 }
 
 .small-blog-card .card {

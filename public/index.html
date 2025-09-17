@@ -185,6 +185,9 @@
     
 
 
+<div id="homepage-identifier" style="display: none;" data-page="homepage" data-cards="small-squares"></div>
+
+
 <div class="hero-section py-5 mb-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
   <div class="container">
     <div class="row align-items-center">
@@ -319,6 +322,8 @@
  
 .small-blog-card {
   height: 100%;
+   
+  will-change: transform;
 }
 
 .small-blog-card .card {
@@ -482,6 +487,8 @@
  
 .small-blog-card {
   height: 100%;
+   
+  will-change: transform;
 }
 
 .small-blog-card .card {
@@ -645,6 +652,8 @@
  
 .small-blog-card {
   height: 100%;
+   
+  will-change: transform;
 }
 
 .small-blog-card .card {
@@ -782,6 +791,49 @@
     </div>
   </div>
 </div>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  localStorage.setItem('homepage_card_format', 'small-squares');
+  localStorage.setItem('homepage_last_loaded', Date.now());
+  
+  
+  const cards = document.querySelectorAll('.small-blog-card');
+  cards.forEach(function(card, index) {
+    setTimeout(function() {
+      card.classList.add('loaded');
+    }, index * 50);
+  });
+});
+
+
+document.addEventListener('visibilitychange', function() {
+  if (!document.hidden) {
+    
+    const cardFormat = localStorage.getItem('homepage_card_format');
+    if (cardFormat === 'small-squares') {
+      document.body.classList.add('small-cards-active');
+    }
+  }
+});
+</script>
+
+<style>
+ 
+.small-blog-card {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+ 
+.small-blog-card.loaded,
+body.small-cards-active .small-blog-card {
+  opacity: 1;
+}
+</style>
 
 
     

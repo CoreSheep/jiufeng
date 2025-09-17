@@ -9,7 +9,7 @@ hugo
 
 # git add new files, modified and deleted files and commit
 git add --all
-git commit -m "Remove Notes section from website"
+git commit -m "Remove Tags section and add Blogs section to website"
 
 git push origin main
 

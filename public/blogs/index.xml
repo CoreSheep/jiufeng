@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Feng</title>
-    <link>https://jiufengblog.web.app/</link>
-    <description>Recent content on Feng</description>
+    <title>Blogs on Feng</title>
+    <link>https://jiufengblog.web.app/blogs/</link>
+    <description>Recent content in Blogs on Feng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://jiufengblog.web.app/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.web.app/blogs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

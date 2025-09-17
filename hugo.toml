@@ -89,8 +89,8 @@ website = "https://jiufengblog.web.app/"
 
 
 [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
+    name = "Blogs"
+    url = "/blogs/"
     weight = 2
 
 [[menu.main]]

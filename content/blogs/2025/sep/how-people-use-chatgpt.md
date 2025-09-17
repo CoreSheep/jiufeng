@@ -1,6 +1,6 @@
 ---
 title: "How People Are Using ChatGPT: Insights from OpenAI's Latest Usage Analysis"
-date: 2024-09-16T14:00:00+01:00
+date: 2025-09-16T14:00:00+01:00
 draft: false
 tags: ["chatgpt", "openai", "ai-usage", "productivity", "consumer-ai"]
 categories: ["AI Research"]

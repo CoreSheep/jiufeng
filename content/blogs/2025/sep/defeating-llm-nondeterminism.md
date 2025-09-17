@@ -1,6 +1,6 @@
 ---
 title: "Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility"
-date: 2024-09-15T10:00:00+01:00
+date: 2025-09-15T10:00:00+01:00
 draft: false
 tags: ["machine-learning", "llm", "determinism", "reproducibility", "research"]
 categories: ["AI Research"]

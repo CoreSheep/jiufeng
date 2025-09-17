@@ -1,6 +1,6 @@
 ---
 title: "The Great AI Divide: ChatGPT vs Claude Usage Patterns Reveal Distinct User Preferences"
-date: 2024-09-17T16:00:00+01:00
+date: 2025-09-17T16:00:00+01:00
 draft: false
 tags: ["chatgpt", "claude", "ai-comparison", "usage-patterns", "anthropic", "openai"]
 categories: ["AI Research"]

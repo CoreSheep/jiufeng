@@ -48,15 +48,29 @@
     <item>
       <title>Blog</title>
       <link>https://jiufengblog.web.app/tags/blog/</link>
-      <pubDate>Mon, 01 Jan 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <pubDate>Mon, 16 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
       <guid>https://jiufengblog.web.app/tags/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Sample</title>
       <link>https://jiufengblog.web.app/tags/sample/</link>
-      <pubDate>Mon, 01 Jan 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <pubDate>Mon, 16 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
       <guid>https://jiufengblog.web.app/tags/sample/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://jiufengblog.web.app/tags/hugo/</link>
+      <pubDate>Sun, 15 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>https://jiufengblog.web.app/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>https://jiufengblog.web.app/tags/test/</link>
+      <pubDate>Sun, 15 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>https://jiufengblog.web.app/tags/test/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,6 +1,6 @@
 ---
 title: "Sample Blog Post"
-date: 2024-01-01T10:00:00+01:00
+date: 2024-09-16T10:00:00+01:00
 draft: false
 tags: ["sample", "blog"]
 categories: ["general"]

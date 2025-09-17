@@ -21,9 +21,16 @@
     <!-- Blog Posts Section -->
     <div class="col-md-12">
       <h2 class="mb-4">Latest Blog Posts</h2>
-      {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections ) 6 }}
-      {{ range $pag.Pages }}
-      {{ partial "post_preview_card" . }}
+      {{ $blogPages := where site.Pages "Section" "blogs" }}
+      {{ $blogPages = where $blogPages "Kind" "page" }}
+      {{ if $blogPages }}
+        <div class="row">
+          {{ range first 6 $blogPages }}
+          {{ partial "post_preview_card" . }}
+          {{ end }}
+        </div>
+      {{ else }}
+        <p class="text-muted">No blog posts available yet. Check back soon!</p>
       {{ end }}
     </div>
   </div>

@@ -20,8 +20,15 @@
     <item>
       <title>General</title>
       <link>https://jiufengblog.web.app/categories/general/</link>
-      <pubDate>Mon, 01 Jan 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <pubDate>Mon, 16 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
       <guid>https://jiufengblog.web.app/categories/general/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>https://jiufengblog.web.app/categories/testing/</link>
+      <pubDate>Sun, 15 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>https://jiufengblog.web.app/categories/testing/</guid>
       <description></description>
     </item>
   </channel>

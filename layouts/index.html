@@ -79,35 +79,40 @@
 
     <!-- Blog Posts Section -->
     <div class="col-12">
-      <div class="section-header mb-4">
+      <div class="section-header mb-5 text-center">
         <h2 class="display-6 fw-bold">
           <i class="bi bi-journal-text me-2"></i>Latest Blog Posts
         </h2>
         <p class="text-muted">Thoughts on AI, machine learning, and technology</p>
+        <div class="underline mx-auto mt-3" style="width: 60px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 2px;"></div>
       </div>
       
       {{ $blogPages := where site.Pages "Section" "blogs" }}
       {{ $blogPages = where $blogPages "Kind" "page" }}
       {{ if $blogPages }}
-        <!-- Blog Posts List - Using same style as blog page -->
-        <div class="row g-3 mb-5">
+        <!-- Featured Blog Posts Grid -->
+        <div class="row g-4 mb-5">
           {{ range first 6 $blogPages }}
-          <div class="col-lg-6 col-12">
-            {{ partial "post_preview_card" . }}
+          <div class="col-lg-4 col-md-6 col-12">
+            {{ partial "homepage_post_card" . }}
           </div>
           {{ end }}
         </div>
         
         <!-- View All Posts Button -->
         <div class="text-center">
-          <a href="/blogs/" class="btn btn-primary btn-lg">
-            <i class="bi bi-arrow-right me-2"></i>View All Posts
+          <a href="/blogs/" class="btn btn-primary btn-lg px-4 py-3 rounded-pill shadow-sm">
+            <i class="bi bi-collection me-2"></i>View All Posts
+            <i class="bi bi-arrow-right ms-2"></i>
           </a>
         </div>
       {{ else }}
         <div class="text-center py-5">
-          <i class="bi bi-journal-x display-1 text-muted"></i>
-          <p class="text-muted mt-3">No blog posts available yet. Check back soon!</p>
+          <div class="empty-state">
+            <i class="bi bi-journal-x display-1 text-muted mb-3"></i>
+            <h4 class="text-muted">No blog posts available yet</h4>
+            <p class="text-muted">Check back soon for new content!</p>
+          </div>
         </div>
       {{ end }}
     </div>

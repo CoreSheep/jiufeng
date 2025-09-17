@@ -1,0 +1,173 @@
+<!-- Homepage Featured Blog Post Card -->
+<div class="homepage-blog-card h-100">
+  <a href="{{ .Permalink }}" class="text-decoration-none">
+    <div class="card h-100 border-0 shadow-sm homepage-card-hover">
+      
+      <!-- Featured Image -->
+      {{ with partial "get_image" . }}
+      <div class="card-img-top-wrapper position-relative overflow-hidden" style="height: 200px;">
+        <img src="{{ (.Resize "400x200 Center").RelPermalink }}" 
+             alt="{{ $.Title }}"
+             class="card-img-top w-100 h-100"
+             style="object-fit: cover; transition: transform 0.3s ease;">
+        <div class="card-img-overlay d-flex align-items-end p-0">
+          <div class="gradient-overlay w-100" style="background: linear-gradient(transparent, rgba(0,0,0,0.6)); height: 80px;"></div>
+        </div>
+        
+        <!-- Category Badge on Image -->
+        {{ if .Params.categories }}
+        <div class="position-absolute top-0 start-0 m-3">
+          {{ range first 1 .Params.categories }}
+          <span class="badge bg-primary shadow-sm">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ else if .Params.tags }}
+        <div class="position-absolute top-0 start-0 m-3">
+          {{ range first 1 .Params.tags }}
+          <span class="badge bg-secondary shadow-sm">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ else }}
+      <!-- Default gradient if no image -->
+      <div class="card-img-top-wrapper position-relative" style="height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <i class="bi bi-journal-text text-white" style="font-size: 3rem; opacity: 0.8;"></i>
+        </div>
+        
+        <!-- Category Badge on Gradient -->
+        {{ if .Params.categories }}
+        <div class="position-absolute top-0 start-0 m-3">
+          {{ range first 1 .Params.categories }}
+          <span class="badge bg-light text-dark shadow-sm">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ else if .Params.tags }}
+        <div class="position-absolute top-0 start-0 m-3">
+          {{ range first 1 .Params.tags }}
+          <span class="badge bg-light text-dark shadow-sm">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <div class="card-body p-4">
+        <!-- Title -->
+        <h5 class="card-title fw-bold mb-3 text-dark" 
+            style="line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+          {{ .Title }}
+        </h5>
+
+        <!-- Subtitle -->
+        {{ if .Params.subtitle }}
+        <h6 class="card-subtitle mb-3 text-muted fw-normal" 
+            style="display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;">
+          {{ .Params.subtitle }}
+        </h6>
+        {{ end }}
+
+        <!-- Excerpt -->
+        <p class="card-text text-muted mb-3" 
+           style="font-size: 0.9rem; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+          {{ if .Description }}
+            {{ .Description | truncate 120 }}
+          {{ else }}
+            {{ .Summary | truncate 120 }}
+          {{ end }}
+        </p>
+
+        <!-- Meta Info -->
+        <div class="d-flex align-items-center justify-content-between text-muted small mt-auto">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-calendar3 me-2"></i>
+            <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+          </div>
+          <div class="d-flex align-items-center">
+            <i class="bi bi-clock me-1"></i>
+            <span>{{ .ReadingTime }} min read</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Read More Footer -->
+      <div class="card-footer bg-transparent border-0 px-4 pb-4 pt-0">
+        <div class="d-flex align-items-center text-primary">
+          <span class="fw-medium small me-2">Read More</span>
+          <i class="bi bi-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+<style>
+.homepage-blog-card {
+  min-height: 400px;
+}
+
+.homepage-card-hover {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.homepage-card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important;
+}
+
+.homepage-card-hover:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.homepage-blog-card a:hover {
+  text-decoration: none;
+}
+
+.homepage-blog-card .card-title {
+  transition: color 0.2s ease;
+}
+
+.homepage-blog-card:hover .card-title {
+  color: #667eea !important;
+}
+
+.homepage-blog-card:hover .text-primary {
+  color: #5a67d8 !important;
+}
+
+.card-img-top-wrapper {
+  border-radius: 12px 12px 0 0;
+}
+
+.homepage-blog-card .card-footer {
+  margin-top: auto;
+}
+
+.homepage-blog-card .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-blog-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-blog-card .card-text {
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .homepage-blog-card {
+    min-height: 350px;
+  }
+  
+  .card-img-top-wrapper {
+    height: 160px !important;
+  }
+}
+</style>

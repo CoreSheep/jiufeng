@@ -90,10 +90,10 @@
       {{ $blogPages := where site.Pages "Section" "blogs" }}
       {{ $blogPages = where $blogPages "Kind" "page" }}
       {{ if $blogPages }}
-        <!-- Featured Blog Posts Grid -->
+        <!-- Featured Blog Posts Grid - 3x3 Layout -->
         <div class="row g-4 mb-5">
-          {{ range first 6 $blogPages }}
-          <div class="col-lg-4 col-md-6 col-12">
+          {{ range first 9 $blogPages }}
+          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
             {{ partial "homepage_post_card" . }}
           </div>
           {{ end }}

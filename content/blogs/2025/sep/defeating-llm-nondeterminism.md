@@ -5,6 +5,7 @@ draft: false
 tags: ["machine-learning", "llm", "determinism", "reproducibility", "research"]
 categories: ["AI Research"]
 description: "An in-depth analysis of how the Thinking Machines team solved the nondeterminism problem in large language model inference, achieving truly reproducible reasoning."
+image: "/img/blog/llm-determinism.jpg"
 ---
 
 # Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility

@@ -5,6 +5,7 @@ draft: false
 tags: ["chatgpt", "openai", "ai-usage", "productivity", "consumer-ai"]
 categories: ["AI Research"]
 description: "OpenAI reveals fascinating insights into how millions of users interact with ChatGPT, showing a shift toward personal and exploratory use cases rather than work-focused applications."
+image: "/img/blog/chatgpt-usage.jpg"
 ---
 
 # How People Are Using ChatGPT: Insights from OpenAI's Latest Usage Analysis

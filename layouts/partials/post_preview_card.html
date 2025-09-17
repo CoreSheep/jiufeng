@@ -6,10 +6,10 @@
         
         <!-- Left: Image/Icon Section -->
         <div class="col-4">
-          {{ with partial "get_image" . }}
+          {{ if .Params.image }}
           <div class="card-img-wrapper h-100 position-relative overflow-hidden">
-            <img src="{{ (.Resize "150x120 Center").RelPermalink }}" 
-                 alt="{{ $.Title }}"
+            <img src="{{ .Params.image }}" 
+                 alt="{{ .Title }}"
                  class="card-img h-100 w-100"
                  style="object-fit: cover; transition: transform 0.3s ease;">
           </div>

@@ -5,6 +5,7 @@ draft: false
 tags: ["chatgpt", "claude", "ai-comparison", "usage-patterns", "anthropic", "openai"]
 categories: ["AI Research"]
 description: "Dueling studies from OpenAI and Anthropic reveal fascinating differences in how users interact with ChatGPT and Claude, suggesting complementary rather than competing AI ecosystems."
+image: "/img/blog/ai-comparison.jpg"
 ---
 
 # The Great AI Divide: ChatGPT vs Claude Usage Patterns Reveal Distinct User Preferences

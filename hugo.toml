@@ -87,25 +87,21 @@ website = "https://jiufengblog.web.app/"
     url = "/"
     weight = 1
 
-[[menu.main]]
-    name = "Notes"
-    url = "/notes/"
-    weight = 2
 
 [[menu.main]]
     name = "Tags"
     url = "/tags/"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     name = "Collections"
     url = "/collections/"
-    weight = 4
+    weight = 3
 
 [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 5
+    weight = 4
 
 [sitemap]
   changefreq = "monthly"

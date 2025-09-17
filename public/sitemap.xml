@@ -47,7 +47,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/blogs/2024/sep/chatgpt-vs-claude-usage-patterns/</loc>
+    <loc>https://jiufengblog.firebaseapp.com/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/</loc>
     <lastmod>2024-09-17T16:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -67,7 +67,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/blogs/2024/sep/how-people-use-chatgpt/</loc>
+    <loc>https://jiufengblog.firebaseapp.com/blogs/2025/sep/how-people-use-chatgpt/</loc>
     <lastmod>2024-09-16T14:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -77,37 +77,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/tags/blog/</loc>
-    <lastmod>2024-09-16T10:00:00+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/categories/general/</loc>
-    <lastmod>2024-09-16T10:00:00+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/tags/sample/</loc>
-    <lastmod>2024-09-16T10:00:00+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/blogs/2024/sample-blog/</loc>
-    <lastmod>2024-09-16T10:00:00+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://jiufengblog.firebaseapp.com/blogs/2024/sep/defeating-llm-nondeterminism/</loc>
     <lastmod>2024-09-15T10:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/tags/determinism/</loc>
+    <loc>https://jiufengblog.firebaseapp.com/blogs/2025/sep/defeating-llm-nondeterminism/</loc>
     <lastmod>2024-09-15T10:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/tags/hugo/</loc>
+    <loc>https://jiufengblog.firebaseapp.com/tags/determinism/</loc>
     <lastmod>2024-09-15T10:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -128,21 +108,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://jiufengblog.firebaseapp.com/tags/research/</loc>
-    <lastmod>2024-09-15T10:00:00+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/tags/test/</loc>
-    <lastmod>2024-09-15T10:00:00+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/categories/testing/</loc>
-    <lastmod>2024-09-15T10:00:00+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/blogs/2024/sep/test-blog/</loc>
     <lastmod>2024-09-15T10:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

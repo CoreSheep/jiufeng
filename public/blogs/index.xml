@@ -12,24 +12,17 @@
     <atom:link href="https://jiufengblog.firebaseapp.com/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Great AI Divide: ChatGPT vs Claude Usage Patterns Reveal Distinct User Preferences</title>
-      <link>https://jiufengblog.firebaseapp.com/blogs/2024/sep/chatgpt-vs-claude-usage-patterns/</link>
+      <link>https://jiufengblog.firebaseapp.com/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/</link>
       <pubDate>Tue, 17 Sep 2024 16:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.firebaseapp.com/blogs/2024/sep/chatgpt-vs-claude-usage-patterns/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/</guid>
       <description>&lt;h1 id=&#34;the-great-ai-divide-chatgpt-vs-claude-usage-patterns-reveal-distinct-user-preferences&#34;&gt;The Great AI Divide: ChatGPT vs Claude Usage Patterns Reveal Distinct User Preferences&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In an unprecedented move, both OpenAI and Anthropic have released comprehensive usage studies of their flagship AI assistants, ChatGPT and Claude. These &lt;a href=&#34;https://fortune.com/2025/09/15/openai-chatgpt-claude-anthropic-work-personal-use-new-data/&#34;&gt;dueling analyses&lt;/a&gt; provide fascinating insights into how different AI models are carving out distinct niches in the rapidly evolving landscape of artificial intelligence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How People Are Using ChatGPT: Insights from OpenAI&#39;s Latest Usage Analysis</title>
-      <link>https://jiufengblog.firebaseapp.com/blogs/2024/sep/how-people-use-chatgpt/</link>
+      <link>https://jiufengblog.firebaseapp.com/blogs/2025/sep/how-people-use-chatgpt/</link>
       <pubDate>Mon, 16 Sep 2024 14:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.firebaseapp.com/blogs/2024/sep/how-people-use-chatgpt/</guid>
+      <guid>https://jiufengblog.firebaseapp.com/blogs/2025/sep/how-people-use-chatgpt/</guid>
       <description>&lt;h1 id=&#34;how-people-are-using-chatgpt-insights-from-openais-latest-usage-analysis&#34;&gt;How People Are Using ChatGPT: Insights from OpenAI&amp;rsquo;s Latest Usage Analysis&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Understanding how people actually use artificial intelligence tools provides crucial insights into the technology&amp;rsquo;s real-world impact and future trajectory. OpenAI recently released a comprehensive analysis of ChatGPT usage patterns, examining millions of conversations to understand how people interact with their flagship AI assistant.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sample Blog Post</title>
-      <link>https://jiufengblog.firebaseapp.com/blogs/2024/sample-blog/</link>
-      <pubDate>Mon, 16 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.firebaseapp.com/blogs/2024/sample-blog/</guid>
-      <description>&lt;p&gt;This is a sample blog post to test the new Blogs section.&lt;/p&gt;&#xA;&lt;p&gt;The Blogs section has been successfully added to replace the old Notes section.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Clean blog layout&lt;/li&gt;&#xA;&lt;li&gt;Proper navigation&lt;/li&gt;&#xA;&lt;li&gt;Tag support&lt;/li&gt;&#xA;&lt;li&gt;Category support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This demonstrates that the Blogs section is working correctly.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility</title>
@@ -39,11 +32,11 @@
       <description>&lt;h1 id=&#34;defeating-nondeterminism-in-llm-inference-a-breakthrough-in-deep-learning-system-reproducibility&#34;&gt;Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Reproducibility&lt;/strong&gt; stands as one of the fundamental pillars of scientific research. However, when dealing with large language models (LLMs), achieving reproducible results has proven extraordinarily challenging. Even when we set the temperature parameter to 0 (greedy sampling), which should theoretically produce deterministic results, LLM inference still exhibits nondeterministic behavior.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>测试博客文章：验证主页显示功能</title>
-      <link>https://jiufengblog.firebaseapp.com/blogs/2024/sep/test-blog/</link>
+      <title>Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility</title>
+      <link>https://jiufengblog.firebaseapp.com/blogs/2025/sep/defeating-llm-nondeterminism/</link>
       <pubDate>Sun, 15 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.firebaseapp.com/blogs/2024/sep/test-blog/</guid>
-      <description>&lt;h1 id=&#34;测试博客文章验证主页显示功能&#34;&gt;测试博客文章：验证主页显示功能&lt;/h1&gt;&#xA;&lt;p&gt;这是一篇测试文章，用于验证主页是否能正确显示多篇博客文章。&lt;/p&gt;&#xA;&lt;h2 id=&#34;测试目的&#34;&gt;测试目的&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;验证主页能正确显示多篇博客文章&lt;/li&gt;&#xA;&lt;li&gt;测试文章的排序和显示逻辑&lt;/li&gt;&#xA;&lt;li&gt;确保点击Home后文章不会消失&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;测试内容&#34;&gt;测试内容&lt;/h2&gt;&#xA;&lt;h3 id=&#34;文章结构&#34;&gt;文章结构&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;正确的front matter配置&lt;/li&gt;&#xA;&lt;li&gt;适当的日期设置&lt;/li&gt;&#xA;&lt;li&gt;相关的标签和分类&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;技术要点&#34;&gt;技术要点&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hugo页面生成&lt;/li&gt;&#xA;&lt;li&gt;主页布局逻辑&lt;/li&gt;&#xA;&lt;li&gt;文章过滤机制&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;预期结果&#34;&gt;预期结果&lt;/h2&gt;&#xA;&lt;p&gt;这篇文章应该与其他博客文章一起显示在主页上，并且点击Home后应该保持可见。&lt;/p&gt;&#xA;&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;&#xA;&lt;p&gt;通过创建这篇测试文章，我们可以验证主页的文章显示功能是否正常工作。&lt;/p&gt;</description>
+      <guid>https://jiufengblog.firebaseapp.com/blogs/2025/sep/defeating-llm-nondeterminism/</guid>
+      <description>&lt;h1 id=&#34;defeating-nondeterminism-in-llm-inference-a-breakthrough-in-deep-learning-system-reproducibility&#34;&gt;Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Reproducibility&lt;/strong&gt; stands as one of the fundamental pillars of scientific research. However, when dealing with large language models (LLMs), achieving reproducible results has proven extraordinarily challenging. Even when we set the temperature parameter to 0 (greedy sampling), which should theoretically produce deterministic results, LLM inference still exhibits nondeterministic behavior.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

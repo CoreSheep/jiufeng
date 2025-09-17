@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>击败LLM推理中的非确定性：深度学习系统可重现性的突破 - Feng</title>
-<meta name="description" content="深入解析Thinking Machines团队如何解决大语言模型推理中的非确定性问题，实现真正的可重现推理">
+<title>Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility - Feng</title>
+<meta name="description" content="An in-depth analysis of how the Thinking Machines team solved the nondeterminism problem in large language model inference, achieving truly reproducible reasoning.">
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -45,7 +45,7 @@
         "position": 3,
         "item": {
           "@id": "https:\/\/jiufengblog.firebaseapp.com\/blogs\/2024\/sep\/defeating-llm-nondeterminism\/",
-          "name": "击败 llm推理中的非确定性：深度学习系统可重现性的突破"
+          "name": "Defeating nondeterminism in llm inference a breakthrough in deep learning system reproducibility"
         }
     }]
 }
@@ -56,12 +56,12 @@
   "author": {
     "name" : ""
   },
-  "headline": "击败LLM推理中的非确定性：深度学习系统可重现性的突破",
-  "description" : "深入解析Thinking Machines团队如何解决大语言模型推理中的非确定性问题，实现真正的可重现推理",
+  "headline": "Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility",
+  "description" : "An in-depth analysis of how the Thinking Machines team solved the nondeterminism problem in large language model inference, achieving truly reproducible reasoning.",
   "inLanguage" : "en",
-  "wordCount":  208 ,
-  "datePublished" : "2024-09-17T10:00:00",
-  "dateModified" : "2024-09-17T10:00:00",
+  "wordCount":  1110 ,
+  "datePublished" : "2024-09-15T10:00:00",
+  "dateModified" : "2024-09-15T10:00:00",
   "image" : "https:\/\/jiufengblog.firebaseapp.com\/",
   "keywords" : [ "machine-learning, llm, determinism, reproducibility, research" ],
   "mainEntityOfPage" : "https:\/\/jiufengblog.firebaseapp.com\/blogs\/2024\/sep\/defeating-llm-nondeterminism\/",
@@ -78,8 +78,8 @@
 }
 </script>
 
-<meta property="og:title" content="击败LLM推理中的非确定性：深度学习系统可重现性的突破" />
-<meta property="og:description" content="深入解析Thinking Machines团队如何解决大语言模型推理中的非确定性问题，实现真正的可重现推理">
+<meta property="og:title" content="Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility" />
+<meta property="og:description" content="An in-depth analysis of how the Thinking Machines team solved the nondeterminism problem in large language model inference, achieving truly reproducible reasoning.">
 <meta property="og:url" content="https://jiufengblog.firebaseapp.com/blogs/2024/sep/defeating-llm-nondeterminism/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Feng" />
@@ -247,7 +247,7 @@
 
               
               <h1 class="fw-semibold display-5 lh-1 mb-3"> 
-                击败LLM推理中的非确定性：深度学习系统可重现性的突破
+                Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility
                 
               </h1>
               
@@ -288,163 +288,163 @@
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       <article role="main" class="blog-post">
-        <h1 id="击败llm推理中的非确定性深度学习系统可重现性的突破">击败LLM推理中的非确定性：深度学习系统可重现性的突破</h1>
-<h2 id="引言">引言</h2>
-<p>在科学研究的基石中，<strong>可重现性</strong>占据着至关重要的地位。然而，当我们面对大语言模型（LLM）时，获得可重现的结果却异常困难。即使我们将温度参数调整到0（贪心采样），理论上应该产生确定性的结果，但LLM推理仍然表现出非确定性行为。</p>
-<p>最近，Thinking Machines团队在<a href="https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/">这篇开创性研究</a>中深入探讨了LLM推理非确定性的根本原因，并提出了有效的解决方案。本文将深入解析这项研究的核心原理和方法。</p>
-<h2 id="问题的本质浮点数非结合性">问题的本质：浮点数非结合性</h2>
-<h3 id="浮点数运算的原罪">浮点数运算的&quot;原罪&quot;</h3>
-<p>要理解非确定性的根源，我们首先需要了解<strong>浮点数非结合性</strong>的概念。在浮点数运算中：</p>
+        <h1 id="defeating-nondeterminism-in-llm-inference-a-breakthrough-in-deep-learning-system-reproducibility">Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility</h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Reproducibility</strong> stands as one of the fundamental pillars of scientific research. However, when dealing with large language models (LLMs), achieving reproducible results has proven extraordinarily challenging. Even when we set the temperature parameter to 0 (greedy sampling), which should theoretically produce deterministic results, LLM inference still exhibits nondeterministic behavior.</p>
+<p>Recently, the Thinking Machines team published <a href="https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/">groundbreaking research</a> that deeply investigates the root causes of nondeterminism in LLM inference and proposes effective solutions. This article provides an in-depth analysis of the core principles and methods of this research.</p>
+<h2 id="the-nature-of-the-problem-floating-point-non-associativity">The Nature of the Problem: Floating-Point Non-Associativity</h2>
+<h3 id="the-original-sin-of-floating-point-operations">The &ldquo;Original Sin&rdquo; of Floating-Point Operations</h3>
+<p>To understand the root of nondeterminism, we must first grasp the concept of <strong>floating-point non-associativity</strong>. In floating-point arithmetic:</p>
 <p>$$(a + b) + c \neq a + (b + c)$$</p>
-<p>这个看似简单的数学性质实际上是大语言模型推理非确定性的根本原因。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 浮点数非结合性的简单示例</span>
-</span></span><span style="display:flex;"><span>(<span style="color:#099">0.1</span> <span style="font-weight:bold">+</span> <span style="color:#099">1e20</span>) <span style="font-weight:bold">-</span> <span style="color:#099">1e20</span>  <span style="color:#998;font-style:italic"># 结果: 0</span>
-</span></span><span style="display:flex;"><span><span style="color:#099">0.1</span> <span style="font-weight:bold">+</span> (<span style="color:#099">1e20</span> <span style="font-weight:bold">-</span> <span style="color:#099">1e20</span>)  <span style="color:#998;font-style:italic"># 结果: 0.1</span>
-</span></span></code></pre></div><h3 id="动态精度与信息丢失">动态精度与信息丢失</h3>
-<p>浮点数系统通过&quot;动态精度&quot;来平衡数值范围和精度。当我们相加两个具有不同指数的浮点数时，系统必须丢弃一些精度信息：</p>
+<p>This seemingly simple mathematical property is actually the fundamental cause of nondeterminism in large language model inference.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Simple example of floating-point non-associativity</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#099">0.1</span> <span style="font-weight:bold">+</span> <span style="color:#099">1e20</span>) <span style="font-weight:bold">-</span> <span style="color:#099">1e20</span>  <span style="color:#998;font-style:italic"># Result: 0</span>
+</span></span><span style="display:flex;"><span><span style="color:#099">0.1</span> <span style="font-weight:bold">+</span> (<span style="color:#099">1e20</span> <span style="font-weight:bold">-</span> <span style="color:#099">1e20</span>)  <span style="color:#998;font-style:italic"># Result: 0.1</span>
+</span></span></code></pre></div><h3 id="dynamic-precision-and-information-loss">Dynamic Precision and Information Loss</h3>
+<p>Floating-point systems balance numerical range and precision through &ldquo;dynamic precision.&rdquo; When adding two floating-point numbers with different exponents, the system must discard some precision information:</p>
 <ul>
 <li>1230 ($1.23 \times 10^2$) + 23.4 ($2.34 \times 10^1$) = 1253.4</li>
-<li>但由于只能保持3位精度，结果被截断为 1250 ($1.25 \times 10^2$)</li>
+<li>But due to maintaining only 3 digits of precision, the result is truncated to 1250 ($1.25 \times 10^2$)</li>
 </ul>
-<p>这意味着<strong>每次以不同顺序相加浮点数时，都可能得到完全不同的结果</strong>。</p>
-<h2 id="传统解释的局限性">传统解释的局限性</h2>
-<h3 id="并发浮点数假设的不足">&ldquo;并发+浮点数&quot;假设的不足</h3>
-<p>长期以来，学术界普遍认为LLM推理的非确定性源于&quot;并发+浮点数&quot;假设：</p>
+<p>This means that <strong>every time floating-point numbers are added in different orders, completely different results may be obtained</strong>.</p>
+<h2 id="limitations-of-traditional-explanations">Limitations of Traditional Explanations</h2>
+<h3 id="insufficiency-of-the-concurrency--floating-point-hypothesis">Insufficiency of the &ldquo;Concurrency + Floating-Point&rdquo; Hypothesis</h3>
+<p>For a long time, the academic community has generally attributed the nondeterminism in LLM inference to the &ldquo;concurrency + floating-point&rdquo; hypothesis:</p>
 <blockquote>
-<p>由于GPU的并行计算特性，不同线程的完成顺序是非确定性的，导致浮点数累加顺序的不一致。</p>
+<p>Due to the parallel computing characteristics of GPUs, the completion order of different threads is nondeterministic, leading to inconsistent floating-point accumulation orders.</p>
 </blockquote>
-<p>然而，这项研究揭示了这一假设的局限性：</p>
+<p>However, this research reveals the limitations of this hypothesis:</p>
 <ol>
-<li><strong>GPU矩阵乘法是确定性的</strong>：即使是高度并行的矩阵乘法操作，在相同数据上重复执行也能产生位级相同的结果</li>
-<li><strong>并非所有并发操作都导致非确定性</strong>：关键在于具体的实现方式，而非并发本身</li>
+<li><strong>GPU matrix multiplication is deterministic</strong>: Even highly parallel matrix multiplication operations can produce bit-level identical results when repeatedly executed on the same data</li>
+<li><strong>Not all concurrent operations lead to nondeterminism</strong>: The key lies in specific implementation methods, not concurrency itself</li>
 </ol>
-<h2 id="真正的罪魁祸首批处理非不变性">真正的罪魁祸首：批处理非不变性</h2>
-<h3 id="核心发现">核心发现</h3>
-<p>研究团队发现，LLM推理非确定性的真正根源是<strong>批处理非不变性</strong>（batch non-invariance）。具体表现为：</p>
+<h2 id="the-real-culprit-batch-non-invariance">The Real Culprit: Batch Non-Invariance</h2>
+<h3 id="core-discovery">Core Discovery</h3>
+<p>The research team discovered that the true root of LLM inference nondeterminism is <strong>batch non-invariance</strong>. Specifically manifested as:</p>
 <ul>
-<li>相同的数据在不同的批处理大小下会产生不同的数值结果</li>
-<li>这种差异会随着推理过程的进行而累积放大</li>
-<li>最终导致完全不同的输出序列</li>
+<li>The same data produces different numerical results under different batch sizes</li>
+<li>These differences accumulate and amplify during the inference process</li>
+<li>Ultimately leading to completely different output sequences</li>
 </ul>
-<h3 id="分片归约策略的问题">分片归约策略的问题</h3>
-<p>在注意力机制的计算中，当查询长度较小时（如解码阶段），需要采用分片归约策略来充分利用GPU并行性。问题在于：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 问题示例：动态分片策略</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># KV长度 = 1000，需要4个分片</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 每个核心处理250个元素</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 但分片数量依赖于批处理大小和查询长度</span>
-</span></span></code></pre></div><p>这种动态分片策略破坏了批处理不变性，因为：</p>
+<h3 id="problems-with-chunked-reduction-strategies">Problems with Chunked Reduction Strategies</h3>
+<p>In attention mechanism calculations, when query length is small (such as during the decoding phase), chunked reduction strategies are needed to fully utilize GPU parallelism. The problem lies in:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Problem example: Dynamic chunking strategy</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># KV length = 1000, requires 4 chunks</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Each core processes 250 elements</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># But chunk count depends on batch size and query length</span>
+</span></span></code></pre></div><p>This dynamic chunking strategy breaks batch invariance because:</p>
 <ul>
-<li>分片策略依赖于当前处理的查询数量</li>
-<li>不同请求可能触发不同的分片策略</li>
-<li>导致浮点数累加顺序的差异</li>
+<li>Chunking strategy depends on the current number of queries being processed</li>
+<li>Different requests may trigger different chunking strategies</li>
+<li>Leading to differences in floating-point accumulation order</li>
 </ul>
-<h2 id="解决方案批处理不变性内核">解决方案：批处理不变性内核</h2>
-<h3 id="固定大小分片策略">固定大小分片策略</h3>
-<p>研究团队提出的核心解决方案是采用<strong>固定大小分片策略</strong>：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 解决方案：固定大小分片</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 无论KV长度如何，每个分片固定为256个元素</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># KV长度 = 1000 → 3个256分片 + 1个232分片</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># KV长度 = 512  → 2个256分片</span>
-</span></span></code></pre></div><p>这种策略的优势：</p>
+<h2 id="solution-batch-invariant-kernels">Solution: Batch-Invariant Kernels</h2>
+<h3 id="fixed-size-chunking-strategy">Fixed-Size Chunking Strategy</h3>
+<p>The core solution proposed by the research team is to adopt a <strong>fixed-size chunking strategy</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Solution: Fixed-size chunking</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Regardless of KV length, each chunk is fixed at 256 elements</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># KV length = 1000 → 3 chunks of 256 + 1 chunk of 232</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># KV length = 512  → 2 chunks of 256</span>
+</span></span></code></pre></div><p>Advantages of this strategy:</p>
 <ul>
-<li><strong>批处理不变性</strong>：无论处理多少token，都执行相同的归约顺序</li>
-<li><strong>可重现性</strong>：相同输入总是产生相同输出</li>
-<li><strong>性能保持</strong>：仍然能够充分利用GPU并行性</li>
+<li><strong>Batch invariance</strong>: Same reduction order is executed regardless of how many tokens are processed</li>
+<li><strong>Reproducibility</strong>: Same input always produces same output</li>
+<li><strong>Performance preservation</strong>: Still able to fully utilize GPU parallelism</li>
 </ul>
-<h3 id="实现细节">实现细节</h3>
-<p>团队通过以下技术实现了确定性推理：</p>
+<h3 id="implementation-details">Implementation Details</h3>
+<p>The team achieved deterministic inference through the following technologies:</p>
 <ol>
-<li><strong>torch.Library集成</strong>：以非侵入方式替换PyTorch操作符</li>
-<li><strong>FlexAttention后端</strong>：基于vLLM的FlexAttention实现</li>
-<li><strong>批处理不变内核</strong>：专门设计的内核确保数值稳定性</li>
+<li><strong>torch.Library integration</strong>: Non-invasive replacement of PyTorch operators</li>
+<li><strong>FlexAttention backend</strong>: Implementation based on vLLM&rsquo;s FlexAttention</li>
+<li><strong>Batch-invariant kernels</strong>: Specially designed kernels ensuring numerical stability</li>
 </ol>
-<h2 id="实验结果与验证">实验结果与验证</h2>
-<h3 id="非确定性程度评估">非确定性程度评估</h3>
-<p>使用Qwen/Qwen3-235B模型进行测试：</p>
+<h2 id="experimental-results-and-verification">Experimental Results and Verification</h2>
+<h3 id="nondeterminism-level-assessment">Nondeterminism Level Assessment</h3>
+<p>Testing with the Qwen/Qwen3-235B model:</p>
 <ul>
-<li><strong>传统方法</strong>：1000次相同提示生成80个不同的结果</li>
-<li><strong>确定性方法</strong>：1000次相同提示生成完全相同的结果</li>
+<li><strong>Traditional method</strong>: 1000 identical prompts generated 80 different results</li>
+<li><strong>Deterministic method</strong>: 1000 identical prompts generated completely identical results</li>
 </ul>
-<p>值得注意的是，即使是非确定性方法，前102个token也是完全相同的，差异从第103个token开始出现。</p>
-<h3 id="性能影响">性能影响</h3>
+<p>Notably, even with the nondeterministic method, the first 102 tokens were completely identical, with differences beginning to appear from the 103rd token.</p>
+<h3 id="performance-impact">Performance Impact</h3>
 <table>
   <thead>
       <tr>
-          <th>配置</th>
-          <th>时间（秒）</th>
+          <th>Configuration</th>
+          <th>Time (seconds)</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>vLLM默认</td>
+          <td>vLLM Default</td>
           <td>26</td>
       </tr>
       <tr>
-          <td>未优化确定性vLLM</td>
+          <td>Unoptimized Deterministic vLLM</td>
           <td>55</td>
       </tr>
       <tr>
-          <td>改进注意力内核</td>
+          <td>Improved Attention Kernel</td>
           <td>42</td>
       </tr>
   </tbody>
 </table>
-<p>虽然确定性推理会有一定的性能开销，但仍在可接受范围内。</p>
-<h3 id="强化学习的突破">强化学习的突破</h3>
-<p>更重要的是，这项研究解决了强化学习中的一个关键问题：</p>
+<p>While deterministic inference incurs some performance overhead, it remains within acceptable ranges.</p>
+<h3 id="breakthrough-in-reinforcement-learning">Breakthrough in Reinforcement Learning</h3>
+<p>More importantly, this research solves a critical problem in reinforcement learning:</p>
 <ul>
-<li><strong>传统问题</strong>：训练和推理的数值差异导致&quot;假在线策略&quot;强化学习</li>
-<li><strong>解决方案</strong>：确定性推理使得真正的在线策略强化学习成为可能</li>
-<li><strong>验证结果</strong>：在RLVR实验中，确定性方法实现了0 KL散度，表明训练和采样策略完全一致</li>
+<li><strong>Traditional problem</strong>: Numerical differences between training and inference lead to &ldquo;fake on-policy&rdquo; reinforcement learning</li>
+<li><strong>Solution</strong>: Deterministic inference makes true on-policy reinforcement learning possible</li>
+<li><strong>Verification results</strong>: In RLVR experiments, the deterministic method achieved 0 KL divergence, indicating complete consistency between training and sampling policies</li>
 </ul>
-<h2 id="技术实现与开源贡献">技术实现与开源贡献</h2>
-<h3 id="开源资源">开源资源</h3>
-<p>研究团队提供了完整的实现：</p>
+<h2 id="technical-implementation-and-open-source-contributions">Technical Implementation and Open Source Contributions</h2>
+<h3 id="open-source-resources">Open Source Resources</h3>
+<p>The research team provided complete implementations:</p>
 <ul>
-<li><strong>批处理不变操作库</strong>：<a href="https://github.com/thinking-machines-lab/batch-invariant-ops">thinking-machines-lab/batch-invariant-ops</a></li>
-<li><strong>vLLM确定性模式示例</strong>：可直接运行的代码演示</li>
+<li><strong>Batch-invariant operations library</strong>: <a href="https://github.com/thinking-machines-lab/batch-invariant-ops">thinking-machines-lab/batch-invariant-ops</a></li>
+<li><strong>vLLM deterministic mode examples</strong>: Directly runnable code demonstrations</li>
 </ul>
-<h3 id="核心代码结构">核心代码结构</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 批处理不变性内核的核心思想</span>
+<h3 id="core-code-structure">Core Code Structure</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Core idea of batch-invariant kernels</span>
 </span></span><span style="display:flex;"><span><span style="font-weight:bold">def</span> <span style="color:#900;font-weight:bold">batch_invariant_reduction</span>(data, reduction_dim):
-</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># 固定分片大小，而非固定分片数量</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># Fixed chunk size, not fixed chunk count</span>
 </span></span><span style="display:flex;"><span>    fixed_chunk_size <span style="font-weight:bold">=</span> <span style="color:#099">256</span>
 </span></span><span style="display:flex;"><span>    chunks <span style="font-weight:bold">=</span> split_into_fixed_size_chunks(data, fixed_chunk_size)
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># 确保归约顺序的一致性</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#998;font-style:italic"># Ensure consistency of reduction order</span>
 </span></span><span style="display:flex;"><span>    result <span style="font-weight:bold">=</span> deterministic_reduce(chunks)
 </span></span><span style="display:flex;"><span>    <span style="font-weight:bold">return</span> result
-</span></span></code></pre></div><h2 id="对ai研究的意义">对AI研究的意义</h2>
-<h3 id="科学严谨性的提升">科学严谨性的提升</h3>
-<p>这项研究的价值不仅在于技术突破，更在于对AI研究科学严谨性的贡献：</p>
+</span></span></code></pre></div><h2 id="significance-for-ai-research">Significance for AI Research</h2>
+<h3 id="enhancement-of-scientific-rigor">Enhancement of Scientific Rigor</h3>
+<p>The value of this research lies not only in technical breakthroughs but also in its contribution to the scientific rigor of AI research:</p>
 <ol>
-<li><strong>可重现性</strong>：研究者可以完全重现实验结果</li>
-<li><strong>调试能力</strong>：能够精确定位和修复数值问题</li>
-<li><strong>系统理解</strong>：深入理解现代GPU计算系统的复杂性</li>
+<li><strong>Reproducibility</strong>: Researchers can completely reproduce experimental results</li>
+<li><strong>Debugging capability</strong>: Ability to precisely locate and fix numerical issues</li>
+<li><strong>System understanding</strong>: Deep understanding of the complexity of modern GPU computing systems</li>
 </ol>
-<h3 id="实际应用价值">实际应用价值</h3>
+<h3 id="practical-application-value">Practical Application Value</h3>
 <ul>
-<li><strong>模型部署</strong>：确保生产环境中的一致性行为</li>
-<li><strong>A/B测试</strong>：消除随机性对实验结果的影响</li>
-<li><strong>强化学习</strong>：实现真正的在线策略学习</li>
+<li><strong>Model deployment</strong>: Ensuring consistent behavior in production environments</li>
+<li><strong>A/B testing</strong>: Eliminating the impact of randomness on experimental results</li>
+<li><strong>Reinforcement learning</strong>: Enabling true on-policy learning</li>
 </ul>
-<h2 id="结论与展望">结论与展望</h2>
-<p>Thinking Machines团队的研究为我们揭示了LLM推理非确定性的真正根源，并提供了切实可行的解决方案。这项工作不仅解决了技术问题，更重要的是提升了整个AI研究领域的科学严谨性。</p>
-<h3 id="关键启示">关键启示</h3>
+<h2 id="conclusion-and-outlook">Conclusion and Outlook</h2>
+<p>The research by the Thinking Machines team reveals the true root of nondeterminism in LLM inference and provides practical solutions. This work not only solves technical problems but more importantly enhances the scientific rigor of the entire AI research field.</p>
+<h3 id="key-insights">Key Insights</h3>
 <ol>
-<li><strong>不要接受&quot;这是正常的&rdquo;</strong>：面对非确定性问题，我们应该深入挖掘根本原因</li>
-<li><strong>系统思维的重要性</strong>：理解多层抽象系统中的交互效应</li>
-<li><strong>工程与科学的结合</strong>：通过工程实践验证科学假设</li>
+<li><strong>Don&rsquo;t accept &ldquo;this is normal&rdquo;</strong>: When facing nondeterminism issues, we should dig deep into root causes</li>
+<li><strong>Importance of systems thinking</strong>: Understanding interaction effects in multi-layered abstract systems</li>
+<li><strong>Integration of engineering and science</strong>: Validating scientific hypotheses through engineering practice</li>
 </ol>
-<h3 id="未来方向">未来方向</h3>
+<h3 id="future-directions">Future Directions</h3>
 <ul>
-<li><strong>性能优化</strong>：进一步优化确定性内核的性能</li>
-<li><strong>更广泛的适用性</strong>：将方法扩展到更多模型架构</li>
-<li><strong>标准化推广</strong>：推动确定性推理成为行业标准</li>
+<li><strong>Performance optimization</strong>: Further optimizing the performance of deterministic kernels</li>
+<li><strong>Broader applicability</strong>: Extending methods to more model architectures</li>
+<li><strong>Standardization promotion</strong>: Promoting deterministic inference as an industry standard</li>
 </ul>
-<p>这项研究提醒我们，在AI快速发展的今天，我们仍然需要保持对基础问题的关注，通过严谨的科学方法来解决看似复杂的工程问题。确定性推理的实现不仅是一个技术成就，更是对科学方法论的坚持和践行。</p>
+<p>This research reminds us that in today&rsquo;s rapid AI development, we still need to maintain attention to fundamental issues and solve seemingly complex engineering problems through rigorous scientific methods. The implementation of deterministic inference is not only a technical achievement but also a persistence and practice of scientific methodology.</p>
 <hr>
-<p><em>参考文献：</em></p>
+<p><em>References:</em></p>
 <ul>
 <li><a href="https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/">He, Horace and Thinking Machines Lab, &ldquo;Defeating Nondeterminism in LLM Inference&rdquo;, Thinking Machines Lab: Connectionism, Sep 2025</a></li>
 <li><a href="https://github.com/thinking-machines-lab/batch-invariant-ops">GitHub: batch-invariant-ops</a></li>
@@ -500,7 +500,7 @@
     </li>
     
     <li>
-      <a href="//twitter.com/share?url=https%3a%2f%2fjiufengblog.firebaseapp.com%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&amp;text=%e5%87%bb%e8%b4%a5LLM%e6%8e%a8%e7%90%86%e4%b8%ad%e7%9a%84%e9%9d%9e%e7%a1%ae%e5%ae%9a%e6%80%a7%ef%bc%9a%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e7%b3%bb%e7%bb%9f%e5%8f%af%e9%87%8d%e7%8e%b0%e6%80%a7%e7%9a%84%e7%aa%81%e7%a0%b4&amp;via=map%5b%5d"
+      <a href="//twitter.com/share?url=https%3a%2f%2fjiufengblog.firebaseapp.com%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&amp;text=Defeating%20Nondeterminism%20in%20LLM%20Inference%3a%20A%20Breakthrough%20in%20Deep%20Learning%20System%20Reproducibility&amp;via=map%5b%5d"
         target="_blank" title="Share on Twitter">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-twitter-x" viewBox="0 0 16 16">
           <path
@@ -512,7 +512,7 @@
 
     
     <li>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjiufengblog.firebaseapp.com%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&amp;title=%e5%87%bb%e8%b4%a5LLM%e6%8e%a8%e7%90%86%e4%b8%ad%e7%9a%84%e9%9d%9e%e7%a1%ae%e5%ae%9a%e6%80%a7%ef%bc%9a%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e7%b3%bb%e7%bb%9f%e5%8f%af%e9%87%8d%e7%8e%b0%e6%80%a7%e7%9a%84%e7%aa%81%e7%a0%b4"
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjiufengblog.firebaseapp.com%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&amp;title=Defeating%20Nondeterminism%20in%20LLM%20Inference%3a%20A%20Breakthrough%20in%20Deep%20Learning%20System%20Reproducibility"
         target="_blank" title="Share on LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16">
           <path
@@ -522,8 +522,8 @@
     </li>
 
     <li>
-      <a target="_blank" rel="noopener noreferrer" aria-label="share 击败LLM推理中的非确定性：深度学习系统可重现性的突破 on reddit"
-        href="https://reddit.com/submit?url=https%3a%2f%2fjiufengblog.firebaseapp.com%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&title=%e5%87%bb%e8%b4%a5LLM%e6%8e%a8%e7%90%86%e4%b8%ad%e7%9a%84%e9%9d%9e%e7%a1%ae%e5%ae%9a%e6%80%a7%ef%bc%9a%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e7%b3%bb%e7%bb%9f%e5%8f%af%e9%87%8d%e7%8e%b0%e6%80%a7%e7%9a%84%e7%aa%81%e7%a0%b4">
+      <a target="_blank" rel="noopener noreferrer" aria-label="share Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2fjiufengblog.firebaseapp.com%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&title=Defeating%20Nondeterminism%20in%20LLM%20Inference%3a%20A%20Breakthrough%20in%20Deep%20Learning%20System%20Reproducibility">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-reddit"
           viewBox="0 0 16 16">
           <path
@@ -540,7 +540,7 @@
 
     
     <li>
-      <a href="whatsapp://send?text=https%3a%2f%2fjiufengblog.firebaseapp.com%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&amp;description=%e5%87%bb%e8%b4%a5LLM%e6%8e%a8%e7%90%86%e4%b8%ad%e7%9a%84%e9%9d%9e%e7%a1%ae%e5%ae%9a%e6%80%a7%ef%bc%9a%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0%e7%b3%bb%e7%bb%9f%e5%8f%af%e9%87%8d%e7%8e%b0%e6%80%a7%e7%9a%84%e7%aa%81%e7%a0%b4" target="_blank" rel="noopener"
+      <a href="whatsapp://send?text=https%3a%2f%2fjiufengblog.firebaseapp.com%2fblogs%2f2024%2fsep%2fdefeating-llm-nondeterminism%2f&amp;description=Defeating%20Nondeterminism%20in%20LLM%20Inference%3a%20A%20Breakthrough%20in%20Deep%20Learning%20System%20Reproducibility" target="_blank" rel="noopener"
         title="Share on WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-whatsapp" viewBox="0 0 16 16">
           <path
@@ -600,13 +600,19 @@
         
         <li class="list-group-item b-0 p-0">
 
-          <a type="button" class="btn btn-dark" role="button" href="https://jiufengblog.firebaseapp.com/blogs/2024/sample-blog/"
-            data-toggle="tooltip" data-placement="top" title="Sample Blog Post">&larr;
+          <a type="button" class="btn btn-dark" role="button" href="https://jiufengblog.firebaseapp.com/blogs/2024/sep/test-blog/"
+            data-toggle="tooltip" data-placement="top" title="测试博客文章：验证主页显示功能">&larr;
             Previous Post</a>
         </li>
         
 
 
+        
+        <li class="list-group-item ms-auto b-0 p-0">
+          <a type="button" class="btn btn-dark" role="button" href="https://jiufengblog.firebaseapp.com/blogs/2024/sample-blog/"
+            data-toggle="tooltip" data-placement="top" title="Sample Blog Post">Next Post
+            &rarr;</a>
+        </li>
         
       </ul>
       

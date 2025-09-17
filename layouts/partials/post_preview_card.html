@@ -49,11 +49,11 @@
 
             <!-- Excerpt -->
             <p class="card-text text-muted flex-grow-1 mb-2" 
-               style="font-size: 0.8rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+               style="font-size: 0.8rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
               {{ if .Description }}
-                {{ .Description | truncate 80 }}
+                {{ .Description | truncate 120 }}
               {{ else }}
-                {{ .Summary | truncate 80 }}
+                {{ .Summary | truncate 120 }}
               {{ end }}
             </p>
 
@@ -62,7 +62,7 @@
               <div class="d-flex align-items-center justify-content-between">
                 <small class="text-muted d-flex align-items-center">
                   <i class="bi bi-calendar3 me-1" style="font-size: 0.7rem;"></i>
-                  <span style="font-size: 0.7rem;">{{ .Date.Format "Jan 2" }}</span>
+                  <span style="font-size: 0.7rem;">{{ .Date.Format "January 2, 2006" }}</span>
                 </small>
                 <small class="text-muted d-flex align-items-center">
                   <i class="bi bi-clock me-1" style="font-size: 0.7rem;"></i>
@@ -80,11 +80,11 @@
 
 <style>
 .compact-blog-card {
-  height: 140px !important;
+  height: 160px !important;
 }
 
 .compact-card {
-  height: 140px;
+  height: 160px;
   transition: all 0.3s ease;
   border-radius: 8px;
   overflow: hidden;
@@ -117,11 +117,11 @@
 
 @media (max-width: 768px) {
   .compact-blog-card {
-    height: 120px !important;
+    height: 140px !important;
   }
   
   .compact-card {
-    height: 120px;
+    height: 140px;
   }
   
   .compact-card .card-body {

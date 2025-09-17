@@ -1,197 +1,197 @@
 ---
-title: "击败LLM推理中的非确定性：深度学习系统可重现性的突破"
-date: 2024-09-17T10:00:00+01:00
+title: "Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility"
+date: 2024-09-15T10:00:00+01:00
 draft: false
 tags: ["machine-learning", "llm", "determinism", "reproducibility", "research"]
 categories: ["AI Research"]
-description: "深入解析Thinking Machines团队如何解决大语言模型推理中的非确定性问题，实现真正的可重现推理"
+description: "An in-depth analysis of how the Thinking Machines team solved the nondeterminism problem in large language model inference, achieving truly reproducible reasoning."
 ---
 
-# 击败LLM推理中的非确定性：深度学习系统可重现性的突破
+# Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility
 
-## 引言
+## Introduction
 
-在科学研究的基石中，**可重现性**占据着至关重要的地位。然而，当我们面对大语言模型（LLM）时，获得可重现的结果却异常困难。即使我们将温度参数调整到0（贪心采样），理论上应该产生确定性的结果，但LLM推理仍然表现出非确定性行为。
+**Reproducibility** stands as one of the fundamental pillars of scientific research. However, when dealing with large language models (LLMs), achieving reproducible results has proven extraordinarily challenging. Even when we set the temperature parameter to 0 (greedy sampling), which should theoretically produce deterministic results, LLM inference still exhibits nondeterministic behavior.
 
-最近，Thinking Machines团队在[这篇开创性研究](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/)中深入探讨了LLM推理非确定性的根本原因，并提出了有效的解决方案。本文将深入解析这项研究的核心原理和方法。
+Recently, the Thinking Machines team published [groundbreaking research](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/) that deeply investigates the root causes of nondeterminism in LLM inference and proposes effective solutions. This article provides an in-depth analysis of the core principles and methods of this research.
 
-## 问题的本质：浮点数非结合性
+## The Nature of the Problem: Floating-Point Non-Associativity
 
-### 浮点数运算的"原罪"
+### The "Original Sin" of Floating-Point Operations
 
-要理解非确定性的根源，我们首先需要了解**浮点数非结合性**的概念。在浮点数运算中：
+To understand the root of nondeterminism, we must first grasp the concept of **floating-point non-associativity**. In floating-point arithmetic:
 
 $$(a + b) + c \neq a + (b + c)$$
 
-这个看似简单的数学性质实际上是大语言模型推理非确定性的根本原因。
+This seemingly simple mathematical property is actually the fundamental cause of nondeterminism in large language model inference.
 
 ```python
-# 浮点数非结合性的简单示例
-(0.1 + 1e20) - 1e20  # 结果: 0
-0.1 + (1e20 - 1e20)  # 结果: 0.1
+# Simple example of floating-point non-associativity
+(0.1 + 1e20) - 1e20  # Result: 0
+0.1 + (1e20 - 1e20)  # Result: 0.1
 ```
 
-### 动态精度与信息丢失
+### Dynamic Precision and Information Loss
 
-浮点数系统通过"动态精度"来平衡数值范围和精度。当我们相加两个具有不同指数的浮点数时，系统必须丢弃一些精度信息：
+Floating-point systems balance numerical range and precision through "dynamic precision." When adding two floating-point numbers with different exponents, the system must discard some precision information:
 
 - 1230 ($1.23 \times 10^2$) + 23.4 ($2.34 \times 10^1$) = 1253.4
-- 但由于只能保持3位精度，结果被截断为 1250 ($1.25 \times 10^2$)
+- But due to maintaining only 3 digits of precision, the result is truncated to 1250 ($1.25 \times 10^2$)
 
-这意味着**每次以不同顺序相加浮点数时，都可能得到完全不同的结果**。
+This means that **every time floating-point numbers are added in different orders, completely different results may be obtained**.
 
-## 传统解释的局限性
+## Limitations of Traditional Explanations
 
-### "并发+浮点数"假设的不足
+### Insufficiency of the "Concurrency + Floating-Point" Hypothesis
 
-长期以来，学术界普遍认为LLM推理的非确定性源于"并发+浮点数"假设：
+For a long time, the academic community has generally attributed the nondeterminism in LLM inference to the "concurrency + floating-point" hypothesis:
 
-> 由于GPU的并行计算特性，不同线程的完成顺序是非确定性的，导致浮点数累加顺序的不一致。
+> Due to the parallel computing characteristics of GPUs, the completion order of different threads is nondeterministic, leading to inconsistent floating-point accumulation orders.
 
-然而，这项研究揭示了这一假设的局限性：
+However, this research reveals the limitations of this hypothesis:
 
-1. **GPU矩阵乘法是确定性的**：即使是高度并行的矩阵乘法操作，在相同数据上重复执行也能产生位级相同的结果
-2. **并非所有并发操作都导致非确定性**：关键在于具体的实现方式，而非并发本身
+1. **GPU matrix multiplication is deterministic**: Even highly parallel matrix multiplication operations can produce bit-level identical results when repeatedly executed on the same data
+2. **Not all concurrent operations lead to nondeterminism**: The key lies in specific implementation methods, not concurrency itself
 
-## 真正的罪魁祸首：批处理非不变性
+## The Real Culprit: Batch Non-Invariance
 
-### 核心发现
+### Core Discovery
 
-研究团队发现，LLM推理非确定性的真正根源是**批处理非不变性**（batch non-invariance）。具体表现为：
+The research team discovered that the true root of LLM inference nondeterminism is **batch non-invariance**. Specifically manifested as:
 
-- 相同的数据在不同的批处理大小下会产生不同的数值结果
-- 这种差异会随着推理过程的进行而累积放大
-- 最终导致完全不同的输出序列
+- The same data produces different numerical results under different batch sizes
+- These differences accumulate and amplify during the inference process
+- Ultimately leading to completely different output sequences
 
-### 分片归约策略的问题
+### Problems with Chunked Reduction Strategies
 
-在注意力机制的计算中，当查询长度较小时（如解码阶段），需要采用分片归约策略来充分利用GPU并行性。问题在于：
+In attention mechanism calculations, when query length is small (such as during the decoding phase), chunked reduction strategies are needed to fully utilize GPU parallelism. The problem lies in:
 
 ```python
-# 问题示例：动态分片策略
-# KV长度 = 1000，需要4个分片
-# 每个核心处理250个元素
-# 但分片数量依赖于批处理大小和查询长度
+# Problem example: Dynamic chunking strategy
+# KV length = 1000, requires 4 chunks
+# Each core processes 250 elements
+# But chunk count depends on batch size and query length
 ```
 
-这种动态分片策略破坏了批处理不变性，因为：
-- 分片策略依赖于当前处理的查询数量
-- 不同请求可能触发不同的分片策略
-- 导致浮点数累加顺序的差异
+This dynamic chunking strategy breaks batch invariance because:
+- Chunking strategy depends on the current number of queries being processed
+- Different requests may trigger different chunking strategies
+- Leading to differences in floating-point accumulation order
 
-## 解决方案：批处理不变性内核
+## Solution: Batch-Invariant Kernels
 
-### 固定大小分片策略
+### Fixed-Size Chunking Strategy
 
-研究团队提出的核心解决方案是采用**固定大小分片策略**：
+The core solution proposed by the research team is to adopt a **fixed-size chunking strategy**:
 
 ```python
-# 解决方案：固定大小分片
-# 无论KV长度如何，每个分片固定为256个元素
-# KV长度 = 1000 → 3个256分片 + 1个232分片
-# KV长度 = 512  → 2个256分片
+# Solution: Fixed-size chunking
+# Regardless of KV length, each chunk is fixed at 256 elements
+# KV length = 1000 → 3 chunks of 256 + 1 chunk of 232
+# KV length = 512  → 2 chunks of 256
 ```
 
-这种策略的优势：
-- **批处理不变性**：无论处理多少token，都执行相同的归约顺序
-- **可重现性**：相同输入总是产生相同输出
-- **性能保持**：仍然能够充分利用GPU并行性
+Advantages of this strategy:
+- **Batch invariance**: Same reduction order is executed regardless of how many tokens are processed
+- **Reproducibility**: Same input always produces same output
+- **Performance preservation**: Still able to fully utilize GPU parallelism
 
-### 实现细节
+### Implementation Details
 
-团队通过以下技术实现了确定性推理：
+The team achieved deterministic inference through the following technologies:
 
-1. **torch.Library集成**：以非侵入方式替换PyTorch操作符
-2. **FlexAttention后端**：基于vLLM的FlexAttention实现
-3. **批处理不变内核**：专门设计的内核确保数值稳定性
+1. **torch.Library integration**: Non-invasive replacement of PyTorch operators
+2. **FlexAttention backend**: Implementation based on vLLM's FlexAttention
+3. **Batch-invariant kernels**: Specially designed kernels ensuring numerical stability
 
-## 实验结果与验证
+## Experimental Results and Verification
 
-### 非确定性程度评估
+### Nondeterminism Level Assessment
 
-使用Qwen/Qwen3-235B模型进行测试：
-- **传统方法**：1000次相同提示生成80个不同的结果
-- **确定性方法**：1000次相同提示生成完全相同的结果
+Testing with the Qwen/Qwen3-235B model:
+- **Traditional method**: 1000 identical prompts generated 80 different results
+- **Deterministic method**: 1000 identical prompts generated completely identical results
 
-值得注意的是，即使是非确定性方法，前102个token也是完全相同的，差异从第103个token开始出现。
+Notably, even with the nondeterministic method, the first 102 tokens were completely identical, with differences beginning to appear from the 103rd token.
 
-### 性能影响
+### Performance Impact
 
-| 配置 | 时间（秒） |
-|------|-----------|
-| vLLM默认 | 26 |
-| 未优化确定性vLLM | 55 |
-| 改进注意力内核 | 42 |
+| Configuration | Time (seconds) |
+|---------------|----------------|
+| vLLM Default | 26 |
+| Unoptimized Deterministic vLLM | 55 |
+| Improved Attention Kernel | 42 |
 
-虽然确定性推理会有一定的性能开销，但仍在可接受范围内。
+While deterministic inference incurs some performance overhead, it remains within acceptable ranges.
 
-### 强化学习的突破
+### Breakthrough in Reinforcement Learning
 
-更重要的是，这项研究解决了强化学习中的一个关键问题：
+More importantly, this research solves a critical problem in reinforcement learning:
 
-- **传统问题**：训练和推理的数值差异导致"假在线策略"强化学习
-- **解决方案**：确定性推理使得真正的在线策略强化学习成为可能
-- **验证结果**：在RLVR实验中，确定性方法实现了0 KL散度，表明训练和采样策略完全一致
+- **Traditional problem**: Numerical differences between training and inference lead to "fake on-policy" reinforcement learning
+- **Solution**: Deterministic inference makes true on-policy reinforcement learning possible
+- **Verification results**: In RLVR experiments, the deterministic method achieved 0 KL divergence, indicating complete consistency between training and sampling policies
 
-## 技术实现与开源贡献
+## Technical Implementation and Open Source Contributions
 
-### 开源资源
+### Open Source Resources
 
-研究团队提供了完整的实现：
+The research team provided complete implementations:
 
-- **批处理不变操作库**：[thinking-machines-lab/batch-invariant-ops](https://github.com/thinking-machines-lab/batch-invariant-ops)
-- **vLLM确定性模式示例**：可直接运行的代码演示
+- **Batch-invariant operations library**: [thinking-machines-lab/batch-invariant-ops](https://github.com/thinking-machines-lab/batch-invariant-ops)
+- **vLLM deterministic mode examples**: Directly runnable code demonstrations
 
-### 核心代码结构
+### Core Code Structure
 
 ```python
-# 批处理不变性内核的核心思想
+# Core idea of batch-invariant kernels
 def batch_invariant_reduction(data, reduction_dim):
-    # 固定分片大小，而非固定分片数量
+    # Fixed chunk size, not fixed chunk count
     fixed_chunk_size = 256
     chunks = split_into_fixed_size_chunks(data, fixed_chunk_size)
     
-    # 确保归约顺序的一致性
+    # Ensure consistency of reduction order
     result = deterministic_reduce(chunks)
     return result
 ```
 
-## 对AI研究的意义
+## Significance for AI Research
 
-### 科学严谨性的提升
+### Enhancement of Scientific Rigor
 
-这项研究的价值不仅在于技术突破，更在于对AI研究科学严谨性的贡献：
+The value of this research lies not only in technical breakthroughs but also in its contribution to the scientific rigor of AI research:
 
-1. **可重现性**：研究者可以完全重现实验结果
-2. **调试能力**：能够精确定位和修复数值问题
-3. **系统理解**：深入理解现代GPU计算系统的复杂性
+1. **Reproducibility**: Researchers can completely reproduce experimental results
+2. **Debugging capability**: Ability to precisely locate and fix numerical issues
+3. **System understanding**: Deep understanding of the complexity of modern GPU computing systems
 
-### 实际应用价值
+### Practical Application Value
 
-- **模型部署**：确保生产环境中的一致性行为
-- **A/B测试**：消除随机性对实验结果的影响
-- **强化学习**：实现真正的在线策略学习
+- **Model deployment**: Ensuring consistent behavior in production environments
+- **A/B testing**: Eliminating the impact of randomness on experimental results
+- **Reinforcement learning**: Enabling true on-policy learning
 
-## 结论与展望
+## Conclusion and Outlook
 
-Thinking Machines团队的研究为我们揭示了LLM推理非确定性的真正根源，并提供了切实可行的解决方案。这项工作不仅解决了技术问题，更重要的是提升了整个AI研究领域的科学严谨性。
+The research by the Thinking Machines team reveals the true root of nondeterminism in LLM inference and provides practical solutions. This work not only solves technical problems but more importantly enhances the scientific rigor of the entire AI research field.
 
-### 关键启示
+### Key Insights
 
-1. **不要接受"这是正常的"**：面对非确定性问题，我们应该深入挖掘根本原因
-2. **系统思维的重要性**：理解多层抽象系统中的交互效应
-3. **工程与科学的结合**：通过工程实践验证科学假设
+1. **Don't accept "this is normal"**: When facing nondeterminism issues, we should dig deep into root causes
+2. **Importance of systems thinking**: Understanding interaction effects in multi-layered abstract systems
+3. **Integration of engineering and science**: Validating scientific hypotheses through engineering practice
 
-### 未来方向
+### Future Directions
 
-- **性能优化**：进一步优化确定性内核的性能
-- **更广泛的适用性**：将方法扩展到更多模型架构
-- **标准化推广**：推动确定性推理成为行业标准
+- **Performance optimization**: Further optimizing the performance of deterministic kernels
+- **Broader applicability**: Extending methods to more model architectures
+- **Standardization promotion**: Promoting deterministic inference as an industry standard
 
-这项研究提醒我们，在AI快速发展的今天，我们仍然需要保持对基础问题的关注，通过严谨的科学方法来解决看似复杂的工程问题。确定性推理的实现不仅是一个技术成就，更是对科学方法论的坚持和践行。
+This research reminds us that in today's rapid AI development, we still need to maintain attention to fundamental issues and solve seemingly complex engineering problems through rigorous scientific methods. The implementation of deterministic inference is not only a technical achievement but also a persistence and practice of scientific methodology.
 
 ---
 
-*参考文献：*
+*References:*
 - [He, Horace and Thinking Machines Lab, "Defeating Nondeterminism in LLM Inference", Thinking Machines Lab: Connectionism, Sep 2025](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/)
 - [GitHub: batch-invariant-ops](https://github.com/thinking-machines-lab/batch-invariant-ops)

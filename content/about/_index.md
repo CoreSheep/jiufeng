@@ -10,7 +10,9 @@ I'm **Jiufeng** from China, you can also call me **FENG**! Welcome to my persona
 
 I have recently completed my master's degree in Data & Computer Science at [Heidelberg University](https://www.uni-heidelberg.de/en) and successfully finished my Data Scientist internship and working student position at [Mercedes-Benz](https://www.mercedes-benz.com/en/). I'm fascinated by data science, machine learning, and AI, especially the advancements in Generative AI and Large Language Models. I'm also diving into the startup world with a small AI-focused team, aiming to create products that are truly valuable to people.
 
-My journey in AI and machine learning spans over several years, with hands-on experience ranging from computer vision and neural network quantization to large-scale recommender systems and LLM applications. I have a solid foundation in both theoretical research and practical implementation, having published academic work and been granted invention patents in multimodal AI systems.
+**AI/ML Engineer & Data Scientist** with 3+ years across academic research and production systems. Proven track record in vehicle recommender systems (Mercedes-Benz Group), NLP/RAG (Uni Heidelberg & NLP Laboratory), computer vision, and knowledge graphs — delivering low-latency inference with mixed-precision quantization and GPU-accelerated training, backed by rigorous offline and online evaluation.
+
+**Published Research & IP**: M.Sc. thesis on mixed-precision quantization; B.Sc. thesis on multimodal knowledge graphs; co-inventor of a granted China invention patent. Active contributor to Mercedes-Benz Data Science & AI community, advancing enterprise AI solutions and mentoring fellow researchers in neural network optimization and production ML systems.
 
 Outside of tech, I'm passionate about art, music, and film. I love watching films, and I have many beloved movie directors like [Kar Wai Wong](https://en.wikipedia.org/wiki/Wong_Kar-wai), [Edward Yang](https://en.wikipedia.org/wiki/Edward_Yang), [Alfred Hitchcock](https://en.wikipedia.org/wiki/Alfred_Hitchcock), [Hirokazu Kore-eda](https://en.wikipedia.org/wiki/Hirokazu_Kore-eda), [Andrei Tarkovsky](https://en.wikipedia.org/wiki/Andrei_Tarkovsky) and many others. Music is also close to my heart; I enjoy everything from classical to jazz, hip-hop, and rock & roll. [Frédéric Chopin](https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin) and [Johann Sebastian Bach](https://de.wikipedia.org/wiki/Johann_Sebastian_Bach) are two of my all-time favorites, and their music has been a constant companion in my life.
 
@@ -41,11 +43,11 @@ Graduated from a prestigious 211 & 985 project university (ESI Rank Top 1‰). M
 ## Research & Technical Expertise
 
 ### **Core Areas of Expertise**
-- **Neural Network Optimization**: Specializing in quantization techniques, mixed-precision training, and model compression
-- **Large Language Models**: Hands-on experience with LLM deployment, fine-tuning, and RAG systems
-- **Computer Vision**: From object detection and segmentation to large-scale image processing pipelines
-- **Recommender Systems**: Production-grade recommender engines with deep learning architectures
-- **MLOps & AI Infrastructure**: End-to-end ML pipelines, model serving, and scalable AI systems
+- **Neural Network Optimization**: Mixed-precision quantization, GPU-accelerated training, and low-latency inference optimization
+- **Generative AI & LLMs**: RAG systems, LLM fine-tuning, and enterprise AI solution deployment
+- **Production ML Systems**: End-to-end recommender systems serving 300k+ requests/day with <30ms latency
+- **Computer Vision**: YOLOv4 deployment, microscopy image processing, and automated quality assurance pipelines
+- **MLOps & Infrastructure**: Databricks/Delta pipelines processing 2.4TB/day, Kafka streaming, and CI/CD automation
 
 ### **Research Contributions**
 - **Master's Thesis**: Advancing the field of neural network quantization with novel stochastic approaches for activation quantization during backpropagation
@@ -68,11 +70,11 @@ Graduated from a prestigious 211 & 985 project university (ESI Rank Top 1‰). M
 - [Download CV](/JiufengLi_CV.pdf)
 
 ### Research Interests
-- **Neural Network Optimization**: Developing novel quantization techniques and efficient training methods for deep learning models
-- **Generative AI & LLMs**: Advancing the capabilities and applications of large language models in real-world scenarios
-- **Multimodal AI Systems**: Creating intelligent systems that can understand and process multiple types of data simultaneously
-- **AI for Social Good**: Building AI applications that create meaningful value for people and society
-- **MLOps & Scalable AI**: Designing robust, scalable infrastructure for deploying AI systems in production environments
+- **Autonomous AI Systems**: Developing self-optimizing ML pipelines and agentic AI architectures for enterprise applications
+- **Neural Architecture Optimization**: Novel quantization strategies, efficient inference, and hardware-aware model design
+- **Enterprise LLMOps**: Scalable deployment patterns, fine-tuning strategies, and multimodal AI integration for business solutions
+- **AI-Driven Innovation**: Transforming traditional industries through cutting-edge ML applications and intelligent automation
+- **Community Impact**: Contributing to open-source AI tools, mentoring emerging researchers, and advancing AI education
 
 ### Hobbies
 - **Film Enthusiast**: Deeply passionate about cinema, especially works by auteur directors like Kar Wai Wong, Edward Yang, and Alfred Hitchcock

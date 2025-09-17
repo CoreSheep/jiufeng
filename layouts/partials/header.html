@@ -20,7 +20,7 @@
   <div class="intro-header no-img mt-10">
     <div class="container">
       <div class="row justify-content-center">
-        {{ if or ( eq .Type "post")  ( eq .Type "notes") ( eq .Type "collections") }}
+        {{ if or ( eq .Type "post")  ( eq .Type "notes") ( eq .Type "blogs") }}
         <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
           {{ end }}
 
@@ -70,7 +70,7 @@
           {{ if ne .Type "blog" }}
         </div>
         {{ end }}
-        {{ if or ( eq .Type "post")  ( eq .Type "notes") ( eq .Type "collections") }}
+        {{ if or ( eq .Type "post")  ( eq .Type "notes") ( eq .Type "blogs") }}
       </div>
       {{ end }}
     </div>

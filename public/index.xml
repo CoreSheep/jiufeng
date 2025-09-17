@@ -8,7 +8,14 @@
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2024 10:00:00 +0100</lastBuildDate>
     <atom:link href="https://jiufengblog.web.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sample Blog Post</title>
+      <link>https://jiufengblog.web.app/blogs/2024/sample-blog/</link>
+      <pubDate>Mon, 01 Jan 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
+      <guid>https://jiufengblog.web.app/blogs/2024/sample-blog/</guid>
+      <description>&lt;p&gt;This is a sample blog post to test the new Blogs section.&lt;/p&gt;&#xA;&lt;p&gt;The Blogs section has been successfully added to replace the old Notes section.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Clean blog layout&lt;/li&gt;&#xA;&lt;li&gt;Proper navigation&lt;/li&gt;&#xA;&lt;li&gt;Tag support&lt;/li&gt;&#xA;&lt;li&gt;Category support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This demonstrates that the Blogs section is working correctly.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -23,7 +23,7 @@ pagerSize = 6
 
 [Params]
 selfHosted = true
-mainSections = ["post","posts"]
+mainSections = ["post","posts","blogs"]
 dateFormat = "02 January 2006"
 comments = false
 readingTime = true

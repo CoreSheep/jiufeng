@@ -2,12 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jiufengblog.web.app/blogs/</loc>
-    <lastmod>2024-01-01T00:00:00+01:00</lastmod>
+    <loc>https://jiufengblog.web.app/tags/blog/</loc>
+    <lastmod>2024-01-01T10:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.web.app/categories/</loc>
+    <lastmod>2024-01-01T10:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://jiufengblog.web.app/</loc>
+    <lastmod>2024-01-01T10:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.web.app/categories/general/</loc>
+    <lastmod>2024-01-01T10:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.web.app/tags/sample/</loc>
+    <lastmod>2024-01-01T10:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.web.app/blogs/2024/sample-blog/</loc>
+    <lastmod>2024-01-01T10:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.web.app/tags/</loc>
+    <lastmod>2024-01-01T10:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.web.app/blogs/</loc>
     <lastmod>2024-01-01T00:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -16,15 +46,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jiufengblog.web.app/categories/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://jiufengblog.web.app/collections/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.web.app/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

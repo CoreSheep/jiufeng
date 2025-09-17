@@ -12,13 +12,6 @@
     <atom:link href="https://jiufengblog.firebaseapp.com/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility</title>
-      <link>https://jiufengblog.firebaseapp.com/blogs/2024/sep/defeating-llm-nondeterminism/</link>
-      <pubDate>Sun, 15 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.firebaseapp.com/blogs/2024/sep/defeating-llm-nondeterminism/</guid>
-      <description>&lt;h1 id=&#34;defeating-nondeterminism-in-llm-inference-a-breakthrough-in-deep-learning-system-reproducibility&#34;&gt;Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Reproducibility&lt;/strong&gt; stands as one of the fundamental pillars of scientific research. However, when dealing with large language models (LLMs), achieving reproducible results has proven extraordinarily challenging. Even when we set the temperature parameter to 0 (greedy sampling), which should theoretically produce deterministic results, LLM inference still exhibits nondeterministic behavior.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility</title>
       <link>https://jiufengblog.firebaseapp.com/blogs/2025/sep/defeating-llm-nondeterminism/</link>
       <pubDate>Sun, 15 Sep 2024 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
       <guid>https://jiufengblog.firebaseapp.com/blogs/2025/sep/defeating-llm-nondeterminism/</guid>

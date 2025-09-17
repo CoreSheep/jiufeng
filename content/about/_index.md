@@ -66,8 +66,6 @@ Graduated from a prestigious 211 & 985 project university (ESI Rank Top 1‰). M
 ### Tags on me:
 [ENTJ](https://www.16personalities.com/entj-personality) | Gym | AI&ML | Movies | Music | Reading | Writing | Patents | Research
   
-### CV
-- [Download CV](/JiufengLi_CV.pdf)
 
 ### Research Interests
 - **Autonomous AI Systems**: Developing self-optimizing ML pipelines and agentic AI architectures for enterprise applications

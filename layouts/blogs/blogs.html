@@ -57,13 +57,11 @@
       </div>
 
       <!-- Blog Posts Grid -->
-      <div class="row g-4">
-        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blogs") 6 }}
+      <div class="row g-3">
+        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blogs") 9 }}
         {{ range $paginator.Pages }}
-        <div class="col-md-6">
-          <div class="blog-post-card h-100">
-            {{ partial "post_preview_card.html" . }}
-          </div>
+        <div class="col-12">
+          {{ partial "post_preview_card.html" . }}
         </div>
         {{ end }}
       </div>

@@ -5,19 +5,27 @@
 
 <div class="container" role="main">
   <div class="row">
-    {{ with .Content }}
-    <div class="well">
-      {{.}}
+    <!-- About Section -->
+    <div class="col-md-12 mb-5">
+      <div class="well">
+        <h1 class="mb-4">About Me</h1>
+        {{ $aboutPage := .Site.GetPage "/about" }}
+        {{ if $aboutPage }}
+          <div class="about-content">
+            {{ $aboutPage.Content }}
+          </div>
+        {{ end }}
+      </div>
     </div>
-    {{ end }}
 
-
-    {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections ) 9 }}
-    {{ range $pag.Pages }}
-    {{ partial "post_preview_card" . }}
-    {{ end }}
-
-
+    <!-- Blog Posts Section -->
+    <div class="col-md-12">
+      <h2 class="mb-4">Latest Blog Posts</h2>
+      {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections ) 6 }}
+      {{ range $pag.Pages }}
+      {{ partial "post_preview_card" . }}
+      {{ end }}
+    </div>
   </div>
 
   <div class="row font-sans">

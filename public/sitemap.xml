@@ -100,9 +100,5 @@
     <loc>https://jiufengblog.web.app/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.web.app/collections/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
 </urlset>

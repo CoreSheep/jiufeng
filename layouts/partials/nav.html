@@ -30,7 +30,6 @@
                 {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
                 {{ $active = or $active (eq .Name $current.Title) }}
                 {{ $active = or $active (and (eq .Name "Blogs") (eq $current.Section "blogs")) }}
-                {{ $active = or $active (and (eq .Name "Collections") (eq $current.Section "collections")) }}
                 {{ $active = or $active (and (eq .Name "About") (eq $current.Section "about")) }}
 
                 <a class="nav-link {{ if $active }} active {{ end }}" title="{{ .Name }}"

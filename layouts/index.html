@@ -89,9 +89,10 @@
       {{ $blogPages := where site.Pages "Section" "blogs" }}
       {{ $blogPages = where $blogPages "Kind" "page" }}
       {{ if $blogPages }}
+        <!-- Blog Posts List - Using same style as blog page -->
         <div class="row g-3 mb-5">
           {{ range first 6 $blogPages }}
-          <div class="col-lg-4 col-md-6 col-12">
+          <div class="col-lg-6 col-12">
             {{ partial "post_preview_card" . }}
           </div>
           {{ end }}

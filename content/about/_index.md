@@ -1,5 +1,4 @@
 ---
-type : "about"
 layout : "about"
 title: "About me"
 ---

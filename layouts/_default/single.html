@@ -1,31 +1,82 @@
 {{ define "main" }}
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
 
-      <div class="card-image card-image-blog p-0">
+<!-- Blog Post Hero Section -->
+<div class="blog-post-hero">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        
+        <!-- Article Meta -->
+        <div class="article-meta mb-4">
+          {{ if .Params.categories }}
+          <div class="category-badge mb-3">
+            {{ range first 1 .Params.categories }}
+            <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-medium">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+          
+          <!-- Title -->
+          <h1 class="article-title mb-4">{{ .Title }}</h1>
+          
+          <!-- Meta Info -->
+          <div class="article-info d-flex flex-wrap align-items-center gap-4 text-muted">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-calendar3"></i>
+              <span>{{ .Date.Format "January 2, 2006" }}</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-clock"></i>
+              <span>{{ math.Round (div (countwords .Content) 200.0) }} min read</span>
+            </div>
+            {{ if .Params.tags }}
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-tags"></i>
+              <div class="d-flex gap-1 flex-wrap">
+                {{ range first 3 .Params.tags }}
+                <span class="tag-item">{{ . }}</span>
+                {{ end }}
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+
+        <!-- Featured Image -->
         {{ $ := . }}
         {{ with partial "get_image" . }}
           {{ if not (strings.Contains $.Content $.Params.image) }}
-            <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="card-img-bottom rounded img-fluid lazyload">
+          <div class="featured-image mb-5">
+            <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="img-fluid rounded-3 shadow-sm">
+          </div>
           {{ end }}
         {{ end }}
 
-
         {{ if .Params.video }}
-        <video loop autoplay muted playsinline class="img-title">
-          <source src="{{ .Params.video }}">
-        </video>
+        <div class="featured-video mb-5">
+          <video loop autoplay muted playsinline class="img-fluid rounded-3 shadow-sm">
+            <source src="{{ .Params.video }}">
+          </video>
+        </div>
         {{ end }}
+
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
-      <article role="main" class="blog-post">
-        {{ .Content }}
-      </article>
+<!-- Article Content -->
+<div class="article-content">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <article class="blog-post-content">
+          {{ .Content }}
+        </article>
+      </div>
     </div>
   </div>
+</div>
 
   {{ if or .Params.tags (not .Site.Params.hideAuthor) ($.Param "socialShare") (ne .Type "page") }}
   <div class="row">
@@ -179,4 +230,309 @@
   {{ end }}
 
 </div>
+
+<!-- Blog Post Typography Styles -->
+<style>
+/* Blog Post Hero Section */
+.blog-post-hero {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 4rem 0 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.article-meta {
+  text-align: center;
+}
+
+.category-badge .badge {
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.article-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a202c;
+  margin-bottom: 1.5rem;
+}
+
+.article-info {
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.article-info i {
+  color: #667eea;
+  font-size: 1rem;
+}
+
+.tag-item {
+  background: #f7fafc;
+  color: #4a5568;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  border: 1px solid #e2e8f0;
+}
+
+.featured-image img,
+.featured-video video {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Article Content Typography */
+.article-content {
+  padding: 2rem 0 4rem 0;
+}
+
+.blog-post-content {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.7;
+  color: #2d3748;
+  font-size: 1.1rem;
+}
+
+/* Headings */
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4,
+.blog-post-content h5,
+.blog-post-content h6 {
+  font-weight: 700;
+  color: #1a202c;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.blog-post-content h1 {
+  font-size: 2.25rem;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.blog-post-content h2 {
+  font-size: 1.875rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.375rem;
+}
+
+.blog-post-content h3 {
+  font-size: 1.5rem;
+  color: #667eea;
+}
+
+.blog-post-content h4 {
+  font-size: 1.25rem;
+}
+
+.blog-post-content h5,
+.blog-post-content h6 {
+  font-size: 1.125rem;
+}
+
+/* Paragraphs */
+.blog-post-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4a5568;
+}
+
+/* Lists */
+.blog-post-content ul,
+.blog-post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.blog-post-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.blog-post-content ul li {
+  list-style-type: disc;
+}
+
+.blog-post-content ol li {
+  list-style-type: decimal;
+}
+
+/* Code blocks */
+.blog-post-content pre {
+  background: #1a202c;
+  color: #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border: 1px solid #2d3748;
+}
+
+.blog-post-content code {
+  background: #f7fafc;
+  color: #e53e3e;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9em;
+  border: 1px solid #e2e8f0;
+}
+
+.blog-post-content pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+/* Blockquotes */
+.blog-post-content blockquote {
+  border-left: 4px solid #667eea;
+  background: #f7fafc;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #4a5568;
+}
+
+.blog-post-content blockquote p {
+  margin-bottom: 0;
+}
+
+/* Tables */
+.blog-post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-content th,
+.blog-post-content td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.blog-post-content th {
+  background: #f7fafc;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.blog-post-content tr:hover {
+  background: #f7fafc;
+}
+
+/* Links */
+.blog-post-content a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.blog-post-content a:hover {
+  color: #764ba2;
+  border-bottom-color: #764ba2;
+}
+
+/* Images */
+.blog-post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Horizontal rules */
+.blog-post-content hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+  margin: 3rem 0;
+}
+
+/* Strong and emphasis */
+.blog-post-content strong {
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.blog-post-content em {
+  font-style: italic;
+  color: #4a5568;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-post-hero {
+    padding: 2rem 0 1.5rem 0;
+  }
+  
+  .article-title {
+    font-size: 2rem;
+  }
+  
+  .article-info {
+    flex-direction: column;
+    gap: 1rem !important;
+  }
+  
+  .blog-post-content {
+    font-size: 1rem;
+  }
+  
+  .blog-post-content h1 {
+    font-size: 1.875rem;
+  }
+  
+  .blog-post-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .blog-post-content h3 {
+    font-size: 1.25rem;
+  }
+  
+  .blog-post-content p {
+    font-size: 1rem;
+  }
+  
+  .blog-post-content pre {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-title {
+    font-size: 1.75rem;
+  }
+  
+  .blog-post-content {
+    font-size: 0.95rem;
+  }
+  
+  .blog-post-content p {
+    font-size: 0.95rem;
+  }
+}
+</style>
+
 {{ end }}

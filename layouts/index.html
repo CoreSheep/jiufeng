@@ -352,9 +352,9 @@
                       {{ $content = replace $content "`" "" }}
                       {{ $content = trim $content " \n\t" }}
                       {{ if $content }}
-                        {{ $content | truncate 200 }}
+                        {{ $content | truncate 208 }}
                       {{ else }}
-                        {{ .Summary | truncate 200 }}
+                        {{ .Summary | truncate 208 }}
                       {{ end }}
                     </p>
                     
@@ -783,16 +783,16 @@ body.small-cards-active .small-blog-card {
   transition: all 0.3s ease;
   border-radius: 12px;
   overflow: hidden;
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .blog-card-hover:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15) !important;
   border-color: rgba(102, 126, 234, 0.3) !important;
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(5px);
+  background: #fff;
 }
 
 .blog-preview-card a:hover {

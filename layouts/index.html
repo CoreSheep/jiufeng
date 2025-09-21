@@ -334,14 +334,28 @@
                     
                     <!-- Description -->
                     <p class="card-text text-muted mb-4" style="font-size: 0.85rem; line-height: 1.4;">
-                      {{ $content := .Content | plainify | replace "&rsquo;" "'" | replace "&ldquo;" "\"" | replace "&rdquo;" "\"" | replace "&hellip;" "..." | replace "&mdash;" "—" | replace "&ndash;" "–" | replace "&amp;" "&" | replace "&lt;" "<" | replace "&gt;" ">" | replace "&quot;" "\"" }}
+                      {{ $content := .Content | plainify }}
+                      {{ $content = replace $content "&rsquo;" "'" }}
+                      {{ $content = replace $content "&ldquo;" "\"" }}
+                      {{ $content = replace $content "&rdquo;" "\"" }}
+                      {{ $content = replace $content "&hellip;" "..." }}
+                      {{ $content = replace $content "&mdash;" "—" }}
+                      {{ $content = replace $content "&ndash;" "–" }}
+                      {{ $content = replace $content "&amp;" "&" }}
+                      {{ $content = replace $content "&lt;" "<" }}
+                      {{ $content = replace $content "&gt;" ">" }}
+                      {{ $content = replace $content "&quot;" "\"" }}
                       {{ $content = replace $content .Title "" }}
                       {{ $content = replace $content "**" "" }}
                       {{ $content = replace $content "*" "" }}
                       {{ $content = replace $content "_" "" }}
                       {{ $content = replace $content "`" "" }}
                       {{ $content = trim $content " \n\t" }}
-                      {{ $content | truncate 200 }}
+                      {{ if $content }}
+                        {{ $content | truncate 200 }}
+                      {{ else }}
+                        {{ .Summary | truncate 200 }}
+                      {{ end }}
                     </p>
                     
                     <!-- Meta Info -->

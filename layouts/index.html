@@ -298,12 +298,81 @@
         </div>
       </div>
       
-      <!-- View Blogs Button -->
-      <div class="text-center mt-5">
-        <a href="/blogs/" class="btn btn-outline-primary btn-lg px-4 py-3 rounded-pill">
-          <i class="bi bi-journal-text me-2"></i>Read My Blog
-          <i class="bi bi-arrow-right ms-2"></i>
-        </a>
+      <!-- Latest Blog Posts Preview -->
+      <div class="col-12 mt-5">
+        <div class="section-header mb-5 text-center">
+          <h2 class="display-6 fw-bold">
+            <i class="bi bi-journal-text me-2"></i>Latest Blog Posts
+          </h2>
+          <p class="text-muted">Explore my latest thoughts on AI, technology, and innovation</p>
+          <div class="underline mx-auto mt-3" style="width: 60px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 2px;"></div>
+        </div>
+        
+        <!-- Blog Preview Grid -->
+        <div class="row g-4 mb-5">
+          {{ $blogPosts := where (where site.Pages "Section" "blogs") "Kind" "page" }}
+          {{ range first 3 $blogPosts }}
+          <div class="col-lg-4 col-md-6">
+            <div class="blog-preview-card h-100">
+              <a href="{{ .Permalink }}" class="text-decoration-none">
+                <div class="card border-0 shadow-sm h-100 blog-card-hover">
+                  <div class="card-body p-4">
+                    
+                    <!-- Category Badge -->
+                    {{ if .Params.categories }}
+                    <div class="mb-3">
+                      {{ range first 1 .Params.categories }}
+                      <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-medium" style="font-size: 0.75rem;">{{ . }}</span>
+                      {{ end }}
+    </div>
+    {{ end }}
+
+                    <!-- Title -->
+                    <h5 class="card-title fw-bold text-dark mb-3 lh-sm" style="font-size: 1.1rem; line-height: 1.4;">
+                      {{ .Title }}
+                    </h5>
+                    
+                    <!-- Description -->
+                    <p class="card-text text-muted mb-4" style="font-size: 0.9rem; line-height: 1.5;">
+                      {{ .Summary | truncate 120 }}
+                    </p>
+                    
+                    <!-- Meta Info -->
+                    <div class="blog-meta d-flex justify-content-between align-items-center">
+                      <small class="text-muted d-flex align-items-center">
+                        <i class="bi bi-calendar3 me-1" style="font-size: 0.8rem;"></i>
+                        <span style="font-size: 0.8rem;">{{ .Date.Format "Jan 2, 2006" }}</span>
+                      </small>
+                      <small class="text-muted d-flex align-items-center">
+                        <i class="bi bi-clock me-1" style="font-size: 0.8rem;"></i>
+                        <span style="font-size: 0.8rem;">{{ math.Round (div (countwords .Content) 200.0) }}min</span>
+                      </small>
+                    </div>
+                    
+                    <!-- Tags -->
+                    {{ if .Params.tags }}
+                    <div class="mt-3">
+                      {{ range first 2 .Params.tags }}
+                      <span class="badge bg-light text-dark me-1" style="font-size: 0.7rem; padding: 0.25rem 0.5rem;">{{ . }}</span>
+                      {{ end }}
+                    </div>
+    {{ end }}
+
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          {{ end }}
+  </div>
+
+        <!-- View All Blogs Button -->
+        <div class="text-center">
+          <a href="/blogs/" class="btn btn-outline-primary btn-lg px-4 py-3 rounded-pill">
+            <i class="bi bi-journal-text me-2"></i>View All Blog Posts
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -681,6 +750,69 @@ body.small-cards-active .small-blog-card {
   
   .experience-card {
     padding: 1rem;
+  }
+}
+
+/* Blog Preview Cards Styles */
+.blog-preview-card {
+  transition: all 0.3s ease;
+}
+
+.blog-card-hover {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.blog-card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15) !important;
+}
+
+.blog-preview-card a:hover {
+  text-decoration: none;
+}
+
+.blog-preview-card .card-title {
+  transition: color 0.2s ease;
+}
+
+.blog-preview-card:hover .card-title {
+  color: #667eea !important;
+}
+
+.blog-meta {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1rem;
+  margin-top: auto;
+}
+
+/* Responsive Blog Cards */
+@media (max-width: 768px) {
+  .blog-preview-card .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  .blog-preview-card .card-title {
+    font-size: 1rem !important;
+  }
+  
+  .blog-preview-card .card-text {
+    font-size: 0.85rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-preview-card .card-body {
+    padding: 1rem !important;
+  }
+  
+  .blog-preview-card .card-title {
+    font-size: 0.95rem !important;
+  }
+  
+  .blog-preview-card .card-text {
+    font-size: 0.8rem !important;
   }
 }
 </style>

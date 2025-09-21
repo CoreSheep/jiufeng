@@ -316,47 +316,47 @@
             <div class="blog-preview-card h-100">
               <a href="{{ .Permalink }}" class="text-decoration-none">
                 <div class="card border-0 shadow-sm h-100 blog-card-hover">
-                  <div class="card-body p-4">
+                  <div class="card-body p-3">
                     
                     <!-- Category Badge -->
                     {{ if .Params.categories }}
-                    <div class="mb-3">
+                    <div class="mb-2">
                       {{ range first 1 .Params.categories }}
-                      <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-medium" style="font-size: 0.75rem;">{{ . }}</span>
+                      <span class="badge bg-primary bg-opacity-10 text-primary px-2 py-1 rounded-pill fw-medium" style="font-size: 0.7rem;">{{ . }}</span>
                       {{ end }}
-    </div>
-    {{ end }}
+                    </div>
+                    {{ end }}
 
                     <!-- Title -->
-                    <h5 class="card-title fw-bold text-dark mb-3 lh-sm" style="font-size: 1.1rem; line-height: 1.4;">
+                    <h5 class="card-title fw-bold text-dark mb-3 lh-sm" style="font-size: 1rem; line-height: 1.3;">
                       {{ .Title }}
                     </h5>
                     
                     <!-- Description -->
-                    <p class="card-text text-muted mb-4" style="font-size: 0.9rem; line-height: 1.5;">
-                      {{ .Summary | truncate 120 }}
+                    <p class="card-text text-muted mb-4" style="font-size: 0.85rem; line-height: 1.4;">
+                      {{ .Summary | truncate 100 }}
                     </p>
                     
                     <!-- Meta Info -->
                     <div class="blog-meta d-flex justify-content-between align-items-center">
                       <small class="text-muted d-flex align-items-center">
-                        <i class="bi bi-calendar3 me-1" style="font-size: 0.8rem;"></i>
-                        <span style="font-size: 0.8rem;">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        <i class="bi bi-calendar3 me-1" style="font-size: 0.75rem;"></i>
+                        <span style="font-size: 0.75rem;">{{ .Date.Format "Jan 2, 2006" }}</span>
                       </small>
                       <small class="text-muted d-flex align-items-center">
-                        <i class="bi bi-clock me-1" style="font-size: 0.8rem;"></i>
-                        <span style="font-size: 0.8rem;">{{ math.Round (div (countwords .Content) 200.0) }}min</span>
+                        <i class="bi bi-clock me-1" style="font-size: 0.75rem;"></i>
+                        <span style="font-size: 0.75rem;">{{ math.Round (div (countwords .Content) 200.0) }}min</span>
                       </small>
                     </div>
                     
                     <!-- Tags -->
                     {{ if .Params.tags }}
-                    <div class="mt-3">
+                    <div class="mt-2">
                       {{ range first 2 .Params.tags }}
-                      <span class="badge bg-light text-dark me-1" style="font-size: 0.7rem; padding: 0.25rem 0.5rem;">{{ . }}</span>
+                      <span class="badge bg-light text-dark me-1" style="font-size: 0.65rem; padding: 0.2rem 0.4rem;">{{ . }}</span>
                       {{ end }}
                     </div>
-    {{ end }}
+                    {{ end }}
 
                   </div>
                 </div>
@@ -790,15 +790,26 @@ body.small-cards-active .small-blog-card {
 /* Responsive Blog Cards */
 @media (max-width: 768px) {
   .blog-preview-card .card-body {
-    padding: 1.5rem !important;
+    padding: 1.25rem !important;
   }
   
   .blog-preview-card .card-title {
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.25 !important;
   }
   
   .blog-preview-card .card-text {
-    font-size: 0.85rem !important;
+    font-size: 0.8rem !important;
+    line-height: 1.35 !important;
+  }
+  
+  .blog-preview-card .badge {
+    font-size: 0.65rem !important;
+    padding: 0.15rem 0.35rem !important;
+  }
+  
+  .blog-preview-card .blog-meta small {
+    font-size: 0.7rem !important;
   }
 }
 
@@ -808,11 +819,22 @@ body.small-cards-active .small-blog-card {
   }
   
   .blog-preview-card .card-title {
-    font-size: 0.95rem !important;
+    font-size: 0.9rem !important;
+    line-height: 1.2 !important;
   }
   
   .blog-preview-card .card-text {
-    font-size: 0.8rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  .blog-preview-card .badge {
+    font-size: 0.6rem !important;
+    padding: 0.1rem 0.3rem !important;
+  }
+  
+  .blog-preview-card .blog-meta small {
+    font-size: 0.65rem !important;
   }
 }
 </style>

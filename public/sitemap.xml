@@ -3,7 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jiufengblog.firebaseapp.com/categories/ai-research/</loc>
-    <lastmod>2025-09-17T16:00:00+01:00</lastmod>
+    <lastmod>2025-09-21T09:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.firebaseapp.com/tags/ai-breakthrough/</loc>
+    <lastmod>2025-09-21T09:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.firebaseapp.com/categories/</loc>
+    <lastmod>2025-09-21T09:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.firebaseapp.com/tags/deepseek/</loc>
+    <lastmod>2025-09-21T09:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.firebaseapp.com/blogs/2025/sep/deepseek-r1-nature-breakthrough/</loc>
+    <lastmod>2025-09-21T09:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.firebaseapp.com/</loc>
+    <lastmod>2025-09-21T09:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.firebaseapp.com/tags/llm/</loc>
+    <lastmod>2025-09-21T09:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.firebaseapp.com/tags/nature/</loc>
+    <lastmod>2025-09-21T09:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.firebaseapp.com/tags/reasoning/</loc>
+    <lastmod>2025-09-21T09:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.firebaseapp.com/tags/reinforcement-learning/</loc>
+    <lastmod>2025-09-21T09:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://jiufengblog.firebaseapp.com/tags/</loc>
+    <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -13,11 +63,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://jiufengblog.firebaseapp.com/tags/anthropic/</loc>
-    <lastmod>2025-09-17T16:00:00+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/categories/</loc>
     <lastmod>2025-09-17T16:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -32,17 +77,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/</loc>
-    <lastmod>2025-09-17T16:00:00+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://jiufengblog.firebaseapp.com/tags/openai/</loc>
-    <lastmod>2025-09-17T16:00:00+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/tags/</loc>
     <lastmod>2025-09-17T16:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -83,11 +118,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://jiufengblog.firebaseapp.com/tags/determinism/</loc>
-    <lastmod>2025-09-15T10:00:00+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://jiufengblog.firebaseapp.com/tags/llm/</loc>
     <lastmod>2025-09-15T10:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

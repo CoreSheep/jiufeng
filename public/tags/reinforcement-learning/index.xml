@@ -1,42 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Feng</title>
-    <link>https://jiufengblog.firebaseapp.com/blogs/</link>
-    <description>Recent content in Blogs on Feng</description>
+    <title>Reinforcement-Learning on Feng</title>
+    <link>https://jiufengblog.firebaseapp.com/tags/reinforcement-learning/</link>
+    <description>Recent content in Reinforcement-Learning on Feng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Sun, 21 Sep 2025 09:00:00 +0100</lastBuildDate>
-    <atom:link href="https://jiufengblog.firebaseapp.com/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.firebaseapp.com/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DeepSeek-R1 Nature封面突破：纯强化学习重新定义大模型推理范式</title>
       <link>https://jiufengblog.firebaseapp.com/blogs/2025/sep/deepseek-r1-nature-breakthrough/</link>
       <pubDate>Sun, 21 Sep 2025 09:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
       <guid>https://jiufengblog.firebaseapp.com/blogs/2025/sep/deepseek-r1-nature-breakthrough/</guid>
       <description>&lt;h1 id=&#34;deepseek-r1-nature封面突破纯强化学习重新定义大模型推理范式&#34;&gt;DeepSeek-R1 Nature封面突破：纯强化学习重新定义大模型推理范式&lt;/h1&gt;&#xA;&lt;p&gt;2025年9月21日，一篇来自中国DeepSeek团队的研究论文登上了《Nature》杂志封面，标志着人工智能领域的重大突破。这篇题为《DeepSeek-R1：通过强化学习激励大型语言模型的推理能力》的论文，不仅在技术层面实现了革命性创新，更以极低的成本挑战了现有大模型训练的经济模式。&lt;/p&gt;&#xA;&lt;h2 id=&#34;-核心技术创新纯强化学习范式&#34;&gt;🎯 核心技术创新：纯强化学习范式&lt;/h2&gt;&#xA;&lt;h3 id=&#34;突破传统监督微调局限&#34;&gt;突破传统监督微调局限&lt;/h3&gt;&#xA;&lt;p&gt;传统的大语言模型训练高度依赖人工标注的推理过程，这不仅成本高昂，还限制了模型的自主推理能力发展。DeepSeek-R1采用了**纯强化学习（Pure Reinforcement Learning）**方法，完全摒弃了监督微调阶段：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;# 传统训练范式&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Traditional_Training &lt;span style=&#34;font-weight:bold&#34;&gt;=&lt;/span&gt; Pretraining &lt;span style=&#34;font-weight:bold&#34;&gt;+&lt;/span&gt; Supervised_Fine_Tuning &lt;span style=&#34;font-weight:bold&#34;&gt;+&lt;/span&gt; RLHF&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#998;font-style:italic&#34;&gt;# DeepSeek-R1创新范式  &lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DeepSeek_R1 &lt;span style=&#34;font-weight:bold&#34;&gt;=&lt;/span&gt; Pretraining &lt;span style=&#34;font-weight:bold&#34;&gt;+&lt;/span&gt; Pure_Reinforcement_Learning&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这种方法仅通过&lt;strong&gt;最终答案的正确性&lt;/strong&gt;给予奖励信号，让模型在没有人工指导的情况下，自主探索和发现最优的推理路径。&lt;/p&gt;&#xA;&lt;h3 id=&#34;思维链自我演化机制&#34;&gt;思维链自我演化机制&lt;/h3&gt;&#xA;&lt;p&gt;R1模型集成了**Chain-of-Thought（思维链）**技术，使模型能够：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;自主分解复杂问题&lt;/strong&gt;：将复杂任务拆解为多个子步骤&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;推理过程回溯&lt;/strong&gt;：在推理过程中自我修正错误路径&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;幻觉问题缓解&lt;/strong&gt;：通过多步骤验证减少输出中的错误信息&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-架构设计突破&#34;&gt;🏗️ 架构设计突破&lt;/h2&gt;&#xA;&lt;h3 id=&#34;混合专家架构moe优化&#34;&gt;混合专家架构（MoE）优化&lt;/h3&gt;&#xA;&lt;p&gt;DeepSeek-R1采用了&lt;strong&gt;混合专家架构&lt;/strong&gt;，实现了计算资源的精准配置：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Great AI Divide: ChatGPT vs Claude Usage Patterns Reveal Distinct User Preferences</title>
-      <link>https://jiufengblog.firebaseapp.com/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/</link>
-      <pubDate>Wed, 17 Sep 2025 16:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.firebaseapp.com/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/</guid>
-      <description>&lt;h1 id=&#34;the-great-ai-divide-chatgpt-vs-claude-usage-patterns-reveal-distinct-user-preferences&#34;&gt;The Great AI Divide: ChatGPT vs Claude Usage Patterns Reveal Distinct User Preferences&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In an unprecedented move, both OpenAI and Anthropic have released comprehensive usage studies of their flagship AI assistants, ChatGPT and Claude. These &lt;a href=&#34;https://fortune.com/2025/09/15/openai-chatgpt-claude-anthropic-work-personal-use-new-data/&#34;&gt;dueling analyses&lt;/a&gt; provide fascinating insights into how different AI models are carving out distinct niches in the rapidly evolving landscape of artificial intelligence.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How People Are Using ChatGPT: Insights from OpenAI&#39;s Latest Usage Analysis</title>
-      <link>https://jiufengblog.firebaseapp.com/blogs/2025/sep/how-people-use-chatgpt/</link>
-      <pubDate>Tue, 16 Sep 2025 14:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.firebaseapp.com/blogs/2025/sep/how-people-use-chatgpt/</guid>
-      <description>&lt;h1 id=&#34;how-people-are-using-chatgpt-insights-from-openais-latest-usage-analysis&#34;&gt;How People Are Using ChatGPT: Insights from OpenAI&amp;rsquo;s Latest Usage Analysis&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Understanding how people actually use artificial intelligence tools provides crucial insights into the technology&amp;rsquo;s real-world impact and future trajectory. OpenAI recently released a comprehensive analysis of ChatGPT usage patterns, examining millions of conversations to understand how people interact with their flagship AI assistant.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility</title>
-      <link>https://jiufengblog.firebaseapp.com/blogs/2025/sep/defeating-llm-nondeterminism/</link>
-      <pubDate>Mon, 15 Sep 2025 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.firebaseapp.com/blogs/2025/sep/defeating-llm-nondeterminism/</guid>
-      <description>&lt;h1 id=&#34;defeating-nondeterminism-in-llm-inference-a-breakthrough-in-deep-learning-system-reproducibility&#34;&gt;Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Reproducibility&lt;/strong&gt; stands as one of the fundamental pillars of scientific research. However, when dealing with large language models (LLMs), achieving reproducible results has proven extraordinarily challenging. Even when we set the temperature parameter to 0 (greedy sampling), which should theoretically produce deterministic results, LLM inference still exhibits nondeterministic behavior.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

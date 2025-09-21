@@ -1055,7 +1055,12 @@
 
  
 .blog-post-content h1:first-of-type {
-  display: none;
+  display: none !important;
+}
+
+ 
+article.blog-post-content > h1:first-child {
+  display: none !important;
 }
 
 .blog-post-content h1 {

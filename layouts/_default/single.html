@@ -313,7 +313,12 @@
 
 /* Hide the first H1 in content since we show it in the hero section */
 .blog-post-content h1:first-of-type {
-  display: none;
+  display: none !important;
+}
+
+/* Alternative selector to ensure the first H1 is hidden */
+article.blog-post-content > h1:first-child {
+  display: none !important;
 }
 
 .blog-post-content h1 {

@@ -336,7 +336,7 @@
                     <p class="card-text text-muted mb-4" style="font-size: 0.85rem; line-height: 1.4;">
                       {{ $content := .Content | plainify }}
                       {{ $content = replace $content .Title "" }}
-                      {{ $content | truncate 35 }}
+                      {{ $content | truncate 100 }}
                     </p>
                     
                     <!-- Meta Info -->

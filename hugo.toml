@@ -1,4 +1,4 @@
-baseURL = "https://jiufengblog.firebaseapp.com/"
+baseURL = "https://jiufengblog.web.app/"
 DefaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 languageCode = "en-us"
@@ -42,13 +42,13 @@ hideAuthor = false
 description="Your can add your website description here."
 previewCardImagePlacement = "bottom"
 since = "2025"
-website = "https://jiufengblog.firebaseapp.com/"
+website = "https://jiufengblog.web.app/"
 
 
 
 [Params.Author]
   name = "Jiufeng Li"
-  website = "https://jiufengblog.firebaseapp.com/"
+  website = "https://jiufengblog.web.app/"
   authorInfo = "Build yourself and believe in yourself."
   authorPostImage = "/img/author/author_bottom.jpg"
     email = "lijiufeng97@gmail.com"

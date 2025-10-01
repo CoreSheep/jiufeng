@@ -72,7 +72,7 @@ Graduated from a prestigious 211 & 985 project university (ESI Rank Top 1‰). M
 - **Neural Architecture Optimization**: Novel quantization strategies, efficient inference, and hardware-aware model design
 - **Enterprise LLMOps**: Scalable deployment patterns, fine-tuning strategies, and multimodal AI integration for business solutions
 - **AI-Driven Innovation**: Transforming traditional industries through cutting-edge ML applications and intelligent automation
-- **Community Impact**: Contributing to open-source AI tools, mentoring emerging researchers, and advancing AI education
+- **Community Impact**: Contributing to open-source AI tools and advancing AI research
 
 ### Hobbies
 - **Film Enthusiast**: Deeply passionate about cinema, especially works by auteur directors like Kar Wai Wong, Edward Yang, and Alfred Hitchcock

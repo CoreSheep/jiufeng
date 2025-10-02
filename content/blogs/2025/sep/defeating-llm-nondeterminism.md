@@ -5,6 +5,7 @@ draft: false
 tags: ["machine-learning", "llm", "determinism", "reproducibility", "research"]
 categories: ["AI Research"]
 description: "An in-depth analysis of how the Thinking Machines team solved the nondeterminism problem in large language model inference, achieving truly reproducible reasoning."
+image: "/img/posts/defeating-llm-nondeterminism.jpg"
 ---
 
 # Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility
@@ -17,7 +18,7 @@ Recently, the Thinking Machines team published [groundbreaking research](https:/
 
 ## The Nature of the Problem: Floating-Point Non-Associativity
 
-### The "Original Sin" of Floating-Point Operations
+## The "Original Sin" of Floating-Point Operations
 
 To understand the root of nondeterminism, we must first grasp the concept of **floating-point non-associativity**. In floating-point arithmetic:
 
@@ -31,7 +32,7 @@ This seemingly simple mathematical property is actually the fundamental cause of
 0.1 + (1e20 - 1e20)  # Result: 0.1
 ```
 
-### Dynamic Precision and Information Loss
+## Dynamic Precision and Information Loss
 
 Floating-point systems balance numerical range and precision through "dynamic precision." When adding two floating-point numbers with different exponents, the system must discard some precision information:
 
@@ -42,7 +43,7 @@ This means that **every time floating-point numbers are added in different order
 
 ## Limitations of Traditional Explanations
 
-### Insufficiency of the "Concurrency + Floating-Point" Hypothesis
+## Insufficiency of the "Concurrency + Floating-Point" Hypothesis
 
 For a long time, the academic community has generally attributed the nondeterminism in LLM inference to the "concurrency + floating-point" hypothesis:
 
@@ -55,7 +56,7 @@ However, this research reveals the limitations of this hypothesis:
 
 ## The Real Culprit: Batch Non-Invariance
 
-### Core Discovery
+## Core Discovery
 
 The research team discovered that the true root of LLM inference nondeterminism is **batch non-invariance**. Specifically manifested as:
 
@@ -63,7 +64,7 @@ The research team discovered that the true root of LLM inference nondeterminism 
 - These differences accumulate and amplify during the inference process
 - Ultimately leading to completely different output sequences
 
-### Problems with Chunked Reduction Strategies
+## Problems with Chunked Reduction Strategies
 
 In attention mechanism calculations, when query length is small (such as during the decoding phase), chunked reduction strategies are needed to fully utilize GPU parallelism. The problem lies in:
 
@@ -81,7 +82,7 @@ This dynamic chunking strategy breaks batch invariance because:
 
 ## Solution: Batch-Invariant Kernels
 
-### Fixed-Size Chunking Strategy
+## Fixed-Size Chunking Strategy
 
 The core solution proposed by the research team is to adopt a **fixed-size chunking strategy**:
 
@@ -97,7 +98,7 @@ Advantages of this strategy:
 - **Reproducibility**: Same input always produces same output
 - **Performance preservation**: Still able to fully utilize GPU parallelism
 
-### Implementation Details
+## Implementation Details
 
 The team achieved deterministic inference through the following technologies:
 
@@ -107,7 +108,7 @@ The team achieved deterministic inference through the following technologies:
 
 ## Experimental Results and Verification
 
-### Nondeterminism Level Assessment
+## Nondeterminism Level Assessment
 
 Testing with the Qwen/Qwen3-235B model:
 - **Traditional method**: 1000 identical prompts generated 80 different results
@@ -115,7 +116,7 @@ Testing with the Qwen/Qwen3-235B model:
 
 Notably, even with the nondeterministic method, the first 102 tokens were completely identical, with differences beginning to appear from the 103rd token.
 
-### Performance Impact
+## Performance Impact
 
 | Configuration | Time (seconds) |
 |---------------|----------------|
@@ -125,7 +126,7 @@ Notably, even with the nondeterministic method, the first 102 tokens were comple
 
 While deterministic inference incurs some performance overhead, it remains within acceptable ranges.
 
-### Breakthrough in Reinforcement Learning
+## Breakthrough in Reinforcement Learning
 
 More importantly, this research solves a critical problem in reinforcement learning:
 
@@ -135,14 +136,14 @@ More importantly, this research solves a critical problem in reinforcement learn
 
 ## Technical Implementation and Open Source Contributions
 
-### Open Source Resources
+## Open Source Resources
 
 The research team provided complete implementations:
 
 - **Batch-invariant operations library**: [thinking-machines-lab/batch-invariant-ops](https://github.com/thinking-machines-lab/batch-invariant-ops)
 - **vLLM deterministic mode examples**: Directly runnable code demonstrations
 
-### Core Code Structure
+## Core Code Structure
 
 ```python
 # Core idea of batch-invariant kernels
@@ -158,7 +159,7 @@ def batch_invariant_reduction(data, reduction_dim):
 
 ## Significance for AI Research
 
-### Enhancement of Scientific Rigor
+## Enhancement of Scientific Rigor
 
 The value of this research lies not only in technical breakthroughs but also in its contribution to the scientific rigor of AI research:
 
@@ -166,7 +167,7 @@ The value of this research lies not only in technical breakthroughs but also in 
 2. **Debugging capability**: Ability to precisely locate and fix numerical issues
 3. **System understanding**: Deep understanding of the complexity of modern GPU computing systems
 
-### Practical Application Value
+## Practical Application Value
 
 - **Model deployment**: Ensuring consistent behavior in production environments
 - **A/B testing**: Eliminating the impact of randomness on experimental results
@@ -176,13 +177,13 @@ The value of this research lies not only in technical breakthroughs but also in 
 
 The research by the Thinking Machines team reveals the true root of nondeterminism in LLM inference and provides practical solutions. This work not only solves technical problems but more importantly enhances the scientific rigor of the entire AI research field.
 
-### Key Insights
+## Key Insights
 
 1. **Don't accept "this is normal"**: When facing nondeterminism issues, we should dig deep into root causes
 2. **Importance of systems thinking**: Understanding interaction effects in multi-layered abstract systems
 3. **Integration of engineering and science**: Validating scientific hypotheses through engineering practice
 
-### Future Directions
+## Future Directions
 
 - **Performance optimization**: Further optimizing the performance of deterministic kernels
 - **Broader applicability**: Extending methods to more model architectures

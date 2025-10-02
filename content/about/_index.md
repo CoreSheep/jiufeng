@@ -10,9 +10,7 @@ I'm **Jiufeng** (pronounced as /jo phone/) from China, you can also call me **FE
 
 I have recently completed my master's degree in Data & Computer Science at [Heidelberg University](https://www.uni-heidelberg.de/en) and successfully finished my Data Scientist internship and working student position at [Mercedes-Benz](https://www.mercedes-benz.com/en/). I'm fascinated by data science, machine learning, and AI, especially the advancements in Generative AI and Large Language Models. I'm also diving into the startup world with a small AI-focused team, aiming to create products that are truly valuable to people.
 
-**AI/ML Engineer & Data Scientist** with 3+ years across academic research and production systems. Proven track record in vehicle recommender systems (Mercedes-Benz Group), NLP/RAG (Uni Heidelberg & NLP Laboratory), computer vision, and knowledge graphs — delivering low-latency inference with mixed-precision quantization and GPU-accelerated training, backed by rigorous offline and online evaluation.
-
-**Published Research & IP**: M.Sc. thesis on mixed-precision quantization; B.Sc. thesis on multimodal knowledge graphs; co-inventor of a granted China invention patent. Active contributor to Mercedes-Benz Data Science & AI community, advancing enterprise AI solutions and mentoring fellow researchers in neural network optimization and production ML systems.
+**AI/ML Engineer & Data Scientist** with 3+ years across academic research and production systems. Proven track record in vehicle recommender systems (Mercedes-Benz Group), NLP/RAG (Uni Heidelberg & NLP Laboratory), computer vision, and knowledge graphs — delivering low-latency inference with mixed-precision quantization and GPU-accelerated training.
 
 Outside of tech, I'm passionate about art, music, and film. I love watching films, and I have many beloved movie directors like [Kar Wai Wong](https://en.wikipedia.org/wiki/Wong_Kar-wai), [Edward Yang](https://en.wikipedia.org/wiki/Edward_Yang), [Alfred Hitchcock](https://en.wikipedia.org/wiki/Alfred_Hitchcock), [Hirokazu Kore-eda](https://en.wikipedia.org/wiki/Hirokazu_Kore-eda), [Andrei Tarkovsky](https://en.wikipedia.org/wiki/Andrei_Tarkovsky) and many others. Music is also close to my heart; I enjoy everything from classical to jazz, hip-hop, and rock & roll. [Frédéric Chopin](https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin) and [Johann Sebastian Bach](https://de.wikipedia.org/wiki/Johann_Sebastian_Bach) are two of my all-time favorites, and their music has been a constant companion in my life.
 
@@ -95,4 +93,4 @@ Graduated from a prestigious 211 & 985 project university (ESI Rank Top 1‰). M
 
 ---
 
-*Always excited to connect with fellow researchers, entrepreneurs, and anyone passionate about AI, technology, or life in general. Feel free to reach out!* :D
+*Always excited to connect with researchers, entrepreneurs, and anyone passionate about AI, technology, or life in general. Feel free to reach out!* :D

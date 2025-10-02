@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,14 +15,14 @@
     "@type": "WebSite",
     "name": "Feng",
     
-    "url": "https:\/\/jiufengblog.web.app\/"
+    "url": "http:\/\/localhost:1313\/"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https:\/\/jiufengblog.web.app\/"
+  "url": "http:\/\/localhost:1313\/"
   
   
   
@@ -31,17 +31,21 @@
 </script>
 
 <meta property="og:title" content="Categories" />
-<meta property="og:url" content="https://jiufengblog.web.app/categories/" />
+<meta property="og:url" content="http://localhost:1313/categories/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Feng" />
-<link rel="apple-touch-icon" sizes="180x180" href=" https://jiufengblog.web.app/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://jiufengblog.web.app/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://jiufengblog.web.app/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href=" http://localhost:1313/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon/favicon-16x16.png">
 
 
 <meta name="generator" content="Hugo 0.136.5">
-<link rel="alternate" href="https://jiufengblog.web.app/index.xml" type="application/rss+xml" title="Feng">
-<script src="https://jiufengblog.web.app/js/dark-mode.js"></script><script src="https://jiufengblog.web.app/vendor/lunr/lunr.min.js"></script><script src="https://jiufengblog.web.app/js/lunr-search.js" data-index="/search.json"></script><link rel="stylesheet" href="/style.min.css">
+<link rel="alternate" href="http://localhost:1313/index.xml" type="application/rss+xml" title="Feng">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="http://localhost:1313/js/dark-mode.js"></script><script src="http://localhost:1313/vendor/lunr/lunr.min.js"></script><script src="http://localhost:1313/js/lunr-search.js" data-index="/search.json"></script><link rel="stylesheet" href="/style.min.css">
 
 
 
@@ -59,7 +63,7 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
         <div class="container">
 
-          <a class="navbar-brand fw-bold" href="https://jiufengblog.web.app/">Feng</a>
+          <a class="navbar-brand fw-bold" href="http://localhost:1313/">Feng</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -124,7 +128,6 @@
               
               <li class="nav-item search-item">
                 <form id="search" class="search" role="search">
-                  <label for="search-input" class="bi bi-search search-icon"></label>
                   <input type="search" id="search-input" class="search-input">
                 </form>
               </li>
@@ -168,6 +171,38 @@
     </div>
   </div>
 </div>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      
+      const href = this.getAttribute('href');
+      if (href && !href.startsWith('http') && !href.startsWith('#')) {
+        
+        navLinks.forEach(function(navLink) {
+          navLink.classList.add('underline-hidden');
+        });
+      }
+    });
+  });
+  
+  
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) {
+      
+      navLinks.forEach(function(navLink) {
+        navLink.classList.remove('underline-hidden');
+      });
+    }
+  });
+});
+</script>
     
 
 
@@ -233,16 +268,16 @@
               </h2>
               <div id="collapseai research" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  <a href="https://jiufengblog.web.app//categories/ai-research/" class="post-title list-group-item view-all">View all</a>
+                  <a href="http://localhost:1313//categories/ai-research/" class="post-title list-group-item view-all">View all</a>
                   <div class="list-group">
                     
-                    <a href="https://jiufengblog.web.app/blogs/2025/sep/deepseek-r1-nature-breakthrough/" class="list-group-item">DeepSeek-R1 Makes Nature Cover: How Pure Reinforcement Learning Revolutionizes LLM Reasoning</a>
+                    <a href="http://localhost:1313/blogs/2025/sep/deepseek-r1-nature-breakthrough/" class="list-group-item">DeepSeek-R1 Makes Nature Cover: How Pure Reinforcement Learning Revolutionizes LLM Reasoning</a>
                     
-                    <a href="https://jiufengblog.web.app/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/" class="list-group-item">The Great AI Divide: ChatGPT vs Claude Usage Patterns Reveal Distinct User Preferences</a>
+                    <a href="http://localhost:1313/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/" class="list-group-item">The Great AI Divide: ChatGPT vs Claude Usage Patterns Reveal Distinct User Preferences</a>
                     
-                    <a href="https://jiufengblog.web.app/blogs/2025/sep/how-people-use-chatgpt/" class="list-group-item">How People Are Using ChatGPT: Insights from OpenAI&#39;s Latest Usage Analysis</a>
+                    <a href="http://localhost:1313/blogs/2025/sep/how-people-use-chatgpt/" class="list-group-item">How People Are Really Using ChatGPT: Deep Insights from OpenAI&#39;s Latest Usage Analysis</a>
                     
-                    <a href="https://jiufengblog.web.app/blogs/2025/sep/defeating-llm-nondeterminism/" class="list-group-item">Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility</a>
+                    <a href="http://localhost:1313/blogs/2025/sep/defeating-llm-nondeterminism/" class="list-group-item">Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility</a>
                     
                   </div>
                 </div>
@@ -285,7 +320,7 @@
 
           
           &nbsp;&bull;&nbsp;
-          <a href="https://jiufengblog.web.app/">Feng</a>
+          <a href="http://localhost:1313/">Feng</a>
           
         </p>
         
@@ -296,8 +331,8 @@
       </div>
     </div>
   </div>
-</footer><script src="https://jiufengblog.web.app/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="https://jiufengblog.web.app/js/highlight.min.js"></script>
+</footer><script src="http://localhost:1313/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="http://localhost:1313/js/highlight.min.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> $(document).ready(function () { $("pre.chroma").css("padding", "0"); }); </script>
 

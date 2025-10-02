@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,14 +14,14 @@
     "@type": "WebSite",
     "name": "Feng",
     
-    "url": "https:\/\/jiufengblog.web.app\/"
+    "url": "http:\/\/localhost:1313\/"
 }
 </script><script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "Organization",
   "name": "",
-  "url": "https:\/\/jiufengblog.web.app\/"
+  "url": "http:\/\/localhost:1313\/"
   
   
   
@@ -30,17 +30,21 @@
 </script>
 
 <meta property="og:title" content="Determinism" />
-<meta property="og:url" content="https://jiufengblog.web.app/tags/determinism/" />
+<meta property="og:url" content="http://localhost:1313/tags/determinism/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Feng" />
-<link rel="apple-touch-icon" sizes="180x180" href=" https://jiufengblog.web.app/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://jiufengblog.web.app/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://jiufengblog.web.app/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href=" http://localhost:1313/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon/favicon-16x16.png">
 
 
 <meta name="generator" content="Hugo 0.136.5">
-<link rel="alternate" href="https://jiufengblog.web.app/index.xml" type="application/rss+xml" title="Feng">
-<script src="https://jiufengblog.web.app/js/dark-mode.js"></script><script src="https://jiufengblog.web.app/vendor/lunr/lunr.min.js"></script><script src="https://jiufengblog.web.app/js/lunr-search.js" data-index="/search.json"></script><link rel="stylesheet" href="/style.min.css">
+<link rel="alternate" href="http://localhost:1313/index.xml" type="application/rss+xml" title="Feng">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="http://localhost:1313/js/dark-mode.js"></script><script src="http://localhost:1313/vendor/lunr/lunr.min.js"></script><script src="http://localhost:1313/js/lunr-search.js" data-index="/search.json"></script><link rel="stylesheet" href="/style.min.css">
 
 
 
@@ -58,7 +62,7 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
         <div class="container">
 
-          <a class="navbar-brand fw-bold" href="https://jiufengblog.web.app/">Feng</a>
+          <a class="navbar-brand fw-bold" href="http://localhost:1313/">Feng</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -123,7 +127,6 @@
               
               <li class="nav-item search-item">
                 <form id="search" class="search" role="search">
-                  <label for="search-input" class="bi bi-search search-icon"></label>
                   <input type="search" id="search-input" class="search-input">
                 </form>
               </li>
@@ -167,6 +170,38 @@
     </div>
   </div>
 </div>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      
+      const href = this.getAttribute('href');
+      if (href && !href.startsWith('http') && !href.startsWith('#')) {
+        
+        navLinks.forEach(function(navLink) {
+          navLink.classList.add('underline-hidden');
+        });
+      }
+    });
+  });
+  
+  
+  document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) {
+      
+      navLinks.forEach(function(navLink) {
+        navLink.classList.remove('underline-hidden');
+      });
+    }
+  });
+});
+</script>
     
 
 
@@ -189,11 +224,6 @@
             
 
             <div class="tags-heading">
-              
-              <h1 class="fw-semibold display-5 lh-1 mb-3">
-                #Determinism
-              </h1>
-              
               
 
               
@@ -219,25 +249,46 @@
 
 
     
-<div class="container" role="main">
+
+<div class="tag-hero py-5" style="background: linear-gradient(135deg, #71b084 0%, #d3c4f5 50%, #839788 100%);">
+  <div class="container" style="max-width: 1200px;">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="display-4 fw-bold mb-3" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 300; font-size: 3rem; line-height: 1.1; letter-spacing: -0.02em; color: white; text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+          #Determinism
+        </h1>
+        <p class="lead text-white-50 mb-0" style="font-family: 'Inter', sans-serif; font-size: 1.1rem;">
+          1 post found
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container py-5" role="main" style="max-width: 1200px;">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-12">
       
-      <div class="row">
+      
+      
+      <div class="row g-4">
         
+        <div class="col-lg-6 col-md-6">
           
-<div class="compact-blog-card h-100">
-  <a href="https://jiufengblog.web.app/blogs/2025/sep/defeating-llm-nondeterminism/" class="text-decoration-none">
-    <div class="card compact-card border-0 shadow-sm">
+<div class="tag-blog-card h-100">
+  <a href="http://localhost:1313/blogs/2025/sep/defeating-llm-nondeterminism/" class="text-decoration-none">
+    <div class="card tag-card border-0 shadow-sm h-100">
       <div class="row g-0 h-100">
         
         
         <div class="col-4">
           
-          <div class="card-img-wrapper h-100 d-flex align-items-center justify-content-center" 
-               style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-            <i class="bi bi-journal-text text-white" style="font-size: 1.5rem; opacity: 0.9;"></i>
+          
+          <div class="card-img-wrapper h-100 d-flex align-items-center justify-content-center" style="padding: 0.4rem;">
+            <img src="/img/posts/defeating-llm-nondeterminism.jpg" alt="Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility" class="card-img" style="object-fit: cover; width: 100%; aspect-ratio: 4/3; border-radius: 4px;">
           </div>
+          
         </div>
 
         
@@ -248,27 +299,27 @@
             
             <div class="mb-2">
               
-              <span class="badge bg-primary bg-opacity-10 text-primary" style="font-size: 0.7rem;">AI Research</span>
+              <span class="badge" style="font-size: 0.7rem; background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3);">AI Research</span>
               
             </div>
             
 
             
-            <h6 class="card-title fw-bold mb-2 text-dark lh-sm" 
-                style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 0.95rem;">
+            <h5 class="card-title fw-bold mb-2 lh-sm" 
+                style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 1rem; line-height: 1.3; color: #2d3436;">
               Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility
-            </h6>
+            </h5>
 
             
             <p class="card-text text-muted flex-grow-1 mb-3" 
-               style="font-size: 0.8rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
+               style="font-size: 0.85rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
               
-                An in-depth analysis of how the Thinking Machines team solved the nondeterminism problem in large language model inference, …
+                An in-depth analysis of how the Thinking Machines team solved the nondeterminism problem in large language model …
               
             </p>
 
             
-            <div class="mt-auto pt-3 pb-2">
+            <div class="mt-auto">
               <div class="d-flex align-items-center justify-content-between">
                 <small class="text-muted d-flex align-items-center" style="flex: 1; min-width: 0;">
                   <i class="bi bi-calendar3 me-1" style="font-size: 0.7rem; flex-shrink: 0;"></i>
@@ -289,91 +340,163 @@
 </div>
 
 <style>
-.compact-blog-card {
-  height: 200px !important;
+.tag-blog-card {
+  height: 180px !important;
 }
 
-.compact-card {
-  height: 200px;
+.tag-card {
+  height: 180px;
   transition: all 0.3s ease;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.compact-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important;
+.tag-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(113, 176, 132, 0.15) !important;
 }
 
-.compact-card:hover .card-img {
-  transform: scale(1.1);
-}
-
-.compact-blog-card a:hover {
+.tag-blog-card a:hover {
   text-decoration: none;
 }
 
-.compact-blog-card .card-title {
+.tag-blog-card .card-title {
   transition: color 0.2s ease;
 }
 
-.compact-blog-card:hover .card-title {
-  color: #667eea !important;
+.tag-blog-card:hover .card-title {
+  color: #71b084 !important;
 }
 
 .card-img-wrapper {
   border-radius: 8px 0 0 8px;
+  background: #f8f9fa;
 }
 
+.card-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+ 
 @media (max-width: 768px) {
-  .compact-blog-card {
-    height: 180px !important;
+  .tag-blog-card {
+    height: 160px !important;
   }
   
-  .compact-card {
-    height: 180px;
+  .tag-card {
+    height: 160px;
   }
   
-  .compact-card .card-body {
-    padding: 0.75rem !important;
+  .tag-card .card-body {
+    padding: 0.8rem !important;
   }
   
-  .compact-card .card-title {
-    font-size: 0.85rem !important;
+  .card-img-wrapper {
+    padding: 0.3rem !important;
   }
   
-  .compact-card .card-text {
-    font-size: 0.75rem !important;
+  .tag-card .card-title {
+    font-size: 0.9rem !important;
   }
   
-  .compact-card .meta-date-text {
+  .tag-card .card-text {
+    font-size: 0.8rem !important;
+  }
+  
+  .tag-card .meta-date-text {
     font-size: 0.7rem !important;
   }
   
-  .compact-card .meta-time-text {
+  .tag-card .meta-time-text {
     font-size: 0.7rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .tag-blog-card {
+    height: 150px !important;
+  }
+  
+  .tag-card {
+    height: 150px;
+  }
+  
+  .tag-card .card-body {
+    padding: 0.7rem !important;
+  }
+  
+  .card-img-wrapper {
+    padding: 0.25rem !important;
   }
 }
 </style>
 
+        </div>
         
       </div>
     </div>
   </div>
 </div>
 
-<div class="container">
- <div class="row font-sans">
-   <div class="col-md-12 mt-10">
+
+<div class="container pb-5" style="max-width: 1200px;">
+  <div class="row">
+    <div class="col-12">
       <nav aria-label="Page navigation">
-      <ul class= "pagination justify-content-end">
-      
-      </ul>
+        <ul class="pagination justify-content-center">
+          
+        </ul>
       </nav>
     </div>
   </div>
 </div>
 
+<style>
+ 
+.tag-hero {
+  margin-bottom: 0;
+}
+
+ 
+@media (max-width: 768px) {
+  .tag-hero .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  .container[role="main"] {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  .tag-hero h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .tag-hero .lead {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .tag-hero .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  .container[role="main"] {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  .tag-hero h1 {
+    font-size: 2rem !important;
+  }
+}
+</style>
 
     
 
@@ -404,7 +527,7 @@
 
           
           &nbsp;&bull;&nbsp;
-          <a href="https://jiufengblog.web.app/">Feng</a>
+          <a href="http://localhost:1313/">Feng</a>
           
         </p>
         
@@ -415,8 +538,8 @@
       </div>
     </div>
   </div>
-</footer><script src="https://jiufengblog.web.app/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="https://jiufengblog.web.app/js/highlight.min.js"></script>
+</footer><script src="http://localhost:1313/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="http://localhost:1313/js/highlight.min.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> $(document).ready(function () { $("pre.chroma").css("padding", "0"); }); </script>
 

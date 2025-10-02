@@ -2,6 +2,12 @@
 <div class="small-blog-card">
   <a href="{{ .Permalink }}" class="text-decoration-none">
     <article class="card border-0 shadow-sm">
+      {{ if .Params.image }}
+      <!-- Blog post image -->
+      <div class="card-img-top" style="height: 80px; overflow: hidden;">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-100 h-100" style="object-fit: cover;">
+      </div>
+      {{ end }}
       <div class="card-body p-3 d-flex flex-column">
         
         <!-- Category Badge -->
@@ -51,7 +57,7 @@
 .small-blog-card .card {
   border-radius: 8px;
   transition: all 0.3s ease;
-  height: 180px;
+  height: 220px;
   width: 100%;
   background: #fff;
   overflow: hidden;
@@ -122,7 +128,7 @@
 /* Responsive Design */
 @media (max-width: 991px) {
   .small-blog-card .card {
-    height: 160px;
+    height: 200px;
   }
   
   .small-blog-card .card-title {
@@ -136,7 +142,7 @@
 
 @media (max-width: 768px) {
   .small-blog-card .card {
-    height: 140px;
+    height: 180px;
   }
   
   .small-blog-card .card-body {
@@ -155,7 +161,7 @@
 
 @media (max-width: 576px) {
   .small-blog-card .card {
-    height: 120px;
+    height: 160px;
   }
   
   .small-blog-card .card-body {

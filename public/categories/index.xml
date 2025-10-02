@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Feng</title>
-    <link>https://jiufengblog.web.app/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Feng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Sun, 21 Sep 2025 09:00:00 +0100</lastBuildDate>
-    <atom:link href="https://jiufengblog.web.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Research</title>
-      <link>https://jiufengblog.web.app/categories/ai-research/</link>
+      <link>http://localhost:1313/categories/ai-research/</link>
       <pubDate>Sun, 21 Sep 2025 09:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/categories/ai-research/</guid>
+      <guid>http://localhost:1313/categories/ai-research/</guid>
       <description></description>
     </item>
   </channel>

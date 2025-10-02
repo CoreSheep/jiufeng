@@ -1,25 +1,43 @@
 {{ define "main" }}
 
+
 <!-- About Hero Section -->
-<div class="about-hero py-5 mb-5" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
-  <div class="container">
+<div class="about-hero py-5 mb-5" style="background: linear-gradient(315deg, #d3c4f5 0%, #839788 50%, #71b084 100%); color: white; position: relative; overflow: hidden;">
+  <div class="container" style="position: relative; z-index: 2; max-width: 1200px;">
     <div class="row align-items-center">
       <div class="col-lg-8">
-        <h1 class="display-4 fw-bold mb-3">About Me</h1>
+        <h1 class="mb-3" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 300; font-size: 3.5rem; line-height: 1.1; letter-spacing: -0.02em; color: white; text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">About Me</h1>
         <p class="lead">Get to know more about my journey, interests, and aspirations</p>
       </div>
     </div>
   </div>
 </div>
 
+<style>
+/* About page mobile responsive optimization */
+@media (max-width: 768px) {
+  .about-hero .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+</style>
+
 <!-- About Content -->
-<div class="about-section">
-  <div class="container">
+<div class="about-section py-5">
+  <div class="container" style="max-width: 1200px;">
     <div class="row">
       <!-- Profile Image -->
-      <div class="col-lg-4 mb-5">
+      <div class="col-lg-4 col-md-6 mb-5">
         <div class="sticky-top" style="top: 4rem;">
-          <div class="card shadow-sm border-0">
+          <div class="card shadow-sm" style="transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)'">
             <div class="card-body text-center p-4">
               {{ $image := resources.Get "/img/author/author_profile_pic.jpg" }}
               {{ if $image }}
@@ -27,36 +45,36 @@
                    class="rounded-circle img-fluid shadow mb-3" 
                    style="width: 200px; height: 200px; object-fit: cover;">
               {{ end }}
-              <h3 class="h4 mb-2">Jiufeng Li</h3>
-              <p class="text-muted mb-2">Data Scientist | ML/AI Engineer | M.Sc. Heidelberg University</p>
+              <h3 class="h4 mb-2" style="font-family: 'Inter', sans-serif; font-weight: 600; color: #2d3436;">Jiufeng Li</h3>
+              <p class="text-muted mb-2" style="font-family: 'Inter', sans-serif; font-size: 0.95rem;">Data Scientist | ML/AI Engineer | M.Sc. Heidelberg University</p>
               
               <!-- Location -->
               <div class="mb-3">
-                <span class="text-muted">
-                  <i class="bi bi-geo-alt-fill me-1"></i>Heidelberg, Germany
+                <span class="text-muted" style="font-family: 'Inter', sans-serif; font-size: 0.85rem;">
+                  <i class="bi bi-geo-alt-fill me-1"></i>🏰 Heidelberg, Germany
                 </span>
               </div>
               
               <!-- Hobbies Tags -->
               <div class="mb-4">
-                <h6 class="text-muted mb-2 small">🏷️ Interests & Hobbies</h6>
+                <h6 class="text-muted mb-2" style="font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500;">🏷️ Interests & Hobbies</h6>
                 <div class="d-flex flex-wrap justify-content-center gap-1">
-                  <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-2 py-1 small">
+                  <span class="skill-tag" style="background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3); padding: 0.2rem 0.5rem; border-radius: 10px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">
                     🎬 Movies
                   </span>
-                  <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1 small">
+                  <span class="skill-tag" style="background: rgba(211, 196, 245, 0.1); color: #d3c4f5; border: 1px solid rgba(211, 196, 245, 0.3); padding: 0.2rem 0.5rem; border-radius: 10px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">
                     🎵 Music
                   </span>
-                  <span class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25 px-2 py-1 small">
+                  <span class="skill-tag" style="background: rgba(131, 151, 136, 0.1); color: #839788; border: 1px solid rgba(131, 151, 136, 0.3); padding: 0.2rem 0.5rem; border-radius: 10px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">
                     💪 Fitness
                   </span>
-                  <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25 px-2 py-1 small">
+                  <span class="skill-tag" style="background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3); padding: 0.2rem 0.5rem; border-radius: 10px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">
                     🏊 Swimming
                   </span>
-                  <span class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary border-opacity-25 px-2 py-1 small">
+                  <span class="skill-tag" style="background: rgba(211, 196, 245, 0.1); color: #d3c4f5; border: 1px solid rgba(211, 196, 245, 0.3); padding: 0.2rem 0.5rem; border-radius: 10px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">
                     ✈️ Travel
                   </span>
-                  <span class="badge bg-dark bg-opacity-10 text-dark border border-dark border-opacity-25 px-2 py-1 small">
+                  <span class="skill-tag" style="background: rgba(131, 151, 136, 0.1); color: #839788; border: 1px solid rgba(131, 151, 136, 0.3); padding: 0.2rem 0.5rem; border-radius: 10px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">
                     📚 Reading
                   </span>
                 </div>
@@ -64,13 +82,13 @@
               
               <!-- Social Links -->
               <div class="d-flex justify-content-center gap-2">
-                <a href="https://www.linkedin.com/in/jiufeng-li-520040273/" class="btn btn-outline-primary btn-sm" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/jiufeng-li-520040273/" class="btn btn-outline-secondary btn-sm" title="LinkedIn" style="border-color: rgba(0, 119, 181, 0.3); color: rgba(0, 119, 181, 0.7); transition: color 0.2s ease;" onmouseover="this.style.color='rgba(51, 51, 51, 0.8)'" onmouseout="this.style.color='rgba(0, 119, 181, 0.7)'">
                   <i class="bi bi-linkedin"></i>
                 </a>
-                <a href="https://github.com/CoreSheep" class="btn btn-outline-dark btn-sm" title="GitHub">
+                <a href="https://github.com/CoreSheep" class="btn btn-outline-secondary btn-sm" title="GitHub" style="border-color: rgba(51, 51, 51, 0.3); color: rgba(51, 51, 51, 0.7); transition: color 0.2s ease;" onmouseover="this.style.color='rgba(51, 51, 51, 0.8)'" onmouseout="this.style.color='rgba(51, 51, 51, 0.7)'">
                   <i class="bi bi-github"></i>
                 </a>
-                <a href="https://www.instagram.com/jiufeng.li/" class="btn btn-outline-danger btn-sm" title="Instagram">
+                <a href="https://www.instagram.com/jiufeng.li/" class="btn btn-outline-secondary btn-sm" title="Instagram" style="border-color: rgba(225, 48, 108, 0.3); color: rgba(225, 48, 108, 0.7); transition: color 0.2s ease;" onmouseover="this.style.color='rgba(51, 51, 51, 0.8)'" onmouseout="this.style.color='rgba(225, 48, 108, 0.7)'">
                   <i class="bi bi-instagram"></i>
                 </a>
               </div>
@@ -81,12 +99,78 @@
       </div>
 
       <!-- Content -->
-      <div class="col-lg-8">
+      <div class="col-lg-8 col-md-8">
         <div class="about-content">
           {{ with .Content }}
-          <div class="prose">
+          <div class="prose" style="max-width: 100%; margin: 0; line-height: 1.5; font-size: 0.95rem; text-align: justify;">
             {{ . }}
           </div>
+          <style>
+            /* 统一About页面正文字体大小和标题样式 */
+            .about-section .prose,
+            .about-section .prose p,
+            .about-section .prose li {
+              font-size: 0.95rem !important;
+            }
+            
+            .prose a {
+              color: #71b084;
+              text-decoration: none;
+              font-weight: 500;
+              border-bottom: 1px solid transparent;
+              transition: all 0.2s ease;
+            }
+            .prose a:hover {
+              color: #71b084;
+              border-bottom-color: #71b084;
+            }
+            
+            /* 手机端响应式优化 */
+            @media (max-width: 768px) {
+              .about-section .container {
+                padding-left: 1.5rem !important;
+                padding-right: 1.5rem !important;
+              }
+              
+              .about-section .row {
+                margin-left: 0;
+                margin-right: 0;
+              }
+              
+              .about-section .col-lg-4,
+              .about-section .col-lg-8,
+              .about-section .col-md-6,
+              .about-section .col-md-8 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+              }
+              
+              .about-content .prose {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+              }
+            }
+            
+            @media (max-width: 576px) {
+              .about-section .container {
+                padding-left: 2rem !important;
+                padding-right: 2rem !important;
+              }
+              
+              .about-section .col-lg-4,
+              .about-section .col-lg-8,
+              .about-section .col-md-6,
+              .about-section .col-md-8 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+              }
+              
+              .about-content .prose {
+                padding-left: 1rem;
+                padding-right: 1rem;
+              }
+            }
+          </style>
           {{ end }}
         </div>
       </div>
@@ -96,28 +180,30 @@
 
 <!-- Skills Section -->
 <div class="skills-section py-5" style="background-color: #f8f9fa;">
-  <div class="container">
+  <div class="container" style="max-width: 1200px;">
     <div class="row">
       <div class="col-12 text-center mb-5">
-        <h2 class="display-6 fw-bold">Skills & Expertise</h2>
-        <p class="text-muted">Technologies and areas I'm passionate about</p>
+        <h2 class="display-6" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 300 !important; font-size: 2.5rem; line-height: 1.1; letter-spacing: -0.02em; color: #2d3436; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+          <i class="bi bi-gear-fill me-2"></i>Skills & Expertise
+        </h2>
+        <p class="text-muted" style="font-family: 'Inter', sans-serif; font-size: 0.95rem;">Technologies and areas I'm passionate about</p>
       </div>
     </div>
     
-    <div class="row g-4">
+    <div class="row g-3">
       <!-- Technical Skills -->
       <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
-            <h4>Technical Skills</h4>
-            <div class="mt-3">
-              <span class="badge bg-primary me-2 mb-2">Python</span>
-              <span class="badge bg-success me-2 mb-2">Machine Learning</span>
-              <span class="badge bg-info me-2 mb-2">Deep Learning</span>
-              <span class="badge bg-warning text-dark me-2 mb-2">Data Science</span>
-              <span class="badge bg-secondary me-2 mb-2">TensorFlow</span>
-              <span class="badge bg-dark me-2 mb-2">PyTorch</span>
+        <div class="card h-100 shadow-sm" style="transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)'">
+          <div class="card-body text-center p-3">
+            <i class="bi bi-code-slash text-primary mb-2" style="font-size: 1.5rem;"></i>
+            <h5 class="mb-3" style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; color: #2d3436;">Technical Skills</h5>
+            <div class="d-flex flex-wrap justify-content-center gap-1">
+              <span class="skill-tag" style="background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Python</span>
+              <span class="skill-tag" style="background: rgba(211, 196, 245, 0.1); color: #d3c4f5; border: 1px solid rgba(211, 196, 245, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Machine Learning</span>
+              <span class="skill-tag" style="background: rgba(131, 151, 136, 0.1); color: #839788; border: 1px solid rgba(131, 151, 136, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Deep Learning</span>
+              <span class="skill-tag" style="background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Data Science</span>
+              <span class="skill-tag" style="background: rgba(211, 196, 245, 0.1); color: #d3c4f5; border: 1px solid rgba(211, 196, 245, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">TensorFlow</span>
+              <span class="skill-tag" style="background: rgba(131, 151, 136, 0.1); color: #839788; border: 1px solid rgba(131, 151, 136, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">PyTorch</span>
             </div>
           </div>
         </div>
@@ -125,15 +211,15 @@
 
       <!-- Research Areas -->
       <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <i class="bi bi-lightbulb display-4 text-success mb-3"></i>
-            <h4>Research Areas</h4>
-            <div class="mt-3">
-              <span class="badge bg-primary me-2 mb-2">LLMs</span>
-              <span class="badge bg-success me-2 mb-2">Generative AI</span>
-              <span class="badge bg-info me-2 mb-2">Recommender Systems</span>
-              <span class="badge bg-warning text-dark me-2 mb-2">Neural Networks</span>
+        <div class="card h-100 shadow-sm" style="transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)'">
+          <div class="card-body text-center p-3">
+            <i class="bi bi-lightbulb text-success mb-2" style="font-size: 1.5rem;"></i>
+            <h5 class="mb-3" style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; color: #2d3436;">Research Areas</h5>
+            <div class="d-flex flex-wrap justify-content-center gap-1">
+              <span class="skill-tag" style="background: rgba(131, 151, 136, 0.1); color: #839788; border: 1px solid rgba(131, 151, 136, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">LLMs</span>
+              <span class="skill-tag" style="background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Generative AI</span>
+              <span class="skill-tag" style="background: rgba(211, 196, 245, 0.1); color: #d3c4f5; border: 1px solid rgba(211, 196, 245, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Recommender Systems</span>
+              <span class="skill-tag" style="background: rgba(131, 151, 136, 0.1); color: #839788; border: 1px solid rgba(131, 151, 136, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Neural Networks</span>
             </div>
           </div>
         </div>
@@ -141,16 +227,16 @@
 
       <!-- Interests -->
       <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body text-center p-4">
-            <i class="bi bi-heart display-4 text-danger mb-3"></i>
-            <h4>Interests</h4>
-            <div class="mt-3">
-              <span class="badge bg-primary me-2 mb-2">Movies</span>
-              <span class="badge bg-success me-2 mb-2">Music</span>
-              <span class="badge bg-info me-2 mb-2">Fitness</span>
-              <span class="badge bg-warning text-dark me-2 mb-2">Reading</span>
-              <span class="badge bg-secondary me-2 mb-2">Travel</span>
+        <div class="card h-100 shadow-sm" style="transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)'">
+          <div class="card-body text-center p-3">
+            <i class="bi bi-heart text-danger mb-2" style="font-size: 1.5rem;"></i>
+            <h5 class="mb-3" style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; color: #2d3436;">Interests</h5>
+            <div class="d-flex flex-wrap justify-content-center gap-1">
+              <span class="skill-tag" style="background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Movies</span>
+              <span class="skill-tag" style="background: rgba(211, 196, 245, 0.1); color: #d3c4f5; border: 1px solid rgba(211, 196, 245, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Music</span>
+              <span class="skill-tag" style="background: rgba(131, 151, 136, 0.1); color: #839788; border: 1px solid rgba(131, 151, 136, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Fitness</span>
+              <span class="skill-tag" style="background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Reading</span>
+              <span class="skill-tag" style="background: rgba(211, 196, 245, 0.1); color: #d3c4f5; border: 1px solid rgba(211, 196, 245, 0.3); padding: 0.25rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 500; font-family: 'Inter', sans-serif;">Travel</span>
             </div>
           </div>
         </div>
@@ -158,5 +244,28 @@
     </div>
   </div>
 </div>
+
+<style>
+/* 强制设置About页面标题字重为细字体 */
+.skills-section h2.h3 {
+  font-weight: 300 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
+}
+
+/* Skills section手机端响应式优化 */
+@media (max-width: 768px) {
+  .skills-section .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-section .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
+</style>
 
 {{ end }}

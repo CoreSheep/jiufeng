@@ -29,15 +29,15 @@
             {{ end }}
 
             <div class="{{ .Type }}-heading">
-              {{ if or ( eq .Type "tags") }}
+              {{ if and ( eq .Type "tags") false }}
               <h1 class="fw-semibold display-5 lh-1 mb-3">
-                {{ if .Data.Singular }}#{{ end }}{{ .Title }}
+                {{ .Title }}
               </h1>
               <!-- <hr class="small"> -->
               {{ end }}
 
               {{ if eq .Type "list" }}
-              <h1 class="bino">{{ if .Data.Singular }}#{{ end }}{{ .Title }}</h1>
+              <h1 class="bino">{{ .Title }}</h1>
               {{ else }}
 
               {{if .Page.IsPage}}

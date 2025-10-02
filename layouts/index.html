@@ -4,30 +4,45 @@
 <div id="homepage-identifier" style="display: none;" data-page="homepage" data-cards="small-squares"></div>
 
 <!-- Hero Section -->
-<div class="hero-section py-5 mb-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-  <div class="container">
+<div class="hero-section py-5 mb-5 light-mode" style="background: linear-gradient(135deg, #d3c4f5 0%, #839788 50%, #71b084 100%); color: white; position: relative; overflow: hidden; margin-top: 3rem; margin-bottom: 3rem;">
+  <div class="container" style="position: relative; z-index: 2; max-width: 1200px;">
     <div class="row align-items-center" style="min-height: 60vh;">
       <div class="col-lg-8">
-        <h1 class="display-4 fw-bold mb-4" style="margin-top: 2rem;">Hi, I'm Jiufeng!</h1>
-        <p class="lead mb-4">Data Scientist | ML/AI Engineer | M.Sc. Heidelberg University</p>
-        <p class="mb-4" style="font-size: 1.1rem; opacity: 0.95; line-height: 1.5;">
+        <h1 class="mb-4 hero-title" style="margin-top: 0.5rem; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 300; font-size: 3.5rem; line-height: 1.1; letter-spacing: -0.02em; color: white; text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">Hi, I'm Jiufeng!</h1>
+        <div class="position-tags mb-4">
+          <span class="position-tag">Data Scientist</span>
+          <span class="position-tag">ML/AI Engineer</span>
+          <span class="position-tag">Heidelberg University</span>
+        </div>
+        <p class="mb-4 hero-description" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 300; font-size: 1rem; opacity: 0.95; line-height: 1.6; color: white;">
+          <span class="desktop-text">
           <strong>Data Scientist and Machine Learning Engineer</strong> specializing in <strong>Generative AI</strong>, <strong>LLMs</strong>, and <strong>Autonomous AI Systems</strong>, 
           with a proven record of transforming <strong>SaaS and PaaS platforms</strong> through innovative <strong>enterprise AI</strong> and <strong>agentic AI solutions</strong>. 
           Expertise in optimizing workflows, streamlining <strong>data pipelines</strong>, and building <strong>scalable AI architectures</strong> to solve complex business challenges. 
-          Proven track record in <strong>recommender systems</strong> (Mercedes-Benz Group), <strong>NLP/RAG</strong> (Uni Heidelberg & NLP Laboratory), 
-          <strong>computer vision</strong>, and <strong>knowledge graphs</strong>, delivering <strong>low-latency inference</strong> with <strong>mixed-precision quantization</strong> (Uni Heidelberg & Hardware and Artificial Intelligence (HAWAII) Lab). 
+            Proven track record in <strong>recommender systems</strong> (<strong>Mercedes-Benz Group</strong>), <strong>NLP/RAG</strong> (<strong>Uni Heidelberg</strong> & <strong>NLP Laboratory</strong>), 
+            <strong>computer vision</strong>, and <strong>knowledge graphs</strong>, delivering <strong>low-latency inference</strong> with <strong>mixed-precision quantization</strong> (<strong>Uni Heidelberg</strong> & <strong>Hardware and Artificial Intelligence (HAWAII) Lab</strong>). 
           <strong>Co-inventor of a granted Chinese invention patent</strong> on a <strong>multimodal knowledge graph</strong>.
+          </span>
+          <span class="tablet-text">
+            <strong>Data Scientist and Machine Learning Engineer</strong> specializing in <strong>Generative AI</strong>, <strong>LLMs</strong>, and <strong>Autonomous AI Systems</strong>. 
+            Proven track record in <strong>recommender systems</strong> (<strong>Mercedes-Benz Group</strong>), <strong>NLP/RAG</strong> (<strong>Uni Heidelberg</strong> & <strong>NLP Laboratory</strong>), 
+            <strong>computer vision</strong>, and <strong>knowledge graphs</strong>. <strong>Co-inventor of a granted Chinese invention patent</strong> on a <strong>multimodal knowledge graph</strong>.
+          </span>
+          <span class="mobile-text">
+            <strong>Data Scientist and Machine Learning Engineer</strong> specializing in <strong>Generative AI</strong>, <strong>LLMs</strong>, and <strong>Autonomous AI Systems</strong>. 
+            Proven track record in <strong>recommender systems</strong>, <strong>NLP/RAG</strong>, <strong>computer vision</strong>, and <strong>knowledge graphs</strong>.
+          </span>
         </p>
-        <div class="d-flex gap-3">
-          <a href="/about/" class="btn btn-light btn-lg">Learn More About Me</a>
-          <a href="/blogs/" class="btn btn-outline-light btn-lg">Read My Blog</a>
+        <div class="d-flex gap-3" style="position: relative; z-index: 2; margin-bottom: 3rem;">
+          <a href="/about/" class="btn btn-light" style="background: rgba(255, 255, 255, 0.95); border: none; color: #2d3436; font-weight: 300; font-size: 0.9rem; padding: 0.5rem 1.2rem; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;" onmouseover="this.style.background='#71b084'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(113, 176, 132, 0.4)';" onmouseout="this.style.background='rgba(255, 255, 255, 0.95)'; this.style.color='#2d3436'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 0, 0, 0.1)';">Learn More About Me</a>
+          <a href="/blogs/" class="btn btn-outline-light" style="border: 2px solid rgba(255, 255, 255, 0.8); color: white; font-weight: 300; font-size: 0.9rem; padding: 0.5rem 1.2rem; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;" onmouseover="this.style.background='#71b084'; this.style.borderColor='#71b084'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(113, 176, 132, 0.4)';" onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'; this.style.borderColor='rgba(255, 255, 255, 0.8)'; this.style.color='white'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">Read My Blogs</a>
         </div>
       </div>
-      <div class="col-lg-4 text-center">
+      <div class="col-lg-4 text-center hero-avatar-container" style="margin-top: 0; margin-bottom: 0; padding-top: 1rem; padding-bottom: 1rem;">
         {{ $image := resources.Get "/img/author/author_profile_pic.jpg" }}
         {{ if $image }}
         <img src="{{ $image.RelPermalink }}" alt="Jiufeng Li" 
-             class="rounded-circle img-fluid shadow" style="width: 200px; height: 200px; object-fit: cover;">
+             class="rounded-circle img-fluid shadow hero-avatar" style="width: 200px; height: 200px; object-fit: cover;">
         {{ end }}
       </div>
     </div>
@@ -35,52 +50,58 @@
 </div>
 
 <!-- Main Content -->
-<div class="container" role="main">
+<div class="container" role="main" style="max-width: 1200px;">
   <div class="row">
     <!-- About Summary Section -->
-    <div class="col-lg-8 mb-5">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body p-4">
-          <h2 class="card-title h3 mb-4">
+    <div class="col-lg-8 mb-5" style="margin-top: 3rem;">
+      <div class="card shadow-sm h-100 d-flex flex-column" style="transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)'">
+        <div class="card-body p-4 d-flex flex-column" style="padding-bottom: 1.5rem;">
+          <h3 class="card-title h4 mb-3" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 300 !important; color: #2d3436; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);">
             <i class="bi bi-person-circle me-2"></i>About Me
-          </h2>
+          </h3>
           {{ $aboutPage := .Site.GetPage "/about" }}
           {{ if $aboutPage }}
-            <div class="about-summary">
-              {{ $aboutPage.Summary | truncate 650 }}
-              <a href="/about/" class="text-decoration-none fw-semibold">Read more →</a>
-              
-              <!-- Quick Interest Tags -->
-              <div class="mt-3 pt-3 border-top">
-                <div class="d-flex flex-wrap gap-1">
-                  <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-2 py-1 small">
-                    🎬 Movies
-                  </span>
-                  <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1 small">
-                    🎵 Music
-                  </span>
-                  <span class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25 px-2 py-1 small">
-                    💪 Fitness
-                  </span>
-                  <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25 px-2 py-1 small">
-                    🏊 Swimming
-                  </span>
-                  <span class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary border-opacity-25 px-2 py-1 small">
-                    ✈️ Travel
-                  </span>
-                </div>
-              </div>
+            <div class="about-summary flex-grow-1 mb-2">
+              {{ $aboutPage.Summary | truncate 900 }}
+              <a href="/about/" class="text-decoration-none fw-semibold" style="color: #2d3436; transition: color 0.2s ease;" onmouseover="this.style.color='#71b084';" onmouseout="this.style.color='#2d3436';">Read more →</a>
             </div>
+            <style>
+              .about-summary a {
+                color: #71b084;
+                text-decoration: none;
+                font-weight: 500;
+                border-bottom: 1px solid transparent;
+                transition: all 0.2s ease;
+              }
+              .about-summary a:hover {
+                color: #71b084;
+                border-bottom-color: #71b084;
+              }
+            </style>
           {{ end }}
+          
+          <!-- Interests Tags -->
+          <div class="interests-section mt-2" style="position: relative; z-index: 2;">
+            <h6 class="text-muted mb-1" style="font-family: 'Inter', sans-serif; font-size: 0.9rem; font-weight: 500;">🏷️ Interests & Hobbies</h6>
+            <div class="d-flex flex-wrap gap-1">
+              <span class="skill-badge">🎬 Movies</span>
+              <span class="skill-badge">🎵 Music</span>
+              <span class="skill-badge">📚 Reading</span>
+              <span class="skill-badge">💪 Fitness</span>
+              <span class="skill-badge">🏊 Swimming</span>
+              <span class="skill-badge">✈️ Travel</span>
+              <span class="skill-badge">🤖 AI</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Technical Skills -->
-    <div class="col-lg-4 mb-5">
-      <div class="card shadow-sm border-0 h-100">
-        <div class="card-body p-4">
-          <h3 class="card-title h4 mb-4">
+    <div class="col-lg-4 mb-5" style="margin-top: 3rem;">
+      <div class="card shadow-sm h-100" style="transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)'">
+        <div class="card-body p-4" style="padding-bottom: 1.5rem;">
+          <h3 class="card-title h4 mb-4" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 300 !important; color: #2d3436; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);">
             <i class="bi bi-code-slash me-2"></i>Technical Skills
           </h3>
           
@@ -88,7 +109,7 @@
           <div class="row g-2 mb-4">
             <div class="col-6 text-center">
               <div class="stat-item">
-                <h5 class="h4 text-primary mb-1">{{ len (where (where site.Pages "Section" "blogs") "Kind" "page") }}</h5>
+                <h5 class="h4 mb-1" style="color: #2d3436;">{{ len (where (where site.Pages "Section" "blogs") "Kind" "page") }}</h5>
                 <small class="text-muted">Blog Posts</small>
               </div>
             </div>
@@ -124,7 +145,7 @@
               <!-- Programming & Development -->
               <div class="tab-pane fade show active" id="programming" role="tabpanel">
                 <div class="skill-category">
-                  <h6 class="fw-bold text-primary mb-2">Languages & Frameworks</h6>
+                  <h6 class="fw-bold mb-2" style="color: #2d3436; font-size: 0.8rem;">Languages & Frameworks</h6>
                   <div class="skill-tags mb-3">
                     <span class="skill-badge">Python</span>
                     <span class="skill-badge">TensorFlow</span>
@@ -133,7 +154,7 @@
                     <span class="skill-badge">Streamlit</span>
                   </div>
                   
-                  <h6 class="fw-bold text-success mb-2">Tools & Libraries</h6>
+                  <h6 class="fw-bold mb-2" style="color: #2d3436; font-size: 0.8rem;">Tools & Libraries</h6>
                   <div class="skill-tags mb-3">
                     <span class="skill-badge">Pandas</span>
                     <span class="skill-badge">NumPy</span>
@@ -141,8 +162,8 @@
                     <span class="skill-badge">CI/CD</span>
                   </div>
                   
-                  <h6 class="fw-bold text-info mb-2">Databases</h6>
-                  <div class="skill-tags">
+                  <h6 class="fw-bold mb-2" style="color: #2d3436; font-size: 0.8rem;">Databases</h6>
+                  <div class="skill-tags mb-0">
                     <span class="skill-badge">SQL</span>
                     <span class="skill-badge">NoSQL</span>
                     <span class="skill-badge">Vector DB</span>
@@ -153,7 +174,7 @@
               <!-- Data Science & AI -->
               <div class="tab-pane fade" id="ai" role="tabpanel">
                 <div class="skill-category">
-                  <h6 class="fw-bold text-primary mb-2">Core AI Skills</h6>
+                  <h6 class="fw-bold mb-2" style="color: #2d3436; font-size: 0.8rem;">Core AI Skills</h6>
                   <div class="skill-tags mb-3">
                     <span class="skill-badge">Machine Learning</span>
                     <span class="skill-badge">Deep Learning</span>
@@ -161,16 +182,15 @@
                     <span class="skill-badge">LLMs</span>
                   </div>
                   
-                  <h6 class="fw-bold text-success mb-2">AI Frameworks</h6>
+                  <h6 class="fw-bold mb-2" style="color: #2d3436; font-size: 0.8rem;">AI Frameworks</h6>
                   <div class="skill-tags mb-3">
                     <span class="skill-badge">LangChain</span>
                     <span class="skill-badge">RAG</span>
                     <span class="skill-badge">Hugging Face</span>
-                    <span class="skill-badge">OpenAI API</span>
                   </div>
                   
-                  <h6 class="fw-bold text-info mb-2">Models</h6>
-                  <div class="skill-tags">
+                  <h6 class="fw-bold mb-2" style="color: #2d3436; font-size: 0.8rem;">Models</h6>
+                  <div class="skill-tags mb-0">
                     <span class="skill-badge">GPT</span>
                     <span class="skill-badge">LLaMA</span>
                     <span class="skill-badge">Gemini</span>
@@ -181,7 +201,7 @@
               <!-- Cloud & MLOps -->
               <div class="tab-pane fade" id="cloud" role="tabpanel">
                 <div class="skill-category">
-                  <h6 class="fw-bold text-primary mb-2">Cloud Platforms</h6>
+                  <h6 class="fw-bold mb-2" style="color: #2d3436; font-size: 0.8rem;">Cloud Platforms</h6>
                   <div class="skill-tags mb-3">
                     <span class="skill-badge">AWS</span>
                     <span class="skill-badge">Azure</span>
@@ -189,16 +209,17 @@
                     <span class="skill-badge">Heroku</span>
                   </div>
                   
-                  <h6 class="fw-bold text-success mb-2">MLOps</h6>
+                  <h6 class="fw-bold mb-2" style="color: #2d3436; font-size: 0.8rem;">MLOps</h6>
                   <div class="skill-tags mb-3">
                     <span class="skill-badge">MLOps</span>
                     <span class="skill-badge">LLMOps</span>
                     <span class="skill-badge">MLflow</span>
                     <span class="skill-badge">SageMaker</span>
+                    <span class="skill-badge">Azure ML Studio</span>
                   </div>
                   
-                  <h6 class="fw-bold text-info mb-2">Languages</h6>
-                  <div class="skill-tags">
+                  <h6 class="fw-bold mb-2" style="color: #2d3436; font-size: 0.8rem;">Languages</h6>
+                  <div class="skill-tags mb-0">
                     <span class="skill-badge">English</span>
                     <span class="skill-badge">中文</span>
                     <span class="skill-badge">Deutsch</span>
@@ -214,11 +235,11 @@
     <!-- Work Experience Section -->
     <div class="col-12">
       <div class="section-header mb-5 text-center">
-        <h2 class="display-6 fw-bold">
+        <h2 class="display-6" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 300 !important; font-size: 2.5rem; line-height: 1.1; letter-spacing: -0.02em; color: #2d3436; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
           <i class="bi bi-briefcase me-2"></i>Work Experience
         </h2>
-        <p class="text-muted">My professional journey in data science and AI</p>
-        <div class="underline mx-auto mt-3" style="width: 60px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 2px;"></div>
+        <p class="text-muted" style="font-family: 'Inter', sans-serif; font-size: 0.95rem;">My professional journey in data science and AI</p>
+        <div class="underline mx-auto mt-3" style="width: 60px; height: 4px; background: linear-gradient(135deg, #71b084 0%, #839788 100%); border-radius: 2px;"></div>
   </div>
 
       <!-- Experience Timeline -->
@@ -322,39 +343,39 @@
       <!-- Latest Blog Posts Preview -->
       <div class="col-12 mt-5 pt-4">
         <div class="section-header mb-5 text-center">
-          <h2 class="display-6 fw-bold">
+          <h2 class="display-6" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 300 !important; font-size: 2.5rem; line-height: 1.1; letter-spacing: -0.02em; color: #2d3436; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
             <i class="bi bi-journal-text me-2"></i>Latest Blog Posts
           </h2>
-          <p class="text-muted">Explore my latest thoughts on AI, technology, and innovation</p>
-          <div class="underline mx-auto mt-3" style="width: 60px; height: 4px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 2px;"></div>
+          <p class="text-muted" style="font-family: 'Inter', sans-serif; font-size: 0.95rem;">Explore my latest thoughts on AI, technology, and innovation</p>
+          <div class="underline mx-auto mt-3" style="width: 60px; height: 4px; background: linear-gradient(135deg, #71b084 0%, #839788 100%); border-radius: 2px;"></div>
         </div>
         
         <!-- Blog Preview Grid -->
-        <div class="row g-4 mb-5">
+        <div class="row g-3 mb-4">
           {{ $blogPosts := where (where site.Pages "Section" "blogs") "Kind" "page" }}
           {{ range first 3 $blogPosts }}
           <div class="col-lg-4 col-md-6">
             <div class="blog-preview-card h-100">
               <a href="{{ .Permalink }}" class="text-decoration-none">
                 <div class="card border-1 h-100 blog-card-hover">
-                  <div class="card-body p-3">
+                  <div class="card-body p-3" style="padding: 1rem;">
                     
                     <!-- Category Badge -->
                     {{ if .Params.categories }}
-                    <div class="mb-2">
+                    <div class="mb-1">
                       {{ range first 1 .Params.categories }}
-                      <span class="badge fw-medium" style="font-size: 0.7rem; background: rgba(102, 126, 234, 0.8); color: white; border: none; box-shadow: 0 1px 4px rgba(102, 126, 234, 0.2);">{{ . }}</span>
+                      <span class="badge fw-medium" style="font-family: 'Inter', sans-serif; font-size: 0.7rem; background: rgba(113, 176, 132, 0.8); color: white; border: none; box-shadow: 0 1px 4px rgba(113, 176, 132, 0.2);">{{ . }}</span>
                       {{ end }}
                     </div>
                     {{ end }}
 
                     <!-- Title -->
-                    <h4 class="card-title fw-bold text-dark mb-3 lh-sm" style="font-size: 1.2rem; line-height: 1.3;">
+                    <h4 class="card-title fw-bold mb-2 lh-sm" style="font-size: 0.95rem; line-height: 1.3; color: #2d3436;">
                       {{ .Title }}
                     </h4>
                     
                     <!-- Description -->
-                    <p class="card-text text-muted mb-4" style="font-size: 0.85rem; line-height: 1.4;">
+                    <p class="card-text text-muted mb-3" style="font-size: 0.95rem; line-height: 1.6;">
                       {{ $content := .Content | plainify }}
                       {{ $content = replace $content "&rsquo;" "'" }}
                       {{ $content = replace $content "&ldquo;" "\"" }}
@@ -380,22 +401,22 @@
                     </p>
                     
                     <!-- Meta Info -->
-                    <div class="blog-meta d-flex justify-content-between align-items-center">
+                    <div class="blog-meta d-flex justify-content-between align-items-center mb-3">
                       <small class="text-muted d-flex align-items-center">
-                        <i class="bi bi-calendar3 me-1" style="font-size: 0.75rem;"></i>
-                        <span style="font-size: 0.75rem;">{{ .Date.Format "Jan 2, 2006" }}</span>
+                        <i class="bi bi-calendar3 me-1" style="font-size: 0.8rem;"></i>
+                        <span style="font-size: 0.85rem;">{{ .Date.Format "Jan 2, 2006" }}</span>
                       </small>
                       <small class="text-muted d-flex align-items-center">
-                        <i class="bi bi-clock me-1" style="font-size: 0.75rem;"></i>
-                        <span style="font-size: 0.75rem;">{{ math.Round (div (countwords .Content) 200.0) }}min</span>
+                        <i class="bi bi-clock me-1" style="font-size: 0.8rem;"></i>
+                        <span style="font-size: 0.85rem;">{{ math.Round (div (countwords .Content) 200.0) }}min</span>
                       </small>
                     </div>
                     
                     <!-- Tags -->
                     {{ if .Params.tags }}
-                    <div class="mt-2">
+                    <div class="mt-1">
                       {{ range first 2 .Params.tags }}
-                      <span class="badge me-1" style="font-size: 0.65rem; padding: 0.2rem 0.4rem; background: rgba(102, 126, 234, 0.1); color: #667eea; border: 1px solid rgba(102, 126, 234, 0.2);">{{ . }}</span>
+                      <span class="skill-tag me-1" style="font-family: 'Inter', sans-serif; font-size: 0.65rem; padding: 0.2rem 0.4rem; background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3); border-radius: 8px;">{{ . }}</span>
                       {{ end }}
                     </div>
                     {{ end }}
@@ -410,7 +431,7 @@
 
         <!-- View All Blogs Button -->
         <div class="text-center">
-          <a href="/blogs/" class="btn btn-outline-primary btn-lg px-4 py-3 rounded-pill">
+          <a href="/blogs/" class="btn btn-outline-success btn-lg px-4 py-3 rounded-pill" style="border-color: #71b084; color: #71b084; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#71b084'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#71b084';">
             <i class="bi bi-journal-text me-2"></i>View All Blog Posts
             <i class="bi bi-arrow-right ms-2"></i>
           </a>
@@ -478,9 +499,9 @@ body.small-cards-active .small-blog-card {
 }
 
 .skill-tab.active {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #71b084, #839788);
   color: white;
-  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3);
 }
 
 .skill-tab:hover {
@@ -489,8 +510,105 @@ body.small-cards-active .small-blog-card {
 }
 
 .skill-tab.active:hover {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #71b084, #839788);
   color: white;
+}
+
+/* Override Bootstrap default tab switching effects */
+.nav-pills .nav-link:focus {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.nav-pills .nav-link:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-pills .nav-link:active {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.nav-pills .nav-link.active:focus {
+  background: linear-gradient(135deg, #71b084, #839788);
+  border-color: transparent;
+  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3);
+}
+
+.nav-pills .nav-link.active:focus-visible {
+  outline: none;
+  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3);
+}
+
+/* Ensure all possible Bootstrap default styles are overridden */
+.nav-pills .nav-link:not(.active):focus {
+  background-color: #f8f9fa !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  color: #6c757d !important;
+}
+
+.nav-pills .nav-link:not(.active):focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.nav-pills .nav-link:not(.active):active {
+  background-color: #f8f9fa !important;
+  border-color: transparent !important;
+  color: #6c757d !important;
+}
+
+/* Override Bootstrap default blue focus ring */
+.nav-pills .nav-link:focus {
+  box-shadow: none !important;
+}
+
+.nav-pills .nav-link.active:focus {
+  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3) !important;
+}
+
+/* Override Bootstrap JavaScript dynamically added styles */
+.nav-pills .nav-link.show {
+  background-color: #f8f9fa !important;
+  border-color: transparent !important;
+  color: #6c757d !important;
+}
+
+.nav-pills .nav-link.active.show {
+  background: linear-gradient(135deg, #71b084, #839788) !important;
+  border-color: transparent !important;
+  color: white !important;
+  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3) !important;
+}
+
+/* Override all possible Bootstrap default colors */
+.nav-pills .nav-link:focus,
+.nav-pills .nav-link:focus-visible,
+.nav-pills .nav-link:active,
+.nav-pills .nav-link.show:focus,
+.nav-pills .nav-link.show:focus-visible,
+.nav-pills .nav-link.show:active {
+  background-color: #f8f9fa !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  color: #6c757d !important;
+  outline: none !important;
+}
+
+.nav-pills .nav-link.active:focus,
+.nav-pills .nav-link.active:focus-visible,
+.nav-pills .nav-link.active:active,
+.nav-pills .nav-link.active.show:focus,
+.nav-pills .nav-link.active.show:focus-visible,
+.nav-pills .nav-link.active.show:active {
+  background: linear-gradient(135deg, #71b084, #839788) !important;
+  border-color: transparent !important;
+  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3) !important;
+  color: white !important;
+  outline: none !important;
 }
 
 .skill-category h6 {
@@ -506,22 +624,55 @@ body.small-cards-active .small-blog-card {
 
 .skill-badge {
   display: inline-block;
-  background: #f8f9fa;
-  color: #495057;
-  padding: 0.25rem 0.6rem;
-  border-radius: 12px;
-  font-size: 0.7rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
   font-weight: 500;
-  border: 1px solid #e9ecef;
+  font-family: 'Inter', sans-serif;
   transition: all 0.2s ease;
 }
 
-.skill-badge:hover {
-  background: #e9ecef;
-  border-color: #dee2e6;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+/* Cycle through three theme colors */
+.skill-badge:nth-child(3n+1) {
+  background: rgba(113, 176, 132, 0.1);
+  color: #71b084;
+  border: 1px solid rgba(113, 176, 132, 0.3);
 }
+
+.skill-badge:nth-child(3n+2) {
+  background: rgba(211, 196, 245, 0.1);
+  color: #d3c4f5;
+  border: 1px solid rgba(211, 196, 245, 0.3);
+}
+
+.skill-badge:nth-child(3n+3) {
+  background: rgba(131, 151, 136, 0.1);
+  color: #839788;
+  border: 1px solid rgba(131, 151, 136, 0.3);
+}
+
+.skill-badge:nth-child(3n+1):hover {
+  background: rgba(113, 176, 132, 0.2);
+  border-color: rgba(113, 176, 132, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(113, 176, 132, 0.2);
+}
+
+.skill-badge:nth-child(3n+2):hover {
+  background: rgba(211, 196, 245, 0.2);
+  border-color: rgba(211, 196, 245, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(211, 196, 245, 0.2);
+}
+
+.skill-badge:nth-child(3n+3):hover {
+  background: rgba(131, 151, 136, 0.2);
+  border-color: rgba(131, 151, 136, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(131, 151, 136, 0.2);
+}
+
+
 
 .tab-content {
   min-height: 200px;
@@ -599,7 +750,7 @@ body.small-cards-active .small-blog-card {
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, #667eea, #764ba2);
+  background: linear-gradient(to bottom, #71b084, #839788);
   border-radius: 2px;
 }
 
@@ -620,16 +771,16 @@ body.small-cards-active .small-blog-card {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background: #667eea;
+  background: #71b084;
   border: 3px solid #fff;
   box-shadow: 0 0 0 3px #e2e8f0;
   transition: all 0.3s ease;
 }
 
 .timeline-item:hover .timeline-dot {
-  background: #764ba2;
+  background: #839788;
   transform: scale(1.2);
-  box-shadow: 0 0 0 6px rgba(102, 126, 234, 0.2);
+  box-shadow: 0 0 0 6px rgba(113, 176, 132, 0.2);
 }
 
 .experience-card {
@@ -637,7 +788,7 @@ body.small-cards-active .small-blog-card {
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(113, 176, 132, 0.2);
   transition: all 0.3s ease;
   position: relative;
 }
@@ -656,8 +807,8 @@ body.small-cards-active .small-blog-card {
 
 .experience-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: #667eea;
+  box-shadow: 0 8px 25px rgba(113, 176, 132, 0.15);
+  border-color: #71b084;
 }
 
 .company-header {
@@ -678,7 +829,7 @@ body.small-cards-active .small-blog-card {
 }
 
 .time-period {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #71b084, #839788);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -811,9 +962,22 @@ body.small-cards-active .small-blog-card {
 
 .blog-card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.25) !important;
-  border-color: rgba(102, 126, 234, 0.6) !important;
+  box-shadow: 0 8px 20px rgba(113, 176, 132, 0.25) !important;
+  border-color: rgba(113, 176, 132, 0.6) !important;
   background: #fff;
+}
+
+.blog-card-hover:hover .card-title {
+  color: #71b084 !important;
+}
+
+.blog-card-hover:hover .blog-meta small {
+  color: #71b084 !important;
+}
+
+.blog-card-hover:hover .badge {
+  background: #71b084 !important;
+  color: white !important;
 }
 
 .blog-preview-card a:hover {
@@ -824,13 +988,22 @@ body.small-cards-active .small-blog-card {
   transition: color 0.2s ease;
 }
 
+.blog-meta small {
+  transition: color 0.2s ease;
+}
+
+.blog-preview-card .badge {
+  transition: all 0.2s ease;
+}
+
 .blog-preview-card:hover .card-title {
-  color: #667eea !important;
+  color: #71b084 !important;
 }
 
 .blog-meta {
   border-top: 1px solid #f1f5f9;
   padding-top: 1rem;
+  padding-bottom: 0.5rem;
   margin-top: auto;
 }
 
@@ -841,13 +1014,13 @@ body.small-cards-active .small-blog-card {
   }
   
   .blog-preview-card .card-title {
-    font-size: 1.1rem !important;
+    font-size: 0.9rem !important;
     line-height: 1.25 !important;
   }
   
   .blog-preview-card .card-text {
-    font-size: 0.8rem !important;
-    line-height: 1.35 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
   }
   
   .blog-preview-card .badge {
@@ -866,13 +1039,13 @@ body.small-cards-active .small-blog-card {
   }
   
   .blog-preview-card .card-title {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     line-height: 1.2 !important;
   }
   
   .blog-preview-card .card-text {
-    font-size: 0.75rem !important;
-    line-height: 1.3 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
   }
   
   .blog-preview-card .badge {
@@ -884,6 +1057,457 @@ body.small-cards-active .small-blog-card {
     font-size: 0.65rem !important;
   }
 }
+
+/* Responsive Hero Description */
+.hero-description .desktop-text {
+  display: block;
+}
+
+.hero-description .tablet-text {
+  display: none;
+}
+
+.hero-description .mobile-text {
+  display: none;
+}
+
+/* Tablet styles */
+@media (max-width: 992px) {
+  .hero-description .desktop-text {
+    display: none;
+  }
+  
+  .hero-description .tablet-text {
+    display: block;
+  }
+  
+  .hero-description .mobile-text {
+    display: none;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hero-description .desktop-text {
+    display: none;
+  }
+  
+  .hero-description .tablet-text {
+    display: none;
+  }
+  
+  .hero-description .mobile-text {
+    display: block;
+  }
+  
+  .hero-description {
+    font-size: 1rem !important;
+  }
+}
+
+/* Hero Avatar Spacing */
+.hero-avatar-container {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Responsive avatar spacing */
+@media (max-width: 992px) {
+  .hero-avatar-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-avatar-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .hero-avatar {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+/* Position tag styles */
+.position-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.position-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  color: white;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.position-tag:hover {
+  background: rgba(113, 176, 132, 0.4);
+  border-color: rgba(113, 176, 132, 0.8);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(113, 176, 132, 0.4), 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(15px);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Force title font weight to thin */
+.card-title.h3,
+.card-title.h4,
+.display-6,
+h2.card-title,
+h3.card-title,
+h4.card-title {
+  font-weight: 300 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
+}
+
+/* Override Bootstrap default styles */
+.card-title {
+  font-weight: 300 !important;
+}
+
+h2, h3, h4 {
+  font-weight: 300 !important;
+}
+
+/* Keyword artistic emphasis styles */
+.hero-description strong {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.98);
+  text-shadow: 0 0 10px rgba(113, 176, 132, 0.4), 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: inline-block;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .hero-title {
+    color: white !important;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .hero-description {
+    color: rgba(255, 255, 255, 0.95) !important;
+  }
+  
+  .hero-description strong {
+    color: rgba(255, 255, 255, 0.98) !important;
+    text-shadow: 0 0 10px rgba(113, 176, 132, 0.4), 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .position-tag {
+    background: rgba(255, 255, 255, 0.25) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    color: white !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  .hero-title {
+    color: rgba(45, 52, 54, 0.95) !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  .hero-description {
+    color: rgba(45, 52, 54, 0.9) !important;
+  }
+  
+  .hero-description strong {
+    color: rgba(45, 52, 54, 0.95) !important;
+    text-shadow: 0 0 8px rgba(113, 176, 132, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .position-tag {
+    background: rgba(45, 52, 54, 0.1) !important;
+    border: 1px solid rgba(45, 52, 54, 0.3) !important;
+    color: rgba(45, 52, 54, 0.9) !important;
+    text-shadow: none;
+  }
+}
+
+/* Manual dark mode classes */
+.hero-section.dark-mode .hero-title {
+  color: white !important;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.hero-section.dark-mode .hero-description {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.hero-section.dark-mode .hero-description strong {
+  color: rgba(255, 255, 255, 0.98) !important;
+  text-shadow: 0 0 10px rgba(113, 176, 132, 0.4), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section.dark-mode .position-tag {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  color: white !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Manual light mode classes */
+.hero-section.light-mode .hero-title {
+  color: rgba(45, 52, 54, 0.95) !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.hero-section.light-mode .hero-description {
+  color: rgba(45, 52, 54, 0.9) !important;
+}
+
+.hero-section.light-mode .hero-description strong {
+  color: rgba(45, 52, 54, 0.95) !important;
+  text-shadow: 0 0 8px rgba(113, 176, 132, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section.light-mode .position-tag {
+  background: rgba(45, 52, 54, 0.1) !important;
+  border: 1px solid rgba(45, 52, 54, 0.3) !important;
+  color: rgba(45, 52, 54, 0.9) !important;
+  text-shadow: none;
+}
+
+/* Manual mode hover effects - removed */
+
+.hero-section.dark-mode .position-tag:hover {
+  background: rgba(113, 176, 132, 0.4) !important;
+  border-color: rgba(113, 176, 132, 0.8) !important;
+  color: white !important;
+}
+
+/* Light mode strong hover effects - removed */
+
+.hero-section.light-mode .position-tag:hover {
+  background: rgba(113, 176, 132, 0.15) !important;
+  border-color: rgba(113, 176, 132, 0.6) !important;
+  color: rgba(45, 52, 54, 1) !important;
+}
+
+/* Remove underline effects */
+.hero-description strong::after {
+  display: none;
+}
+
+/* Underlines in media queries - all removed */
+@media (prefers-color-scheme: dark) {
+  .hero-description strong::after,
+  .hero-description strong:hover::after {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .hero-description strong::after,
+  .hero-description strong:hover::after {
+    display: none;
+  }
+}
+
+/* Manual mode underlines - all removed */
+.hero-section.dark-mode .hero-description strong::after,
+.hero-section.dark-mode .hero-description strong:hover::after,
+.hero-section.light-mode .hero-description strong::after,
+.hero-section.light-mode .hero-description strong:hover::after {
+  display: none;
+}
+
+/* Basic strong hover effects - removed */
+
+/* Dark mode hover effects - strong hover removed */
+@media (prefers-color-scheme: dark) {
+  
+  .position-tag:hover {
+    background: rgba(113, 176, 132, 0.4) !important;
+    border-color: rgba(113, 176, 132, 0.8) !important;
+    color: white !important;
+  }
+}
+
+/* Light mode hover effects - strong hover removed */
+@media (prefers-color-scheme: light) {
+  
+  .position-tag:hover {
+    background: rgba(113, 176, 132, 0.15) !important;
+    border-color: rgba(113, 176, 132, 0.6) !important;
+    color: rgba(45, 52, 54, 1) !important;
+  }
+}
+
+/* Strong hover underline effects - removed */
+
+/* Position tag responsive design */
+@media (max-width: 768px) {
+  .position-tags {
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .position-tag {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .hero-description {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Global thin font unification */
+body, p, div, span, a, li, td, th {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/* Special elements maintain appropriate font weight */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/* Buttons and important elements - exclude navigation links */
+.btn, .navbar-brand {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/* Skill tag nav-link styles */
+.nav-pills .nav-link {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/* Ensure navigation bar uses global styles, no override */
+/* Remove homepage-specific navigation bar style overrides, use global CSS settings */
+
+/* JavaScript solution: prevent blue flash on first click */
+document.addEventListener('DOMContentLoaded', function() {
+  // Prevent blue flash on first click
+  const skillTabs = document.querySelectorAll('#skillsTab .nav-link');
+  
+  skillTabs.forEach(tab => {
+    // Remove Bootstrap default focus styles
+    tab.addEventListener('click', function(e) {
+      // Immediately remove possible blue styles
+      this.style.setProperty('background-color', '', 'important');
+      this.style.setProperty('border-color', '', 'important');
+      this.style.setProperty('box-shadow', '', 'important');
+      this.style.setProperty('outline', 'none', 'important');
+      
+      // If active state, apply green styles
+      if (this.classList.contains('active')) {
+        this.style.setProperty('background', 'linear-gradient(135deg, #71b084, #839788)', 'important');
+        this.style.setProperty('color', 'white', 'important');
+        this.style.setProperty('box-shadow', '0 2px 10px rgba(113, 176, 132, 0.3)', 'important');
+      } else {
+        this.style.setProperty('background-color', '#f8f9fa', 'important');
+        this.style.setProperty('color', '#6c757d', 'important');
+      }
+    });
+    
+    // Listen to focus events
+    tab.addEventListener('focus', function() {
+      this.style.setProperty('outline', 'none', 'important');
+      this.style.setProperty('box-shadow', 'none', 'important');
+    });
+  });
+});
+
+/* Homepage mobile responsive optimization */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero-section .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  /* Hero Buttons */
+  .hero-section .d-flex.gap-3 {
+    justify-content: center !important;
+    flex-wrap: wrap;
+    gap: 0.8rem !important;
+  }
+  
+  .hero-section .d-flex.gap-3 .btn {
+    flex: 0 0 auto;
+    min-width: 140px;
+  }
+  
+  /* Main Content */
+  .container[role="main"] {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  .container[role="main"] .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .container[role="main"] .col-12 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Hero Section */
+  .hero-section .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  /* Hero Buttons - Smaller screens */
+  .hero-section .d-flex.gap-3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem !important;
+  }
+  
+  .hero-section .d-flex.gap-3 .btn {
+    width: 100%;
+    max-width: 200px;
+    min-width: auto;
+  }
+  
+  /* Main Content */
+  .container[role="main"] {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  .container[role="main"] .col-12 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 </style>
 
+
 {{ end }}
+

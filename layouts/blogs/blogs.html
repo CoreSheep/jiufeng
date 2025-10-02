@@ -1,14 +1,15 @@
 {{ define "main" }}
 
+
 <!-- Blog Hero Section -->
-<div class="blog-hero py-5 mb-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-  <div class="container">
+<div class="blog-hero py-5 mb-5" style="background: linear-gradient(225deg, #839788 0%, #71b084 50%, #d3c4f5 100%); color: white; position: relative; overflow: hidden;">
+  <div class="container" style="position: relative; z-index: 2; max-width: 1200px;">
     <div class="row">
       <div class="col-lg-8">
-        <h1 class="display-4 fw-bold mb-3">My Blog</h1>
-        <p class="lead">Thoughts on AI, machine learning, technology, and life</p>
+        <h1 class="mb-3" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 300; font-size: 3.5rem; line-height: 1.1; letter-spacing: -0.02em; color: white; text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">My Blog</h1>
+        <p class="lead" style="font-size: 0.95rem;">Thoughts on AI, machine learning, technology, and life.</p>
         {{ with .Content }}
-        <div class="blog-description">
+        <div class="blog-description" style="font-size: 0.95rem; line-height: 1.6;">
           {{ . }}
         </div>
         {{ end }}
@@ -30,10 +31,10 @@
 </div>
 
 <!-- Blog Content -->
-<div class="container" role="main">
+<div class="container" role="main" style="max-width: 1200px;">
   <div class="row">
     <!-- Main Content -->
-    <div class="col-lg-8">
+    <div class="col-lg-9">
       <!-- Filter/Search Section -->
       <div class="blog-filters mb-4">
         <div class="card border-0 shadow-sm">
@@ -47,8 +48,8 @@
               <div class="col-md-6">
                 <div class="d-flex gap-2 justify-content-md-end">
                   <span class="badge bg-light text-dark">All Categories</span>
-                  <span class="badge bg-primary">AI Research</span>
-                  <span class="badge bg-success">Technology</span>
+                  <span class="badge" style="background: #d3c4f5; color: white;">AI Research</span>
+                  <span class="badge" style="background: #71b084; color: white;">Technology</span>
                 </div>
               </div>
             </div>
@@ -57,7 +58,7 @@
       </div>
 
       <!-- Blog Posts Grid -->
-      <div class="row g-3">
+      <div class="row g-4">
         {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blogs") 9 }}
         {{ range $paginator.Pages }}
         <div class="col-12">
@@ -79,7 +80,7 @@
     </div>
 
     <!-- Sidebar -->
-    <div class="col-lg-4">
+    <div class="col-lg-3">
       <div class="blog-sidebar">
         
         <!-- About Widget -->
@@ -91,9 +92,9 @@
               <img src="{{ $image.RelPermalink }}" alt="Jiufeng Li" 
                    class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
               {{ end }}
-              <h5 class="mb-2">Jiufeng Li</h5>
-              <p class="text-muted small mb-3">ML/AI Engineer & Data Scientist sharing insights on autonomous AI agents, LLM deployment, and enterprise ML systems</p>
-              <a href="/about/" class="btn btn-outline-primary btn-sm">Learn More</a>
+              <h5 class="mb-2" style="font-size: 0.95rem;">Jiufeng Li</h5>
+              <p class="text-muted mb-3" style="font-size: 0.95rem;">ML/AI Engineer & Data Scientist sharing insights on autonomous AI agents, LLM deployment, and enterprise ML systems</p>
+              <a href="/about/" class="btn btn-sm" style="border: 1px solid #71b084; color: #71b084; background: transparent; transition: all 0.2s ease;" onmouseover="this.style.background='#71b084'; this.style.color='white';" onmouseout="this.style.background='transparent'; this.style.color='#71b084';">Learn More</a>
             </div>
           </div>
         </div>
@@ -110,9 +111,9 @@
               {{ range first 5 (where .Site.RegularPages "Section" "blogs") }}
               <div class="recent-post-item mb-3 pb-3 border-bottom">
                 <h6 class="mb-1">
-                  <a href="{{ .Permalink }}" class="text-decoration-none">{{ .Title }}</a>
+                  <a href="{{ .Permalink }}" class="text-decoration-none" style="color: #2d3436; transition: color 0.2s ease; font-size: 0.95rem;" onmouseover="this.style.color='#71b084';" onmouseout="this.style.color='#2d3436';">{{ .Title }}</a>
                 </h6>
-                <small class="text-muted">{{ .Date.Format "Jan 2, 2006" }}</small>
+                <small class="text-muted" style="font-size: 0.85rem;">{{ .Date.Format "Jan 2, 2006" }}</small>
               </div>
               {{ end }}
             </div>
@@ -129,12 +130,19 @@
               </h5>
             </div>
             <div class="card-body">
-              <div class="tag-cloud">
+              <div class="tag-cloud d-flex flex-wrap justify-content-center gap-1">
+                {{ $colors := slice "#71b084" "#d3c4f5" "#839788" }}
+                {{ $index := 0 }}
                 {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                {{ $color := index $colors (mod $index 3) }}
                 <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" 
-                   class="badge bg-light text-dark text-decoration-none me-2 mb-2">
+                   class="badge text-decoration-none" 
+                   style="background-color: {{ $color }}; color: white; padding: 0.3rem 0.6rem; border-radius: 4px; font-size: 0.75rem; font-weight: 500; font-family: 'Inter', sans-serif; transition: opacity 0.2s ease;"
+                   onmouseover="this.style.opacity='0.8'"
+                   onmouseout="this.style.opacity='1'">
                   {{ $name }} ({{ $taxonomy.Count }})
                 </a>
+                {{ $index = add $index 1 }}
                 {{ end }}
               </div>
             </div>
@@ -146,5 +154,156 @@
     </div>
   </div>
 </div>
+
+<style>
+/* 统一博客页面正文字体大小和标题样式 */
+.blog-description,
+.blog-description p,
+.blog-description li {
+  font-size: 0.95rem !important;
+}
+
+/* 博客页面标题字体大小和间距 */
+.blog-description h1 {
+  font-size: 1.6rem !important;
+  margin-bottom: 0.6rem !important;
+  margin-top: 1.2rem !important;
+  color: #2d3748 !important;
+}
+
+.blog-description h2 {
+  font-size: 1.3rem !important;
+  margin-bottom: 0.5rem !important;
+  margin-top: 1rem !important;
+  color: #2d3748 !important;
+}
+
+.blog-description h3 {
+  font-size: 1.1rem !important;
+  margin-bottom: 0.4rem !important;
+  margin-top: 0.8rem !important;
+  color: #2d3748 !important;
+}
+
+.blog-description h4 {
+  font-size: 1rem !important;
+  margin-bottom: 0.3rem !important;
+  margin-top: 0.6rem !important;
+  color: #2d3748 !important;
+}
+
+.blog-description h5,
+.blog-description h6 {
+  font-size: 0.9rem !important;
+  margin-bottom: 0.3rem !important;
+  margin-top: 0.5rem !important;
+  color: #2d3748 !important;
+}
+
+/* 博客页面手机端响应式优化 */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .blog-hero .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  /* Main Content */
+  .container[role="main"] {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  .container[role="main"] .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .container[role="main"] .col-lg-9,
+  .container[role="main"] .col-lg-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Blog Description 增加更多间距 */
+  .blog-description {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  /* Profile Image 调小 */
+  .blog-sidebar .widget .card-body img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  /* Profile Title 调小 */
+  .blog-sidebar .widget .card-body h5 {
+    font-size: 1rem !important;
+  }
+  
+  /* Recent Posts Title 调小 */
+  .blog-sidebar .widget .card-header h5 {
+    font-size: 1rem !important;
+  }
+  
+  /* Popular Tags Title 调小 */
+  .blog-sidebar .widget .card-header h5 i {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Hero Section */
+  .blog-hero .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  /* Main Content */
+  .container[role="main"] {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  .container[role="main"] .col-lg-9,
+  .container[role="main"] .col-lg-3 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  /* Blog Description 增加更多间距 */
+  .blog-description {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Profile Image 进一步调小 */
+  .blog-sidebar .widget .card-body img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  /* Profile Title 进一步调小 */
+  .blog-sidebar .widget .card-body h5 {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Recent Posts Title 进一步调小 */
+  .blog-sidebar .widget .card-header h5 {
+    font-size: 0.9rem !important;
+  }
+  
+  /* Blog Hero Title 调小 */
+  .blog-hero h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  /* Blog Hero Lead 调小 */
+  .blog-hero .lead {
+    font-size: 1rem !important;
+  }
+}
+</style>
 
 {{ end }}

@@ -2,7 +2,7 @@
 
 <!-- Blog Post Hero Section -->
 <div class="blog-post-hero">
-  <div class="container">
+  <div class="container" style="max-width: 1000px;">
     <div class="row justify-content-center">
       <div class="col-lg-8">
         
@@ -11,7 +11,7 @@
           {{ if .Params.categories }}
           <div class="category-badge mb-3">
             {{ range first 1 .Params.categories }}
-            <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-medium">{{ . }}</span>
+            <span class="badge px-3 py-2 rounded-pill fw-medium" style="background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3);">{{ . }}</span>
             {{ end }}
           </div>
           {{ end }}
@@ -67,7 +67,7 @@
 
 <!-- Article Content -->
 <div class="article-content">
-  <div class="container">
+  <div class="container" style="max-width: 1000px;">
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <article class="blog-post-content">
@@ -155,7 +155,10 @@
         <li class="list-group-item b-0 p-0">
 
           <a type="button" class="btn btn-dark" role="button" href="{{ .PrevInSection.Permalink }}"
-            data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr;
+            data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}" 
+            style="transition: all 0.3s ease;" 
+            onmouseover="this.style.background='#71b084'; this.style.borderColor='#71b084'; this.style.color='white';" 
+            onmouseout="this.style.background='#343a40'; this.style.borderColor='#343a40'; this.style.color='white';">&larr;
             {{ i18n "previousPost" }}</a>
         </li>
         {{ end }}
@@ -164,7 +167,10 @@
         {{ if .NextInSection }}
         <li class="list-group-item ms-auto b-0 p-0">
           <a type="button" class="btn btn-dark" role="button" href="{{ .NextInSection.Permalink }}"
-            data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">{{ i18n "nextPost" }}
+            data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}" 
+            style="transition: all 0.3s ease;" 
+            onmouseover="this.style.background='#71b084'; this.style.borderColor='#71b084'; this.style.color='white';" 
+            onmouseout="this.style.background='#343a40'; this.style.borderColor='#343a40'; this.style.color='white';">{{ i18n "nextPost" }}
             &rarr;</a>
         </li>
         {{ end }}
@@ -187,11 +193,11 @@
   {{ end }}
 
   {{ if $has_related }}
-  <div class="container">
+  <div class="container" style="max-width: 1000px;">
     <div class="row">
       <div class="col-lg-12 col-md-12 mt-3">
-        <h3>{{ i18n "readMore" }}</h3>
-        <hr />
+        <h3 style="color: #2d3436; font-family: 'Inter', sans-serif; font-weight: 600;">{{ i18n "readMore" }}</h3>
+        <hr style="border-color: #71b084; border-width: 2px;" />
       </div>
 
       {{ $num_to_show := .Site.Params.related_content_limit | default 3 }}
@@ -242,21 +248,21 @@
 
 .article-meta {
   text-align: center;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .category-badge .badge {
   font-size: 0.875rem;
   font-weight: 500;
-  border: 1px solid rgba(102, 126, 234, 0.2);
+  border: 1px solid rgba(113, 176, 132, 0.3);
 }
 
 .article-title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 800;
   line-height: 1.2;
   color: #1a202c;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .article-info {
@@ -265,7 +271,7 @@
 }
 
 .article-info i {
-  color: #667eea;
+  color: #71b084;
   font-size: 1rem;
 }
 
@@ -287,7 +293,7 @@
 
 /* Article Content Typography */
 .article-content {
-  padding: 2rem 0 4rem 0;
+  padding: 1.5rem 0 3rem 0;
 }
 
 .blog-post-content {
@@ -306,8 +312,8 @@
 .blog-post-content h6 {
   font-weight: 700;
   color: #1a202c;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
   line-height: 1.3;
 }
 
@@ -322,43 +328,57 @@ article.blog-post-content > h1:first-child {
 }
 
 .blog-post-content h1 {
-  font-size: 2.25rem;
-  border-bottom: 3px solid #667eea;
-  padding-bottom: 0.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
+  margin-top: 1.5rem;
+  color: #2d3748;
 }
 
 .blog-post-content h2 {
-  font-size: 1.875rem;
-  border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 0.375rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.6rem;
+  margin-top: 1.2rem;
+  color: #2d3748;
 }
 
 .blog-post-content h3 {
-  font-size: 1.5rem;
-  color: #667eea;
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 
 .blog-post-content h4 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  color: #2d3748;
+  margin-bottom: 0.4rem;
+  margin-top: 0.8rem;
 }
 
 .blog-post-content h5,
 .blog-post-content h6 {
-  font-size: 1.125rem;
+  font-size: 1rem;
+  color: #2d3748;
+  margin-bottom: 0.3rem;
+  margin-top: 0.6rem;
 }
 
 /* Paragraphs */
 .blog-post-content p {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
   color: #4a5568;
 }
 
 /* Lists */
 .blog-post-content ul,
 .blog-post-content ol {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
   padding-left: 2rem;
 }
 
@@ -379,10 +399,10 @@ article.blog-post-content > h1:first-child {
 .blog-post-content pre {
   background: #1a202c;
   color: #e2e8f0;
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 12px;
   overflow-x: auto;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   font-size: 0.9rem;
   line-height: 1.5;
   border: 1px solid #2d3748;
@@ -407,10 +427,10 @@ article.blog-post-content > h1:first-child {
 
 /* Blockquotes */
 .blog-post-content blockquote {
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #71b084;
   background: #f7fafc;
-  padding: 1.5rem 2rem;
-  margin: 2rem 0;
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0;
   border-radius: 0 8px 8px 0;
   font-style: italic;
   color: #4a5568;
@@ -424,7 +444,7 @@ article.blog-post-content > h1:first-child {
 .blog-post-content table {
   width: 100%;
   border-collapse: collapse;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
@@ -450,7 +470,7 @@ article.blog-post-content > h1:first-child {
 
 /* Links */
 .blog-post-content a {
-  color: #667eea;
+  color: #71b084;
   text-decoration: none;
   font-weight: 500;
   border-bottom: 1px solid transparent;
@@ -458,8 +478,8 @@ article.blog-post-content > h1:first-child {
 }
 
 .blog-post-content a:hover {
-  color: #764ba2;
-  border-bottom-color: #764ba2;
+  color: #839788;
+  border-bottom-color: #839788;
 }
 
 /* Images */
@@ -467,7 +487,7 @@ article.blog-post-content > h1:first-child {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -476,7 +496,7 @@ article.blog-post-content > h1:first-child {
   border: none;
   height: 2px;
   background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 /* Strong and emphasis */
@@ -492,6 +512,18 @@ article.blog-post-content > h1:first-child {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Hero Section */
+  .blog-post-hero .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  /* Main Content */
+  .container[role="main"] {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
   .blog-post-hero {
     padding: 2rem 0 1.5rem 0;
   }
@@ -510,19 +542,19 @@ article.blog-post-content > h1:first-child {
   }
   
   .blog-post-content h1 {
-    font-size: 1.875rem;
+    font-size: 1.6rem;
   }
   
   .blog-post-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   .blog-post-content h3 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   
   .blog-post-content p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
   .blog-post-content pre {
@@ -531,7 +563,33 @@ article.blog-post-content > h1:first-child {
   }
 }
 
+@media (max-width: 576px) {
+  /* Hero Section */
+  .blog-post-hero .container {
+    padding-left: 2.2rem !important;
+    padding-right: 2.2rem !important;
+  }
+  
+  /* Main Content */
+  .container[role="main"] {
+    padding-left: 2.2rem !important;
+    padding-right: 2.2rem !important;
+  }
+}
+
 @media (max-width: 480px) {
+  /* Hero Section */
+  .blog-post-hero .container {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+  
+  /* Main Content */
+  .container[role="main"] {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+  
   .article-title {
     font-size: 1.75rem;
   }

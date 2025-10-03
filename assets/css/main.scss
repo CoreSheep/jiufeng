@@ -1822,12 +1822,19 @@ ul.share li:hover .fab {
   flex-direction: row;
 }
 
+/* --- Light mode --- */
+
+:root[data-theme="light"] {
+  filter: brightness(100%) contrast(100%);
+  -webkit-filter: brightness(100%) contrast(100%);
+}
+
 /* --- Dark mode --- */
 
 :root[data-theme="dark"] {
   background-color: #171717 !important;
-  filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(85%);
-  -webkit-filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(85%);
+  filter: invert(100%) hue-rotate(180deg) brightness(125%) contrast(90%);
+  -webkit-filter: invert(100%) hue-rotate(180deg) brightness(125%) contrast(90%);
 }
 :root[data-theme="dark"] body {
   background-color: #FFF !important;

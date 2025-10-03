@@ -2,147 +2,147 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/ai-research/</loc>
+    <loc>http://localhost:1314/categories/ai-research/</loc>
     <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/ai-breakthrough/</loc>
+    <loc>http://localhost:1314/tags/ai-breakthrough/</loc>
     <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1314/categories/</loc>
     <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/deepseek/</loc>
+    <loc>http://localhost:1314/tags/deepseek/</loc>
     <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blogs/2025/sep/deepseek-r1-nature-breakthrough/</loc>
+    <loc>http://localhost:1314/blogs/2025/sep/deepseek-r1-nature-breakthrough/</loc>
     <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1314/</loc>
     <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/llm/</loc>
+    <loc>http://localhost:1314/tags/llm/</loc>
     <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/nature/</loc>
+    <loc>http://localhost:1314/tags/nature/</loc>
     <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/reasoning/</loc>
+    <loc>http://localhost:1314/tags/reasoning/</loc>
     <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/reinforcement-learning/</loc>
+    <loc>http://localhost:1314/tags/reinforcement-learning/</loc>
     <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1314/tags/</loc>
     <lastmod>2025-09-21T09:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/ai-comparison/</loc>
+    <loc>http://localhost:1314/tags/ai-comparison/</loc>
     <lastmod>2025-09-17T16:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/anthropic/</loc>
+    <loc>http://localhost:1314/tags/anthropic/</loc>
     <lastmod>2025-09-17T16:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/chatgpt/</loc>
+    <loc>http://localhost:1314/tags/chatgpt/</loc>
     <lastmod>2025-09-17T16:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/claude/</loc>
+    <loc>http://localhost:1314/tags/claude/</loc>
     <lastmod>2025-09-17T16:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/openai/</loc>
+    <loc>http://localhost:1314/tags/openai/</loc>
     <lastmod>2025-09-17T16:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/</loc>
+    <loc>http://localhost:1314/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/</loc>
     <lastmod>2025-09-17T16:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/usage-patterns/</loc>
+    <loc>http://localhost:1314/tags/usage-patterns/</loc>
     <lastmod>2025-09-17T16:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/ai-usage/</loc>
+    <loc>http://localhost:1314/tags/ai-usage/</loc>
     <lastmod>2025-09-16T14:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/consumer-ai/</loc>
+    <loc>http://localhost:1314/tags/consumer-ai/</loc>
     <lastmod>2025-09-16T14:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blogs/2025/sep/how-people-use-chatgpt/</loc>
+    <loc>http://localhost:1314/blogs/2025/sep/how-people-use-chatgpt/</loc>
     <lastmod>2025-09-16T14:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/productivity/</loc>
+    <loc>http://localhost:1314/tags/productivity/</loc>
     <lastmod>2025-09-16T14:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blogs/2025/sep/defeating-llm-nondeterminism/</loc>
+    <loc>http://localhost:1314/blogs/2025/sep/defeating-llm-nondeterminism/</loc>
     <lastmod>2025-09-15T10:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/determinism/</loc>
+    <loc>http://localhost:1314/tags/determinism/</loc>
     <lastmod>2025-09-15T10:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/machine-learning/</loc>
+    <loc>http://localhost:1314/tags/machine-learning/</loc>
     <lastmod>2025-09-15T10:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/reproducibility/</loc>
+    <loc>http://localhost:1314/tags/reproducibility/</loc>
     <lastmod>2025-09-15T10:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/research/</loc>
+    <loc>http://localhost:1314/tags/research/</loc>
     <lastmod>2025-09-15T10:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/blogs/</loc>
+    <loc>http://localhost:1314/blogs/</loc>
     <lastmod>2024-01-01T00:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:1314/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

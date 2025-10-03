@@ -1854,6 +1854,13 @@ ul.share li:hover .fab {
   filter: hue-rotate(180deg) contrast(80%) invert(100%) brightness(110%);
   -webkit-filter: hue-rotate(180deg) contrast(80%) invert(100%) brightness(110%);
 }
+:root[data-theme="dark"] #dark-mode-toggle {
+  filter: none !important;
+  -webkit-filter: none !important;
+  pointer-events: auto !important;
+  z-index: 1000 !important;
+}
+
 :root[data-theme="dark"] #dark-mode-toggle::before {
   /* Convert to .bi-sun */
   content: "\f5a2";

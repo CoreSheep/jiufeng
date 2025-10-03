@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI Research on Feng</title>
-    <link>http://localhost:1314/categories/ai-research/</link>
+    <link>https://jiufengblog.web.app/categories/ai-research/</link>
     <description>Recent content in AI Research on Feng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Sun, 21 Sep 2025 09:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1314/categories/ai-research/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.web.app/categories/ai-research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DeepSeek-R1 Makes Nature Cover: How Pure Reinforcement Learning Revolutionizes LLM Reasoning</title>
-      <link>http://localhost:1314/blogs/2025/sep/deepseek-r1-nature-breakthrough/</link>
+      <link>https://jiufengblog.web.app/blogs/2025/sep/deepseek-r1-nature-breakthrough/</link>
       <pubDate>Sun, 21 Sep 2025 09:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/blogs/2025/sep/deepseek-r1-nature-breakthrough/</guid>
+      <guid>https://jiufengblog.web.app/blogs/2025/sep/deepseek-r1-nature-breakthrough/</guid>
       <description>&lt;h1 id=&#34;deepseek-r1-makes-nature-cover-how-pure-reinforcement-learning-revolutionizes-llm-reasoning&#34;&gt;DeepSeek-R1 Makes Nature Cover: How Pure Reinforcement Learning Revolutionizes LLM Reasoning&lt;/h1&gt;&#xA;&lt;p&gt;On September 21, 2025, a research paper from China&amp;rsquo;s DeepSeek team landed on the cover of &lt;em&gt;Nature&lt;/em&gt; magazine, marking a pivotal moment in artificial intelligence. The paper, titled &amp;ldquo;DeepSeek-R1: Incentivizing Reasoning in LLMs through Reinforcement Learning,&amp;rdquo; doesn&amp;rsquo;t just represent a technical breakthrough—it fundamentally challenges the economics of large model training with an approach that&amp;rsquo;s as elegant as it is cost-effective.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Great AI Divide: ChatGPT vs Claude Usage Patterns Reveal Distinct User Preferences</title>
-      <link>http://localhost:1314/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/</link>
+      <link>https://jiufengblog.web.app/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/</link>
       <pubDate>Wed, 17 Sep 2025 16:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/</guid>
+      <guid>https://jiufengblog.web.app/blogs/2025/sep/chatgpt-vs-claude-usage-patterns/</guid>
       <description>&lt;h1 id=&#34;the-great-ai-divide-chatgpt-vs-claude-usage-patterns-reveal-distinct-user-preferences&#34;&gt;The Great AI Divide: ChatGPT vs Claude Usage Patterns Reveal Distinct User Preferences&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In an unprecedented move, both OpenAI and Anthropic have released comprehensive usage studies of their flagship AI assistants, ChatGPT and Claude. These &lt;a href=&#34;https://fortune.com/2025/09/15/openai-chatgpt-claude-anthropic-work-personal-use-new-data/&#34;&gt;dueling analyses&lt;/a&gt; provide fascinating insights into how different AI models are carving out distinct niches in the rapidly evolving landscape of artificial intelligence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How People Are Really Using ChatGPT: Deep Insights from OpenAI&#39;s Latest Usage Analysis</title>
-      <link>http://localhost:1314/blogs/2025/sep/how-people-use-chatgpt/</link>
+      <link>https://jiufengblog.web.app/blogs/2025/sep/how-people-use-chatgpt/</link>
       <pubDate>Tue, 16 Sep 2025 14:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/blogs/2025/sep/how-people-use-chatgpt/</guid>
+      <guid>https://jiufengblog.web.app/blogs/2025/sep/how-people-use-chatgpt/</guid>
       <description>&lt;h1 id=&#34;how-people-are-using-chatgpt-insights-from-openais-latest-usage-analysis&#34;&gt;How People Are Using ChatGPT: Insights from OpenAI&amp;rsquo;s Latest Usage Analysis&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Understanding how people actually use artificial intelligence tools provides crucial insights into the technology&amp;rsquo;s real-world impact and future trajectory. OpenAI recently released a comprehensive analysis of ChatGPT usage patterns, examining millions of conversations to understand how people interact with their flagship AI assistant.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility</title>
-      <link>http://localhost:1314/blogs/2025/sep/defeating-llm-nondeterminism/</link>
+      <link>https://jiufengblog.web.app/blogs/2025/sep/defeating-llm-nondeterminism/</link>
       <pubDate>Mon, 15 Sep 2025 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/blogs/2025/sep/defeating-llm-nondeterminism/</guid>
+      <guid>https://jiufengblog.web.app/blogs/2025/sep/defeating-llm-nondeterminism/</guid>
       <description>&lt;h1 id=&#34;defeating-nondeterminism-in-llm-inference-a-breakthrough-in-deep-learning-system-reproducibility&#34;&gt;Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Reproducibility&lt;/strong&gt; stands as one of the fundamental pillars of scientific research. However, when dealing with large language models (LLMs), achieving reproducible results has proven extraordinarily challenging. Even when we set the temperature parameter to 0 (greedy sampling), which should theoretically produce deterministic results, LLM inference still exhibits nondeterministic behavior.&lt;/p&gt;</description>
     </item>
   </channel>

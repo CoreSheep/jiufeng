@@ -2,145 +2,145 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Feng</title>
-    <link>http://localhost:1314/tags/</link>
+    <link>https://jiufengblog.web.app/tags/</link>
     <description>Recent content in Tags on Feng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Sun, 21 Sep 2025 09:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.web.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ai-Breakthrough</title>
-      <link>http://localhost:1314/tags/ai-breakthrough/</link>
+      <link>https://jiufengblog.web.app/tags/ai-breakthrough/</link>
       <pubDate>Sun, 21 Sep 2025 09:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/ai-breakthrough/</guid>
+      <guid>https://jiufengblog.web.app/tags/ai-breakthrough/</guid>
       <description></description>
     </item>
     <item>
       <title>Deepseek</title>
-      <link>http://localhost:1314/tags/deepseek/</link>
+      <link>https://jiufengblog.web.app/tags/deepseek/</link>
       <pubDate>Sun, 21 Sep 2025 09:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/deepseek/</guid>
+      <guid>https://jiufengblog.web.app/tags/deepseek/</guid>
       <description></description>
     </item>
     <item>
       <title>Llm</title>
-      <link>http://localhost:1314/tags/llm/</link>
+      <link>https://jiufengblog.web.app/tags/llm/</link>
       <pubDate>Sun, 21 Sep 2025 09:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/llm/</guid>
+      <guid>https://jiufengblog.web.app/tags/llm/</guid>
       <description></description>
     </item>
     <item>
       <title>Nature</title>
-      <link>http://localhost:1314/tags/nature/</link>
+      <link>https://jiufengblog.web.app/tags/nature/</link>
       <pubDate>Sun, 21 Sep 2025 09:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/nature/</guid>
+      <guid>https://jiufengblog.web.app/tags/nature/</guid>
       <description></description>
     </item>
     <item>
       <title>Reasoning</title>
-      <link>http://localhost:1314/tags/reasoning/</link>
+      <link>https://jiufengblog.web.app/tags/reasoning/</link>
       <pubDate>Sun, 21 Sep 2025 09:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/reasoning/</guid>
+      <guid>https://jiufengblog.web.app/tags/reasoning/</guid>
       <description></description>
     </item>
     <item>
       <title>Reinforcement-Learning</title>
-      <link>http://localhost:1314/tags/reinforcement-learning/</link>
+      <link>https://jiufengblog.web.app/tags/reinforcement-learning/</link>
       <pubDate>Sun, 21 Sep 2025 09:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/reinforcement-learning/</guid>
+      <guid>https://jiufengblog.web.app/tags/reinforcement-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Ai-Comparison</title>
-      <link>http://localhost:1314/tags/ai-comparison/</link>
+      <link>https://jiufengblog.web.app/tags/ai-comparison/</link>
       <pubDate>Wed, 17 Sep 2025 16:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/ai-comparison/</guid>
+      <guid>https://jiufengblog.web.app/tags/ai-comparison/</guid>
       <description></description>
     </item>
     <item>
       <title>Anthropic</title>
-      <link>http://localhost:1314/tags/anthropic/</link>
+      <link>https://jiufengblog.web.app/tags/anthropic/</link>
       <pubDate>Wed, 17 Sep 2025 16:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/anthropic/</guid>
+      <guid>https://jiufengblog.web.app/tags/anthropic/</guid>
       <description></description>
     </item>
     <item>
       <title>Chatgpt</title>
-      <link>http://localhost:1314/tags/chatgpt/</link>
+      <link>https://jiufengblog.web.app/tags/chatgpt/</link>
       <pubDate>Wed, 17 Sep 2025 16:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/chatgpt/</guid>
+      <guid>https://jiufengblog.web.app/tags/chatgpt/</guid>
       <description></description>
     </item>
     <item>
       <title>Claude</title>
-      <link>http://localhost:1314/tags/claude/</link>
+      <link>https://jiufengblog.web.app/tags/claude/</link>
       <pubDate>Wed, 17 Sep 2025 16:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/claude/</guid>
+      <guid>https://jiufengblog.web.app/tags/claude/</guid>
       <description></description>
     </item>
     <item>
       <title>Openai</title>
-      <link>http://localhost:1314/tags/openai/</link>
+      <link>https://jiufengblog.web.app/tags/openai/</link>
       <pubDate>Wed, 17 Sep 2025 16:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/openai/</guid>
+      <guid>https://jiufengblog.web.app/tags/openai/</guid>
       <description></description>
     </item>
     <item>
       <title>Usage-Patterns</title>
-      <link>http://localhost:1314/tags/usage-patterns/</link>
+      <link>https://jiufengblog.web.app/tags/usage-patterns/</link>
       <pubDate>Wed, 17 Sep 2025 16:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/usage-patterns/</guid>
+      <guid>https://jiufengblog.web.app/tags/usage-patterns/</guid>
       <description></description>
     </item>
     <item>
       <title>Ai-Usage</title>
-      <link>http://localhost:1314/tags/ai-usage/</link>
+      <link>https://jiufengblog.web.app/tags/ai-usage/</link>
       <pubDate>Tue, 16 Sep 2025 14:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/ai-usage/</guid>
+      <guid>https://jiufengblog.web.app/tags/ai-usage/</guid>
       <description></description>
     </item>
     <item>
       <title>Consumer-Ai</title>
-      <link>http://localhost:1314/tags/consumer-ai/</link>
+      <link>https://jiufengblog.web.app/tags/consumer-ai/</link>
       <pubDate>Tue, 16 Sep 2025 14:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/consumer-ai/</guid>
+      <guid>https://jiufengblog.web.app/tags/consumer-ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Productivity</title>
-      <link>http://localhost:1314/tags/productivity/</link>
+      <link>https://jiufengblog.web.app/tags/productivity/</link>
       <pubDate>Tue, 16 Sep 2025 14:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/productivity/</guid>
+      <guid>https://jiufengblog.web.app/tags/productivity/</guid>
       <description></description>
     </item>
     <item>
       <title>Determinism</title>
-      <link>http://localhost:1314/tags/determinism/</link>
+      <link>https://jiufengblog.web.app/tags/determinism/</link>
       <pubDate>Mon, 15 Sep 2025 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/determinism/</guid>
+      <guid>https://jiufengblog.web.app/tags/determinism/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine-Learning</title>
-      <link>http://localhost:1314/tags/machine-learning/</link>
+      <link>https://jiufengblog.web.app/tags/machine-learning/</link>
       <pubDate>Mon, 15 Sep 2025 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/machine-learning/</guid>
+      <guid>https://jiufengblog.web.app/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Reproducibility</title>
-      <link>http://localhost:1314/tags/reproducibility/</link>
+      <link>https://jiufengblog.web.app/tags/reproducibility/</link>
       <pubDate>Mon, 15 Sep 2025 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/reproducibility/</guid>
+      <guid>https://jiufengblog.web.app/tags/reproducibility/</guid>
       <description></description>
     </item>
     <item>
       <title>Research</title>
-      <link>http://localhost:1314/tags/research/</link>
+      <link>https://jiufengblog.web.app/tags/research/</link>
       <pubDate>Mon, 15 Sep 2025 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/tags/research/</guid>
+      <guid>https://jiufengblog.web.app/tags/research/</guid>
       <description></description>
     </item>
   </channel>

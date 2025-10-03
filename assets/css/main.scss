@@ -1829,6 +1829,14 @@ ul.share li:hover .fab {
   -webkit-filter: brightness(100%) contrast(100%);
 }
 
+:root[data-theme="light"] img,
+:root[data-theme="light"] video,
+:root[data-theme="light"] iframe,
+:root[data-theme="light"] body [style*="background-image"] {
+  filter: brightness(105%) contrast(90%);
+  -webkit-filter: brightness(105%) contrast(90%);
+}
+
 /* --- Dark mode --- */
 
 :root[data-theme="dark"] {
@@ -1843,8 +1851,8 @@ ul.share li:hover .fab {
 :root[data-theme="dark"] video,
 :root[data-theme="dark"] iframe,
 :root[data-theme="dark"] body [style*="background-image"] {
-  filter: hue-rotate(180deg) contrast(100%) invert(100%);
-  -webkit-filter: hue-rotate(180deg) contrast(100%) invert(100%);
+  filter: hue-rotate(180deg) contrast(80%) invert(100%) brightness(110%);
+  -webkit-filter: hue-rotate(180deg) contrast(80%) invert(100%) brightness(110%);
 }
 :root[data-theme="dark"] #dark-mode-toggle::before {
   /* Convert to .bi-sun */

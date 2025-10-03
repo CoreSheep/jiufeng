@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Determinism on Feng</title>
-    <link>http://localhost:1314/tags/determinism/</link>
+    <link>https://jiufengblog.web.app/tags/determinism/</link>
     <description>Recent content in Determinism on Feng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Mon, 15 Sep 2025 10:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/determinism/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jiufengblog.web.app/tags/determinism/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility</title>
-      <link>http://localhost:1314/blogs/2025/sep/defeating-llm-nondeterminism/</link>
+      <link>https://jiufengblog.web.app/blogs/2025/sep/defeating-llm-nondeterminism/</link>
       <pubDate>Mon, 15 Sep 2025 10:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:1314/blogs/2025/sep/defeating-llm-nondeterminism/</guid>
+      <guid>https://jiufengblog.web.app/blogs/2025/sep/defeating-llm-nondeterminism/</guid>
       <description>&lt;h1 id=&#34;defeating-nondeterminism-in-llm-inference-a-breakthrough-in-deep-learning-system-reproducibility&#34;&gt;Defeating Nondeterminism in LLM Inference: A Breakthrough in Deep Learning System Reproducibility&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Reproducibility&lt;/strong&gt; stands as one of the fundamental pillars of scientific research. However, when dealing with large language models (LLMs), achieving reproducible results has proven extraordinarily challenging. Even when we set the temperature parameter to 0 (greedy sampling), which should theoretically produce deterministic results, LLM inference still exhibits nondeterministic behavior.&lt;/p&gt;</description>
     </item>
   </channel>

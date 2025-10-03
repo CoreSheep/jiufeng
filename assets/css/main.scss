@@ -1833,16 +1833,16 @@ ul.share li:hover .fab {
 :root[data-theme="light"] video,
 :root[data-theme="light"] iframe,
 :root[data-theme="light"] body [style*="background-image"] {
-  filter: brightness(105%) contrast(90%);
-  -webkit-filter: brightness(105%) contrast(90%);
+  filter: brightness(100%) contrast(90%);
+  -webkit-filter: brightness(100%) contrast(90%);
 }
 
 /* --- Dark mode --- */
 
 :root[data-theme="dark"] {
   background-color: #171717 !important;
-  filter: invert(100%) hue-rotate(180deg) brightness(125%) contrast(90%);
-  -webkit-filter: invert(100%) hue-rotate(180deg) brightness(125%) contrast(90%);
+  filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(90%);
+  -webkit-filter: invert(100%) hue-rotate(180deg) brightness(120%) contrast(90%);
 }
 :root[data-theme="dark"] body {
   background-color: #FFF !important;
@@ -1851,8 +1851,8 @@ ul.share li:hover .fab {
 :root[data-theme="dark"] video,
 :root[data-theme="dark"] iframe,
 :root[data-theme="dark"] body [style*="background-image"] {
-  filter: hue-rotate(180deg) contrast(80%) invert(100%) brightness(110%);
-  -webkit-filter: hue-rotate(180deg) contrast(80%) invert(100%) brightness(110%);
+  filter: hue-rotate(180deg) contrast(60%) invert(100%) brightness(130%);
+  -webkit-filter: hue-rotate(180deg) contrast(60%) invert(100%) brightness(130%);
 }
 :root[data-theme="dark"] #dark-mode-toggle {
   filter: none !important;

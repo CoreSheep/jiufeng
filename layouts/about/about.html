@@ -124,7 +124,49 @@
               color: #71b084;
               border-bottom-color: #71b084;
             }
-            
+
+            /* Steve Jobs Quote Styling */
+            .prose blockquote {
+              background: linear-gradient(135deg, rgba(113, 176, 132, 0.08) 0%, rgba(211, 196, 245, 0.08) 100%);
+              border-left: 4px solid #71b084;
+              padding: 1.5rem;
+              margin: 2.5rem 0;
+              border-radius: 0 8px 8px 0;
+              font-style: italic;
+              color: #2d3436;
+              font-size: 1.1rem;
+              font-weight: 500;
+              line-height: 1.6;
+              letter-spacing: 0.3px;
+              transition: all 0.3s ease;
+              box-shadow: 0 4px 15px rgba(113, 176, 132, 0.08);
+            }
+
+            .prose blockquote:hover {
+              box-shadow: 0 6px 25px rgba(113, 176, 132, 0.15);
+              transform: translateX(2px);
+            }
+
+            .prose blockquote p {
+              margin: 0;
+              color: #2d3436;
+            }
+
+            .prose blockquote em {
+              font-style: normal;
+              color: #71b084;
+              font-weight: 600;
+            }
+
+            /* Align attribution to the left */
+            .prose blockquote p:last-child {
+              text-align: left;
+              margin-top: -0.5rem;
+              margin-bottom: 0;
+              font-style: normal;
+              font-size: 0.95rem;
+            }
+
             /* 手机端响应式优化 */
             @media (max-width: 768px) {
               .about-section .container {

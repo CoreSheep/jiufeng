@@ -93,4 +93,6 @@ Graduated from a prestigious 211 & 985 project university (ESI Rank Top 1‰). M
 
 ---
 
-*Always excited to connect with researchers, entrepreneurs, and anyone passionate about AI, technology, or life in general. Feel free to reach out!* :D
+> "The people who are crazy enough to think they can change the world are the ones that do."
+>
+> — Steve Jobs

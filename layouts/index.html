@@ -6,14 +6,14 @@
 <!-- Hero Section -->
 <div class="hero-section py-5 mb-5" style="background: #e8e8e8; position: relative; overflow: hidden; margin-top: 1rem; margin-bottom: 2rem;">
   <div class="container" style="position: relative; z-index: 2; max-width: 1200px;">
-    <div class="row" style="padding-top: 2rem; padding-bottom: 2rem; align-items: flex-start; gap: 2rem;">
-      <div class="col-lg-8">
+    <div class="row" style="padding-top: 4rem; padding-bottom: 4rem;">
+      <div class="col-6">
         <div class="hero-quote">
           <h2 class="hero-quote-text" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 500; font-size: 2.8rem; line-height: 1.3; letter-spacing: -0.01em; color: #000000; margin: 0; margin-bottom: 1.5rem;">
-            People who are crazy enough to think they can change the world, are the ones that do.
+            "People who are crazy enough to think they can change the world, are the ones that do."
           </h2>
           <p class="hero-quote-attribution" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.6; color: #666666; margin: 0; margin-bottom: 2rem;">
-            Steve Jobs
+            -- Steve Jobs
           </p>
         </div>
         <div class="d-flex gap-3" style="position: relative; z-index: 2;">
@@ -21,11 +21,11 @@
           <a href="/blogs/" class="btn btn-outline-light btn-mobile" style="border: 2px solid #1a1a1a; color: #1a1a1a; font-weight: 300; font-size: 0.95rem; padding: 0.5rem 1.2rem; border-radius: 6px; background: rgba(26, 26, 26, 0.08); backdrop-filter: none; transition: all 0.3s ease;" onmouseover="this.style.background='#666666'; this.style.borderColor='#666666'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(113, 176, 132, 0.4)';" onmouseout="this.style.background='rgba(26, 26, 26, 0.08)'; this.style.borderColor='#1a1a1a'; this.style.color='#1a1a1a'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">Read My Blogs</a>
         </div>
       </div>
-      <div class="col-lg-4 d-flex align-items-flex-start justify-content-center hero-avatar-container" style="margin-top: 0; margin-bottom: 0; padding: 0;">
+      <div class="col-6 hero-avatar-container" style="display: flex; align-items: center; justify-content: flex-end; padding-right: 0;">
         {{ $image := resources.Get "/img/author/author_profile_pic.jpg" }}
         {{ if $image }}
         <img src="{{ $image.RelPermalink }}" alt="Jiufeng Li"
-             class="rounded-circle img-fluid shadow hero-avatar" style="width: 200px; height: 200px; object-fit: cover; flex-shrink: 0;">
+             class="rounded-circle img-fluid shadow hero-avatar" style="width: 200px; height: 200px; object-fit: cover; margin-right: 7rem;">
         {{ end }}
       </div>
     </div>
@@ -544,125 +544,58 @@ body.small-cards-active .small-blog-card {
 
 .skill-tab {
   font-size: 0.8rem;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 1rem;
   border-radius: 20px;
-  border: none;
-  background: #f8f9fa;
-  color: #6c757d;
-  transition: all 0.3s ease;
+  border: 2px solid #e8e8e8;
+  background: #f5f5f5 !important;
+  color: #2d3436 !important;
+  transition: none;
+  font-weight: 500;
+  margin: 0 0.4rem;
 }
 
 .skill-tab.active {
-  background: solid #f0f0f0;
-  color: white;
-  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3);
+  background: #f5f5f5 !important;
+  color: #2d3436 !important;
+  border: 2px solid #aaaaaa !important;
 }
 
 .skill-tab:hover {
-  background: #e9ecef;
-  color: #495057;
+  background: #efefef !important;
+  color: #2d3436 !important;
 }
 
 .skill-tab.active:hover {
-  background: solid #f0f0f0;
-  color: white;
+  background: #f5f5f5 !important;
+  color: #2d3436 !important;
+  border: 2px solid #aaaaaa !important;
 }
 
-/* Override Bootstrap default tab switching effects */
-.nav-pills .nav-link:focus {
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none;
-}
-
-.nav-pills .nav-link:focus-visible {
+/* Override Bootstrap default tab switching effects - skill tab specific */
+.skill-tab:focus,
+.skill-tab:focus-visible {
   outline: none;
   box-shadow: none;
+  background: #f5f5f5 !important;
+  color: #2d3436 !important;
+  border: 2px solid #e8e8e8 !important;
 }
 
-.nav-pills .nav-link:active {
-  background-color: transparent;
-  border-color: transparent;
+.skill-tab:active {
+  background: #f5f5f5 !important;
+  color: #2d3436 !important;
+  border: 2px solid #e8e8e8 !important;
 }
 
-.nav-pills .nav-link.active:focus {
-  background: solid #f0f0f0;
-  border-color: transparent;
-  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3);
-}
-
-.nav-pills .nav-link.active:focus-visible {
+.skill-tab.active:focus,
+.skill-tab.active:focus-visible,
+.skill-tab.active:active,
+.skill-tab.active.show {
+  background: #f5f5f5 !important;
+  color: #2d3436 !important;
+  border: 2px solid #aaaaaa !important;
+  box-shadow: none;
   outline: none;
-  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3);
-}
-
-/* Ensure all possible Bootstrap default styles are overridden */
-.nav-pills .nav-link:not(.active):focus {
-  background-color: #f8f9fa !important;
-  border-color: transparent !important;
-  box-shadow: none !important;
-  color: #6c757d !important;
-}
-
-.nav-pills .nav-link:not(.active):focus-visible {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.nav-pills .nav-link:not(.active):active {
-  background-color: #f8f9fa !important;
-  border-color: transparent !important;
-  color: #6c757d !important;
-}
-
-/* Override Bootstrap default blue focus ring */
-.nav-pills .nav-link:focus {
-  box-shadow: none !important;
-}
-
-.nav-pills .nav-link.active:focus {
-  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3) !important;
-}
-
-/* Override Bootstrap JavaScript dynamically added styles */
-.nav-pills .nav-link.show {
-  background-color: #f8f9fa !important;
-  border-color: transparent !important;
-  color: #6c757d !important;
-}
-
-.nav-pills .nav-link.active.show {
-  background: solid #f0f0f0 !important;
-  border-color: transparent !important;
-  color: white !important;
-  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3) !important;
-}
-
-/* Override all possible Bootstrap default colors */
-.nav-pills .nav-link:focus,
-.nav-pills .nav-link:focus-visible,
-.nav-pills .nav-link:active,
-.nav-pills .nav-link.show:focus,
-.nav-pills .nav-link.show:focus-visible,
-.nav-pills .nav-link.show:active {
-  background-color: #f8f9fa !important;
-  border-color: transparent !important;
-  box-shadow: none !important;
-  color: #6c757d !important;
-  outline: none !important;
-}
-
-.nav-pills .nav-link.active:focus,
-.nav-pills .nav-link.active:focus-visible,
-.nav-pills .nav-link.active:active,
-.nav-pills .nav-link.active.show:focus,
-.nav-pills .nav-link.active.show:focus-visible,
-.nav-pills .nav-link.active.show:active {
-  background: solid #f0f0f0 !important;
-  border-color: transparent !important;
-  box-shadow: 0 2px 10px rgba(113, 176, 132, 0.3) !important;
-  color: white !important;
-  outline: none !important;
 }
 
 .skill-category h6 {
@@ -678,52 +611,22 @@ body.small-cards-active .small-blog-card {
 
 .skill-badge {
   display: inline-block;
-  padding: 0.3rem 0.8rem;
-  border-radius: 6px;
+  padding: 0.35rem 0.8rem;
+  border-radius: 14px;
   font-size: 0.75rem;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
   transition: all 0.2s ease;
+  background: #f0ebe0;
+  color: #000000;
+  border: 1px solid rgba(0,0,0,0.1);
 }
 
-/* Cycle through three theme colors */
-.skill-badge:nth-child(3n+1) {
-  background: rgba(113, 176, 132, 0.1);
-  color: #666666;
-  border: 1px solid rgba(113, 176, 132, 0.3);
-}
-
-.skill-badge:nth-child(3n+2) {
-  background: rgba(184, 163, 232, 0.1);
-  color: #b8a3e8;
-  border: 1px solid rgba(184, 163, 232, 0.3);
-}
-
-.skill-badge:nth-child(3n+3) {
-  background: rgba(131, 151, 136, 0.1);
-  color: #839788;
-  border: 1px solid rgba(131, 151, 136, 0.3);
-}
-
-.skill-badge:nth-child(3n+1):hover {
-  background: rgba(113, 176, 132, 0.2);
-  border-color: rgba(113, 176, 132, 0.5);
+.skill-badge:hover {
+  background: #e8dfd0;
+  border-color: rgba(0,0,0,0.2);
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(113, 176, 132, 0.2);
-}
-
-.skill-badge:nth-child(3n+2):hover {
-  background: rgba(211, 196, 245, 0.2);
-  border-color: rgba(211, 196, 245, 0.5);
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(211, 196, 245, 0.2);
-}
-
-.skill-badge:nth-child(3n+3):hover {
-  background: rgba(131, 151, 136, 0.2);
-  border-color: rgba(131, 151, 136, 0.5);
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(131, 151, 136, 0.2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 
@@ -1314,38 +1217,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Ensure navigation bar uses global styles, no override */
 /* Remove homepage-specific navigation bar style overrides, use global CSS settings */
 
-/* JavaScript solution: prevent blue flash on first click */
-document.addEventListener('DOMContentLoaded', function() {
-  // Prevent blue flash on first click
-  const skillTabs = document.querySelectorAll('#skillsTab .nav-link');
-  
-  skillTabs.forEach(tab => {
-    // Remove Bootstrap default focus styles
-    tab.addEventListener('click', function(e) {
-      // Immediately remove possible blue styles
-      this.style.setProperty('background-color', '', 'important');
-      this.style.setProperty('border-color', '', 'important');
-      this.style.setProperty('box-shadow', '', 'important');
-      this.style.setProperty('outline', 'none', 'important');
-      
-      // If active state, apply green styles
-      if (this.classList.contains('active')) {
-        this.style.setProperty('background', 'linear-gradient(135deg, #666666, #839788)', 'important');
-        this.style.setProperty('color', 'white', 'important');
-        this.style.setProperty('box-shadow', '0 2px 10px rgba(113, 176, 132, 0.3)', 'important');
-      } else {
-        this.style.setProperty('background-color', '#f8f9fa', 'important');
-        this.style.setProperty('color', '#6c757d', 'important');
-      }
-    });
-    
-    // Listen to focus events
-    tab.addEventListener('focus', function() {
-      this.style.setProperty('outline', 'none', 'important');
-      this.style.setProperty('box-shadow', 'none', 'important');
-    });
-  });
-});
+/* Simplified tab styling - no JavaScript animations */
 
 /* Homepage mobile responsive optimization */
 @media (max-width: 768px) {
@@ -1354,14 +1226,19 @@ document.addEventListener('DOMContentLoaded', function() {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
-  
+
+  /* Hero Quote Text - Tablet */
+  .hero-quote-text {
+    font-size: 2rem !important;
+  }
+
   /* Hero Buttons */
   .hero-section .d-flex.gap-3 {
     justify-content: center !important;
     flex-wrap: wrap;
     gap: 0.8rem !important;
   }
-  
+
   .hero-section .d-flex.gap-3 .btn {
     flex: 0 0 auto;
     min-width: 140px;
@@ -1390,14 +1267,25 @@ document.addEventListener('DOMContentLoaded', function() {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
-  
+
+  /* Hero Quote Text - Mobile Small */
+  .hero-quote-text {
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Hero Quote Attribution - Mobile */
+  .hero-quote-attribution {
+    font-size: 0.9rem !important;
+  }
+
   /* Hero Buttons - Smaller screens */
   .hero-section .d-flex.gap-3 {
     flex-direction: column;
     align-items: center;
     gap: 0.6rem !important;
   }
-  
+
   .hero-section .d-flex.gap-3 .btn {
     width: 100%;
     max-width: 200px;

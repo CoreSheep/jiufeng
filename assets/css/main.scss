@@ -1673,8 +1673,7 @@ ul.share li:hover .fab {
 /* eo font style */
 
 .navbar {
-  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
-  background-color: rgba(255, 255, 255, .98);
+  background-color: #e8e8e8;
   z-index: 9999;
 }
 
@@ -1696,7 +1695,9 @@ ul.share li:hover .fab {
 }
 
 .nav-link {
-  background-color: rgba(255, 255, 255, .98);
+  background-color: transparent !important;
+  font-size: 18px !important;
+  font-weight: 500;
 }
 
 /* Remove page transition effects */

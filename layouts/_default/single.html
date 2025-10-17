@@ -11,7 +11,7 @@
           {{ if .Params.categories }}
           <div class="category-badge mb-3">
             {{ range first 1 .Params.categories }}
-            <span class="badge px-3 py-2 rounded-pill fw-medium" style="background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3);">{{ . }}</span>
+            <span class="badge px-3 py-2 rounded-pill fw-medium" style="background: rgba(113, 176, 132, 0.1); color: #666666; border: 1px solid rgba(113, 176, 132, 0.3);">{{ . }}</span>
             {{ end }}
           </div>
           {{ end }}
@@ -157,7 +157,7 @@
           <a type="button" class="btn btn-dark" role="button" href="{{ .PrevInSection.Permalink }}"
             data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}" 
             style="transition: all 0.3s ease;" 
-            onmouseover="this.style.background='#71b084'; this.style.borderColor='#71b084'; this.style.color='white';" 
+            onmouseover="this.style.background='#666666'; this.style.borderColor='#666666'; this.style.color='white';" 
             onmouseout="this.style.background='#343a40'; this.style.borderColor='#343a40'; this.style.color='white';">&larr;
             {{ i18n "previousPost" }}</a>
         </li>
@@ -169,7 +169,7 @@
           <a type="button" class="btn btn-dark" role="button" href="{{ .NextInSection.Permalink }}"
             data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}" 
             style="transition: all 0.3s ease;" 
-            onmouseover="this.style.background='#71b084'; this.style.borderColor='#71b084'; this.style.color='white';" 
+            onmouseover="this.style.background='#666666'; this.style.borderColor='#666666'; this.style.color='white';" 
             onmouseout="this.style.background='#343a40'; this.style.borderColor='#343a40'; this.style.color='white';">{{ i18n "nextPost" }}
             &rarr;</a>
         </li>
@@ -197,7 +197,7 @@
     <div class="row">
       <div class="col-lg-12 col-md-12 mt-3">
         <h3 style="color: #2d3436; font-family: 'Inter', sans-serif; font-weight: 600;">{{ i18n "readMore" }}</h3>
-        <hr style="border-color: #71b084; border-width: 2px;" />
+        <hr style="border-color: #666666; border-width: 2px;" />
       </div>
 
       {{ $num_to_show := .Site.Params.related_content_limit | default 3 }}
@@ -271,7 +271,7 @@
 }
 
 .article-info i {
-  color: #71b084;
+  color: #666666;
   font-size: 1rem;
 }
 
@@ -427,7 +427,7 @@ article.blog-post-content > h1:first-child {
 
 /* Blockquotes */
 .blog-post-content blockquote {
-  border-left: 4px solid #71b084;
+  border-left: 4px solid #666666;
   background: #f7fafc;
   padding: 1.2rem 1.5rem;
   margin: 1.5rem 0;
@@ -470,7 +470,7 @@ article.blog-post-content > h1:first-child {
 
 /* Links */
 .blog-post-content a {
-  color: #71b084;
+  color: #666666;
   text-decoration: none;
   font-weight: 500;
   border-bottom: 1px solid transparent;

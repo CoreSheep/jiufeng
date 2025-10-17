@@ -14,7 +14,7 @@
           {{ else }}
           <!-- Default gradient background -->
           <div class="card-img-wrapper h-100 d-flex align-items-center justify-content-center" 
-               style="background: linear-gradient(135deg, #71b084 0%, #839788 100%); padding: 0.4rem;">
+               style="background: linear-gradient(135deg, #666666 0%, #839788 100%); padding: 0.4rem;">
             <i class="bi bi-journal-text text-white" style="font-size: 1.5rem; opacity: 0.9;"></i>
           </div>
           {{ end }}
@@ -28,13 +28,13 @@
             {{ if .Params.categories }}
             <div class="mb-2">
               {{ range first 1 .Params.categories }}
-              <span class="badge" style="font-size: 0.7rem; background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3);">{{ . }}</span>
+              <span class="badge" style="font-size: 0.7rem; background: rgba(113, 176, 132, 0.1); color: #666666; border: 1px solid rgba(113, 176, 132, 0.3);">{{ . }}</span>
               {{ end }}
             </div>
             {{ else if .Params.tags }}
             <div class="mb-2">
               {{ range first 1 .Params.tags }}
-              <span class="badge" style="font-size: 0.7rem; background: rgba(113, 176, 132, 0.1); color: #71b084; border: 1px solid rgba(113, 176, 132, 0.3);">{{ . }}</span>
+              <span class="badge" style="font-size: 0.7rem; background: rgba(113, 176, 132, 0.1); color: #666666; border: 1px solid rgba(113, 176, 132, 0.3);">{{ . }}</span>
               {{ end }}
             </div>
             {{ end }}
@@ -102,7 +102,7 @@
 }
 
 .tag-blog-card:hover .card-title {
-  color: #71b084 !important;
+  color: #666666 !important;
 }
 
 .card-img-wrapper {

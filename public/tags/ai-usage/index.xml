@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ai-Usage on Feng</title>
-    <link>https://jiufengblog.web.app/tags/ai-usage/</link>
+    <link>http://localhost:61186/tags/ai-usage/</link>
     <description>Recent content in Ai-Usage on Feng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
     <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
     <lastBuildDate>Tue, 16 Sep 2025 14:00:00 +0100</lastBuildDate>
-    <atom:link href="https://jiufengblog.web.app/tags/ai-usage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61186/tags/ai-usage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How People Are Really Using ChatGPT: Deep Insights from OpenAI&#39;s Latest Usage Analysis</title>
-      <link>https://jiufengblog.web.app/blogs/2025/sep/how-people-use-chatgpt/</link>
+      <link>http://localhost:61186/blogs/2025/sep/how-people-use-chatgpt/</link>
       <pubDate>Tue, 16 Sep 2025 14:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>https://jiufengblog.web.app/blogs/2025/sep/how-people-use-chatgpt/</guid>
+      <guid>http://localhost:61186/blogs/2025/sep/how-people-use-chatgpt/</guid>
       <description>&lt;h1 id=&#34;how-people-are-using-chatgpt-insights-from-openais-latest-usage-analysis&#34;&gt;How People Are Using ChatGPT: Insights from OpenAI&amp;rsquo;s Latest Usage Analysis&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Understanding how people actually use artificial intelligence tools provides crucial insights into the technology&amp;rsquo;s real-world impact and future trajectory. OpenAI recently released a comprehensive analysis of ChatGPT usage patterns, examining millions of conversations to understand how people interact with their flagship AI assistant.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -430,12 +430,83 @@
   </div>
 
         <!-- View All Blogs Button -->
-        <div class="text-center">
-          <a href="/blogs/" class="btn btn-outline-success btn-lg px-4 py-3 rounded-pill btn-view-all-mobile" style="border-color: #71b084; color: #71b084; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#71b084'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#71b084';">
-            <i class="bi bi-journal-text me-2"></i>View All Blog Posts
-            <i class="bi bi-arrow-right ms-2"></i>
+        <div class="text-center mt-5">
+          <a href="/blogs/" class="btn btn-view-all-enhanced" style="border: 2px solid #71b084; color: #71b084; background: linear-gradient(135deg, rgba(113, 176, 132, 0.02) 0%, rgba(211, 196, 245, 0.02) 100%); padding: 0.75rem 2rem; border-radius: 50px; font-weight: 500; font-size: 1rem; letter-spacing: 0.5px; display: inline-flex; align-items: center; gap: 0.8rem; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 4px 15px rgba(113, 176, 132, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.6); position: relative; overflow: hidden;" onmouseover="this.style.backgroundColor='#71b084'; this.style.color='white'; this.style.boxShadow='0 8px 30px rgba(113, 176, 132, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)'; this.style.transform='translateY(-2px) scale(1.02)';" onmouseout="this.style.backgroundColor=''; this.style.color='#71b084'; this.style.boxShadow='0 4px 15px rgba(113, 176, 132, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.6)'; this.style.transform='translateY(0) scale(1)';">
+            <span class="btn-icon" style="display: inline-block; transition: all 0.3s ease;">
+              <i class="bi bi-journal-text"></i>
+            </span>
+            <span class="btn-text">View All Blog Posts</span>
+            <span class="btn-arrow" style="display: inline-block; margin-left: 0.5rem; transition: all 0.3s ease;">
+              <i class="bi bi-arrow-right"></i>
+            </span>
           </a>
         </div>
+        <style>
+          .btn-view-all-enhanced {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
+            text-decoration: none;
+          }
+
+          .btn-view-all-enhanced::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+            z-index: -1;
+          }
+
+          .btn-view-all-enhanced:hover::before {
+            left: 100%;
+          }
+
+          .btn-view-all-enhanced .btn-icon {
+            animation-duration: 0.6s;
+          }
+
+          .btn-view-all-enhanced:hover .btn-arrow {
+            animation: slideArrow 0.6s ease infinite;
+          }
+
+          @keyframes slideArrow {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(4px); }
+          }
+
+          /* Mobile responsive adjustments */
+          @media (max-width: 768px) {
+            .btn-view-all-enhanced {
+              padding: 0.65rem 1.5rem !important;
+              font-size: 0.95rem !important;
+            }
+
+            .btn-view-all-enhanced .btn-text {
+              display: none;
+            }
+
+            .btn-view-all-enhanced .btn-icon {
+              margin-right: 0.5rem;
+            }
+
+            .btn-view-all-enhanced .btn-arrow {
+              display: none;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .btn-view-all-enhanced {
+              padding: 0.6rem 1.2rem !important;
+              font-size: 0.9rem !important;
+            }
+
+            .btn-view-all-enhanced span {
+              font-size: 0.9rem !important;
+            }
+          }
+        </style>
       </div>
     </div>
   </div>

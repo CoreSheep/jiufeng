@@ -91,10 +91,12 @@
           <!-- Quick Stats -->
           <div class="row g-2 mb-4">
             <div class="col-6 text-center">
-              <div class="stat-item">
-                <h5 class="h4 mb-1" style="color: #2d3436;">{{ len (where (where site.Pages "Section" "blogs") "Kind" "page") }}</h5>
-                <small class="text-muted">Blog Posts</small>
-              </div>
+              <a href="/blogs/" class="text-decoration-none" style="cursor: pointer;">
+                <div class="stat-item" style="transition: all 0.2s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.opacity='0.8';" onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+                  <h5 class="h4 mb-1" style="color: #2d3436;">{{ len (where (where site.Pages "Section" "blogs") "Kind" "page") }}</h5>
+                  <small class="text-muted">Blog Posts</small>
+                </div>
+              </a>
             </div>
             <div class="col-6 text-center">
               <div class="stat-item">

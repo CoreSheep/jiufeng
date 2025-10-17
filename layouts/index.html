@@ -1256,7 +1256,7 @@ h2, h3, h4 {
   font-weight: 300 !important;
 }
 
-/* OVERRIDE ALL HERO DESCRIPTION COLORS TO BLACK */
+/* LIGHT MODE ONLY - FORCE HERO DESCRIPTION TEXT TO BLACK */
 .hero-description {
   color: #000000 !important;
 }
@@ -1269,165 +1269,23 @@ h2, h3, h4 {
   display: inline-block;
 }
 
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-  .hero-title {
-    color: white !important;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
-  }
-  
-  .hero-description {
-    color: rgba(255, 255, 255, 0.95) !important;
-  }
-  
-  .hero-description strong {
-    color: rgba(255, 255, 255, 0.98) !important;
-    text-shadow: 0 0 10px rgba(113, 176, 132, 0.4), 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .position-tag {
-    background: rgba(255, 255, 255, 0.25) !important;
-    border: 1px solid rgba(255, 255, 255, 0.5) !important;
-    color: white !important;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  }
-}
-
-/* Light mode styles */
-@media (prefers-color-scheme: light) {
-  .hero-title {
-    color: #000000 !important;
-    text-shadow: none !important;
-  }
-
-  .hero-description {
-    color: #000000 !important;
-  }
-
-  .hero-description strong {
-    color: #000000 !important;
-    text-shadow: none;
-  }
-  
-  .position-tag {
-    background: rgba(45, 52, 54, 0.1) !important;
-    border: 1px solid rgba(45, 52, 54, 0.3) !important;
-    color: rgba(45, 52, 54, 0.9) !important;
-    text-shadow: none;
-  }
-}
-
-/* Manual dark mode classes */
-.hero-section.dark-mode .hero-title {
-  color: #e0e0e0 !important;
-  text-shadow: none !important;
-}
-
-.hero-section.dark-mode .hero-description {
-  color: #c0c0c0 !important;
-}
-
-.hero-section.dark-mode .hero-description strong {
-  color: #e0e0e0 !important;
-  text-shadow: none;
-}
-
-.hero-section.dark-mode .position-tag {
-  background: rgba(113, 176, 132, 0.15) !important;
-  border: 1px solid rgba(113, 176, 132, 0.4) !important;
-  color: #666666 !important;
-  text-shadow: none;
-}
-
-/* Manual light mode classes */
-.hero-section.light-mode .hero-title {
+.hero-title {
   color: #000000 !important;
   text-shadow: none !important;
 }
 
-.hero-section.light-mode .hero-description {
-  color: #000000 !important;
+.position-tag {
+  background: rgba(45, 52, 54, 0.1) !important;
+  border: 1px solid rgba(45, 52, 54, 0.3) !important;
+  color: rgba(45, 52, 54, 0.9) !important;
+  text-shadow: none !important;
 }
 
-.hero-section.light-mode .hero-description strong {
-  color: #000000 !important;
-  text-shadow: none;
-}
-
-.hero-section.light-mode .position-tag {
-  background: rgba(113, 176, 132, 0.1) !important;
-  border: 1px solid rgba(113, 176, 132, 0.3) !important;
-  color: #666666 !important;
-  text-shadow: none;
-}
-
-/* Manual mode hover effects - removed */
-
-.hero-section.dark-mode .position-tag:hover {
-  background: rgba(113, 176, 132, 0.4) !important;
-  border-color: rgba(113, 176, 132, 0.8) !important;
-  color: white !important;
-}
-
-/* Light mode strong hover effects - removed */
-
-.hero-section.light-mode .position-tag:hover {
+.position-tag:hover {
   background: rgba(113, 176, 132, 0.15) !important;
   border-color: rgba(113, 176, 132, 0.6) !important;
   color: rgba(45, 52, 54, 1) !important;
 }
-
-/* Remove underline effects */
-.hero-description strong::after {
-  display: none;
-}
-
-/* Underlines in media queries - all removed */
-@media (prefers-color-scheme: dark) {
-  .hero-description strong::after,
-  .hero-description strong:hover::after {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .hero-description strong::after,
-  .hero-description strong:hover::after {
-    display: none;
-  }
-}
-
-/* Manual mode underlines - all removed */
-.hero-section.dark-mode .hero-description strong::after,
-.hero-section.dark-mode .hero-description strong:hover::after,
-.hero-section.light-mode .hero-description strong::after,
-.hero-section.light-mode .hero-description strong:hover::after {
-  display: none;
-}
-
-/* Basic strong hover effects - removed */
-
-/* Dark mode hover effects - strong hover removed */
-@media (prefers-color-scheme: dark) {
-  
-  .position-tag:hover {
-    background: rgba(113, 176, 132, 0.4) !important;
-    border-color: rgba(113, 176, 132, 0.8) !important;
-    color: white !important;
-  }
-}
-
-/* Light mode hover effects - strong hover removed */
-@media (prefers-color-scheme: light) {
-  
-  .position-tag:hover {
-    background: rgba(113, 176, 132, 0.15) !important;
-    border-color: rgba(113, 176, 132, 0.6) !important;
-    color: rgba(45, 52, 54, 1) !important;
-  }
-}
-
-/* Strong hover underline effects - removed */
 
 /* Position tag responsive design */
 @media (max-width: 768px) {

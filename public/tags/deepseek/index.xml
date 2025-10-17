@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Deepseek on Feng</title>
-    <link>http://localhost:61186/tags/deepseek/</link>
-    <description>Recent content in Deepseek on Feng</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor>
-    <webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster>
-    <lastBuildDate>Sun, 21 Sep 2025 09:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:61186/tags/deepseek/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DeepSeek-R1 Makes Nature Cover: How Pure Reinforcement Learning Revolutionizes LLM Reasoning</title>
-      <link>http://localhost:61186/blogs/2025/sep/deepseek-r1-nature-breakthrough/</link>
-      <pubDate>Sun, 21 Sep 2025 09:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author>
-      <guid>http://localhost:61186/blogs/2025/sep/deepseek-r1-nature-breakthrough/</guid>
-      <description>&lt;h1 id=&#34;deepseek-r1-makes-nature-cover-how-pure-reinforcement-learning-revolutionizes-llm-reasoning&#34;&gt;DeepSeek-R1 Makes Nature Cover: How Pure Reinforcement Learning Revolutionizes LLM Reasoning&lt;/h1&gt;&#xA;&lt;p&gt;On September 21, 2025, a research paper from China&amp;rsquo;s DeepSeek team landed on the cover of &lt;em&gt;Nature&lt;/em&gt; magazine, marking a pivotal moment in artificial intelligence. The paper, titled &amp;ldquo;DeepSeek-R1: Incentivizing Reasoning in LLMs through Reinforcement Learning,&amp;rdquo; doesn&amp;rsquo;t just represent a technical breakthrough—it fundamentally challenges the economics of large model training with an approach that&amp;rsquo;s as elegant as it is cost-effective.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Deepseek on Feng</title><link>https://jiufengblog.web.app/tags/deepseek/</link><description>Recent content in Deepseek on Feng</description><generator>Hugo</generator><language>en-us</language><managingEditor>lijiufeng97@gmail.com (Jiufeng Li)</managingEditor><webMaster>lijiufeng97@gmail.com (Jiufeng Li)</webMaster><lastBuildDate>Sun, 21 Sep 2025 09:00:00 +0100</lastBuildDate><atom:link href="https://jiufengblog.web.app/tags/deepseek/index.xml" rel="self" type="application/rss+xml"/><item><title>DeepSeek-R1 Makes Nature Cover: How Pure Reinforcement Learning Revolutionizes LLM Reasoning</title><link>https://jiufengblog.web.app/blogs/2025/sep/deepseek-r1-nature-breakthrough/</link><pubDate>Sun, 21 Sep 2025 09:00:00 +0100</pubDate><author>lijiufeng97@gmail.com (Jiufeng Li)</author><guid>https://jiufengblog.web.app/blogs/2025/sep/deepseek-r1-nature-breakthrough/</guid><description>&lt;h1 id="deepseek-r1-makes-nature-cover-how-pure-reinforcement-learning-revolutionizes-llm-reasoning">DeepSeek-R1 Makes Nature Cover: How Pure Reinforcement Learning Revolutionizes LLM Reasoning&lt;/h1>
+&lt;p>On September 21, 2025, a research paper from China&amp;rsquo;s DeepSeek team landed on the cover of &lt;em>Nature&lt;/em> magazine, marking a pivotal moment in artificial intelligence. The paper, titled &amp;ldquo;DeepSeek-R1: Incentivizing Reasoning in LLMs through Reinforcement Learning,&amp;rdquo; doesn&amp;rsquo;t just represent a technical breakthrough—it fundamentally challenges the economics of large model training with an approach that&amp;rsquo;s as elegant as it is cost-effective.&lt;/p></description></item></channel></rss>

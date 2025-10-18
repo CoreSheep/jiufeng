@@ -105,41 +105,36 @@
 
     {{ if not .Site.Params.hideAuthor }}
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 mt-3">
-      <div class="card">
-        <div class="row no-gutters">
+      <div class="card author-card" style="border: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-radius: 12px; background: #f8f9fa; transition: all 0.3s ease;">
+        <div class="row g-0">
 
           {{ if .Site.Params.Author.authorPostImage }}
-          <div class="col-md-2 ">
-            <div class="card-body ">
+          <div class="col-md-3 d-flex align-items-center justify-content-center" style="padding: 2rem 1.5rem;">
+            <div class="card-body p-0">
               {{- $authorPostImage := .Site.Params.Author.authorPostImage -}}
-              <!-- {{ $authorPostImage = .Site.Params.Author.authorPostImage }} -->
               {{ $image := resources.Get $authorPostImage }}
-              {{ if $image }} <!-- Check if $image exists -->
-                <img src="{{ $image.RelPermalink }}" class="img-responsive img-50 img-round" alt="">
+              {{ if $image }}
+                <img src="{{ $image.RelPermalink }}" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" alt="">
               {{ else }}
-              <!-- Optional: Fallback content if image is not found -->
               <p>Image not available</p>
              {{ end }}
             </div>
           </div>
          {{ end }}
 
-
-          <div class="col-md-10">
-            <div class="card-body p-1.1">
-              <p class="p-0 m-0"><small class="text-muted">Written By</small></p>
-              <p class="card-text fs-5 m-0">
-                 
+          <div class="col-md-9">
+            <div class="card-body p-4">
+              <p class="p-0 m-0 mb-2" style="font-size: 0.85rem; color: #999999; font-weight: 500; letter-spacing: 0.5px;"><small>Written By</small></p>
+              <p class="card-text m-0 mb-2" style="font-size: 1.15rem; font-weight: 600; color: #2d3436;">
                 {{ if .Site.Params.Author.name }}
                 {{ .Site.Params.Author.name | safeHTML }}
                 {{ else }}
                 {{ .Site.Author.name | safeHTML }}
                 {{ end }}
-
               </p>
 
-               {{ if .Site.Params.Author.authorInfo }}
-                <p class="card-text fs-6  m-0">{{ .Site.Params.Author.authorInfo | safeHTML }}</p>
+              {{ if .Site.Params.Author.authorInfo }}
+                <p class="card-text m-0" style="font-size: 0.95rem; color: #666666; line-height: 1.6;">{{ .Site.Params.Author.authorInfo | safeHTML }}</p>
               {{ end }}
             </div>
           </div>
@@ -150,31 +145,25 @@
 
     <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-1 pt-4">
       {{ if ne .Type "page" }}
-      <ul class="list-group list-group-horizontal" style="flex-direction: row">
+      <div class="d-flex gap-2 justify-content-between align-items-center" style="flex-wrap: wrap;">
         {{ if .PrevInSection }}
-        <li class="list-group-item b-0 p-0">
-
-          <a type="button" class="btn btn-dark" role="button" href="{{ .PrevInSection.Permalink }}"
-            data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}" 
-            style="transition: all 0.3s ease;" 
-            onmouseover="this.style.background='#666666'; this.style.borderColor='#666666'; this.style.color='white';" 
-            onmouseout="this.style.background='#343a40'; this.style.borderColor='#343a40'; this.style.color='white';">&larr;
-            {{ i18n "previousPost" }}</a>
-        </li>
+        <a type="button" class="btn nav-button-post" role="button" href="{{ .PrevInSection.Permalink }}"
+          data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}"
+          style="border: 2px solid #666666; color: #666666; background: transparent; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease;"
+          onmouseover="this.style.background='#666666'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(102, 102, 102, 0.25)';"
+          onmouseout="this.style.background='transparent'; this.style.color='#666666'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">&larr; {{ i18n "previousPost" }}</a>
+        {{ else }}
+        <div></div>
         {{ end }}
-
 
         {{ if .NextInSection }}
-        <li class="list-group-item ms-auto b-0 p-0">
-          <a type="button" class="btn btn-dark" role="button" href="{{ .NextInSection.Permalink }}"
-            data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}" 
-            style="transition: all 0.3s ease;" 
-            onmouseover="this.style.background='#666666'; this.style.borderColor='#666666'; this.style.color='white';" 
-            onmouseout="this.style.background='#343a40'; this.style.borderColor='#343a40'; this.style.color='white';">{{ i18n "nextPost" }}
-            &rarr;</a>
-        </li>
+        <a type="button" class="btn nav-button-post" role="button" href="{{ .NextInSection.Permalink }}"
+          data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}"
+          style="border: 2px solid #666666; color: #666666; background: transparent; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease;"
+          onmouseover="this.style.background='#666666'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(102, 102, 102, 0.25)';"
+          onmouseout="this.style.background='transparent'; this.style.color='#666666'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">{{ i18n "nextPost" }} &rarr;</a>
         {{ end }}
-      </ul>
+      </div>
       {{ end }}
     </div>
 

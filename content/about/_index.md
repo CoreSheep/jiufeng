@@ -93,6 +93,6 @@ Graduated from a prestigious 211 & 985 project university (ESI Rank Top 1‰). M
 
 ---
 
-> "The people who are crazy enough to think they can change the world are the ones who do."
+> The people who are crazy enough to think they can change the world are the ones who do.
 >
 > — Steve Jobs

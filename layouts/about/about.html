@@ -14,6 +14,22 @@
 </div>
 
 <style>
+/* Card Styling - Apply 12px border radius to all cards */
+.card {
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+/* Skill card hover effects - CSS-based for border persistence */
+.skill-card-hover {
+  transition: all 0.3s ease;
+}
+
+.skill-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
 /* About page mobile responsive optimization */
 @media (max-width: 768px) {
   .about-hero .container {
@@ -53,7 +69,7 @@
       <!-- Profile Image -->
       <div class="col-lg-4 col-md-6 mb-5">
         <div class="sticky-top" style="top: 4rem;">
-          <div class="card shadow-sm" style="transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)'">
+          <div class="card shadow-sm" style="border-radius: 12px; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)'">
             <div class="card-body text-center p-4">
               {{ $image := resources.Get "/img/author/author_profile_pic.jpg" }}
               {{ if $image }}
@@ -251,7 +267,7 @@
     <div class="row g-4">
       <!-- Technical Skills -->
       <div class="col-md-4">
-        <div class="card h-100 border-0" style="background-color: #f0ebe0; border: 1px solid rgba(0,0,0,0.2); border-radius: 12px; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+        <div class="card h-100 border-0 skill-card-hover" style="background-color: #faf6f0; border-radius: 12px; cursor: pointer;">
           <div class="card-body text-center p-4">
             <i class="bi bi-code-slash mb-3" style="font-size: 2rem; color: #000000;"></i>
             <h5 class="mb-3" style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; color: #000000;">Technical Skills</h5>
@@ -269,7 +285,7 @@
 
       <!-- Research Areas -->
       <div class="col-md-4">
-        <div class="card h-100 border-0" style="background-color: #f0ebe0; border: 1px solid rgba(0,0,0,0.2); border-radius: 12px; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+        <div class="card h-100 border-0 skill-card-hover" style="background-color: #faf6f0; border-radius: 12px; cursor: pointer;">
           <div class="card-body text-center p-4">
             <i class="bi bi-lightbulb mb-3" style="font-size: 2rem; color: #000000;"></i>
             <h5 class="mb-3" style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; color: #000000;">Research Areas</h5>
@@ -285,7 +301,7 @@
 
       <!-- Interests -->
       <div class="col-md-4">
-        <div class="card h-100 border-0" style="background-color: #f0ebe0; border: 1px solid rgba(0,0,0,0.2); border-radius: 12px; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+        <div class="card h-100 border-0 skill-card-hover" style="background-color: #faf6f0; border-radius: 12px; cursor: pointer;">
           <div class="card-body text-center p-4">
             <i class="bi bi-heart mb-3" style="font-size: 2rem; color: #000000;"></i>
             <h5 class="mb-3" style="font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 600; color: #000000;">Interests</h5>

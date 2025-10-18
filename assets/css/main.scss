@@ -30,6 +30,11 @@ body {
   background-color: #ffffff !important;
 }
 
+/* Skill cards - add light border via CSS for persistent visibility */
+.card[style*="background-color: #faf6f0"] {
+  border: 1.5px solid rgba(131, 151, 136, 0.3) !important;
+}
+
 /* Ensure Bootstrap components use the new background */
 .bg-white {
   background-color: #ffffff !important;

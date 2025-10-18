@@ -220,8 +220,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="hero-section py-5 mb-5" style="background: #e8e8e8; position: relative; overflow: hidden; margin-top: 1rem; margin-bottom: 2rem;">
   <div class="container" style="position: relative; z-index: 2; max-width: 1200px;">
-    <div class="row" style="padding-top: 4rem; padding-bottom: 4rem;">
-      <div class="col-6">
+    <div class="row hero-row" style="padding-top: 4rem; padding-bottom: 4rem; display: flex; flex-wrap: wrap;">
+      <div class="col-lg-6 col-12 hero-quote-col" style="order: 1; display: flex; flex-direction: column; justify-content: center;">
         <div class="hero-quote">
           <h2 class="hero-quote-text" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; font-weight: 500; font-size: 2.8rem; line-height: 1.3; letter-spacing: -0.01em; color: #000000; margin: 0; margin-bottom: 1.5rem;">
             "People who are crazy enough to think they can change the world, are the ones that do."
@@ -230,12 +230,12 @@ document.addEventListener('DOMContentLoaded', function() {
             -- Steve Jobs
           </p>
         </div>
-        <div class="d-flex gap-3" style="position: relative; z-index: 2;">
+        <div class="d-flex gap-2 flex-wrap" style="position: relative; z-index: 2;">
           <a href="/about/" class="btn btn-light btn-mobile" style="background: rgba(255, 255, 255, 0.95); border: none; color: #2d3436; font-weight: 300; font-size: 0.95rem; padding: 0.5rem 1.2rem; border-radius: 6px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); transition: all 0.3s ease;" onmouseover="this.style.background='#666666'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(113, 176, 132, 0.4)';" onmouseout="this.style.background='rgba(255, 255, 255, 0.95)'; this.style.color='#2d3436'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 0, 0, 0.1)';">Learn More About Me</a>
           <a href="/blogs/" class="btn btn-outline-light btn-mobile" style="border: 2px solid #1a1a1a; color: #1a1a1a; font-weight: 300; font-size: 0.95rem; padding: 0.5rem 1.2rem; border-radius: 6px; background: rgba(26, 26, 26, 0.08); backdrop-filter: none; transition: all 0.3s ease;" onmouseover="this.style.background='#666666'; this.style.borderColor='#666666'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(113, 176, 132, 0.4)';" onmouseout="this.style.background='rgba(26, 26, 26, 0.08)'; this.style.borderColor='#1a1a1a'; this.style.color='#1a1a1a'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">Read My Blogs</a>
         </div>
       </div>
-      <div class="col-6 hero-avatar-container" style="display: flex; align-items: center; justify-content: flex-end; padding-right: 0;">
+      <div class="col-lg-6 col-12 hero-avatar-col" style="order: 2; display: flex; align-items: center; justify-content: center; padding-right: 0;">
         
         
         <img src="/img/author/author_profile_pic.jpg" alt="Jiufeng Li"
@@ -801,10 +801,6 @@ document.addEventListener('DOMContentLoaded', function() {
             .btn-view-all-enhanced {
               padding: 0.65rem 1.5rem !important;
               font-size: 0.95rem !important;
-            }
-
-            .btn-view-all-enhanced .btn-text {
-              display: none;
             }
 
             .btn-view-all-enhanced .btn-arrow {
@@ -1413,17 +1409,120 @@ body.small-cards-active .small-blog-card {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .hero-avatar-container {
-    margin-top: 0;
+    margin-top: 2rem;
     margin-bottom: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  
+
   .hero-avatar {
-    width: 150px !important;
-    height: 150px !important;
+    width: 140px !important;
+    height: 140px !important;
+    margin-right: 3rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+   
+  .hero-row {
+    flex-direction: column !important;
+  }
+
+  .hero-avatar-col {
+    order: 1 !important;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .hero-avatar-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .hero-avatar {
+    width: 120px !important;
+    height: 120px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .hero-quote-col {
+    order: 2 !important;
+    margin-bottom: 1.5rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .hero-quote-text {
+    font-size: 2rem !important;
+  }
+
+  .hero-quote-col .d-flex {
+    order: 3 !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+   
+  .hero-row {
+    flex-direction: column !important;
+  }
+
+  .hero-avatar-col {
+    order: 1 !important;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .hero-avatar-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .hero-avatar {
+    width: 100px !important;
+    height: 100px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .hero-quote-col {
+    order: 2 !important;
+    margin-bottom: 1rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .hero-quote-text {
+    font-size: 1.6rem !important;
+  }
+
+  .hero-quote-col .d-flex {
+    order: 3 !important;
+    justify-content: center !important;
   }
 }
 
@@ -1555,39 +1654,58 @@ h1, h2, h3, h4, h5, h6 {
  
 @media (max-width: 768px) {
    
+  .hero-section {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
   .hero-section .container {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .hero-section .row {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
   }
 
    
   .hero-quote-text {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-quote-attribution {
+    margin-bottom: 1rem !important;
   }
 
    
-  .hero-section .d-flex.gap-3 {
+  .hero-section .d-flex.gap-2 {
     justify-content: center !important;
     flex-wrap: wrap;
-    gap: 0.8rem !important;
+    gap: 0.5rem !important;
   }
 
-  .hero-section .d-flex.gap-3 .btn {
+  .hero-section .d-flex.gap-2 .btn {
     flex: 0 0 auto;
-    min-width: 140px;
+    min-width: 130px;
+    padding: 0.4rem 1rem !important;
+    font-size: 0.85rem !important;
   }
-  
+
    
   .container[role="main"] {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
-  
+
   .container[role="main"] .row {
     margin-left: 0;
     margin-right: 0;
   }
-  
+
   .container[role="main"] .col-12 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1596,44 +1714,59 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 576px) {
    
+  .hero-section {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
   .hero-section .container {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  .hero-section .row {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
   }
 
    
   .hero-quote-text {
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
     line-height: 1.2 !important;
+    margin-bottom: 0.8rem !important;
   }
 
    
   .hero-quote-attribution {
-    font-size: 0.9rem !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 1rem !important;
   }
 
    
-  .hero-section .d-flex.gap-3 {
-    flex-direction: column;
+  .hero-section .d-flex.gap-2 {
+    flex-direction: row;
     align-items: center;
-    gap: 0.6rem !important;
+    gap: 0.5rem !important;
+    flex-wrap: wrap;
   }
 
-  .hero-section .d-flex.gap-3 .btn {
-    width: 100%;
-    max-width: 200px;
+  .hero-section .d-flex.gap-2 .btn {
+    flex: 0 0 auto;
+    padding: 0.35rem 0.8rem !important;
+    font-size: 0.8rem !important;
     min-width: auto;
   }
-  
+
    
   .container[role="main"] {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
-  
+
   .container[role="main"] .col-12 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 

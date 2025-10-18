@@ -3,7 +3,7 @@
 {{ end }}
 
 
-<footer style="background-color: #1a1a1a; color: #ffffff; padding: 3rem 0; margin-top: 5rem;">
+<footer style="background-color: #1a1a1a; color: #b3b3b3; padding: 3rem 0; margin-top: 5rem;">
 
   <div class="container">
     <div class="row">
@@ -14,7 +14,7 @@
           {{ range .Site.Data.lightbi.social.social_icons }}
           {{- if isset $.Site.Author .id }}
           <li>
-            <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}" target="_blank" style="color: #ffffff; transition: color 0.2s ease;" onmouseover="this.style.color='#cccccc';" onmouseout="this.style.color='#ffffff';">
+            <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}" target="_blank" style="color: #b3b3b3; text-decoration: none; transition: all 0.2s ease;" onmouseover="this.style.color='#b3b3b3'; this.style.textDecoration='underline';" onmouseout="this.style.color='#b3b3b3'; this.style.textDecoration='none';">
               <span class="mx-2">
                 <i class="{{ .icon }}"></i>
               </span>
@@ -24,7 +24,7 @@
           {{ end }}
           {{ if .Site.Params.rss }}
           <li>
-            <a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" title="RSS" style="color: #ffffff; transition: color 0.2s ease;" onmouseover="this.style.color='#cccccc';" onmouseout="this.style.color='#ffffff';">
+            <a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" title="RSS" style="color: #b3b3b3; text-decoration: none; transition: all 0.2s ease;" onmouseover="this.style.color='#b3b3b3'; this.style.textDecoration='underline';" onmouseout="this.style.color='#b3b3b3'; this.style.textDecoration='none';">
               <span class="mx-2">
                 <i class="bi bi-rss"></i>
               </span>
@@ -37,10 +37,10 @@
 
     <div class="row">
       <div class="col-md-12">
-        <p class="credits copyright" style="color: #ffffff;">
+        <p class="credits copyright" style="color: #b3b3b3;">
           {{ if .Params.Author.name }}
           {{ if .Site.Author.website }}
-          <a href="{{ .Site.Author.website }}" style="color: #ffffff; text-decoration: none; transition: color 0.2s ease;" onmouseover="this.style.color='#cccccc';" onmouseout="this.style.color='#ffffff';">{{ .Site.Author.name }}</a>
+          <a href="{{ .Site.Author.website }}" style="color: #b3b3b3; text-decoration: none; transition: all 0.2s ease;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">{{ .Site.Author.name }}</a>
           {{ else }}
           {{ .Site.Author.name }}
           {{ end }}
@@ -55,13 +55,13 @@
 
           {{ if .Site.Title }}
           &nbsp;&bull;&nbsp;
-          <a href="{{ "" | relLangURL }}" style="color: #ffffff; text-decoration: none; transition: color 0.2s ease;" onmouseover="this.style.color='#cccccc';" onmouseout="this.style.color='#ffffff';">{{ .Site.Title }}</a>
+          <a href="{{ "" | relLangURL }}" style="color: #b3b3b3; text-decoration: none; transition: all 0.2s ease;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">{{ .Site.Title }}</a>
           {{ end }}
         </p>
         <!-- Please don't remove this, keep my open source work credited. -->
-        <p class="credits theme-by" style="color: #ffffff;">
+        <p class="credits theme-by" style="color: #b3b3b3;">
           {{ i18n "poweredBy" . | safeHTML }}
-          {{ if $.GitInfo }}&nbsp;&bull;&nbsp;[<a href="{{ .Site.Params.commit }}{{ .GitInfo.Hash }}" style="color: #ffffff; text-decoration: none; transition: color 0.2s ease;" onmouseover="this.style.color='#cccccc';" onmouseout="this.style.color='#ffffff';">{{ substr
+          {{ if $.GitInfo }}&nbsp;&bull;&nbsp;[<a href="{{ .Site.Params.commit }}{{ .GitInfo.Hash }}" style="color: #b3b3b3; text-decoration: none; transition: all 0.2s ease;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">{{ substr
             .GitInfo.Hash 0 8 }}</a>]{{ end }}
         </p>
       </div>

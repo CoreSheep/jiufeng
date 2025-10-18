@@ -49,7 +49,7 @@ footer a:hover {
 
     <div class="row">
       <div class="col-md-12">
-        <p class="credits copyright" style="color: #b3b3b3;">
+        <p class="credits copyright" style="color: #b3b3b3; font-size: 0.95rem;">
           {{ if .Params.Author.name }}
           {{ if .Site.Author.website }}
           <a href="{{ .Site.Author.website }}" style="color: #b3b3b3; text-decoration: none; transition: all 0.2s ease;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">{{ .Site.Author.name }}</a>
@@ -71,7 +71,7 @@ footer a:hover {
           {{ end }}
         </p>
         <!-- Please don't remove this, keep my open source work credited. -->
-        <p class="credits theme-by" style="color: #b3b3b3;">
+        <p class="credits theme-by" style="color: #b3b3b3; font-size: 0.95rem;">
           {{ i18n "poweredBy" . | safeHTML }}
           {{ if $.GitInfo }}&nbsp;&bull;&nbsp;[<a href="{{ .Site.Params.commit }}{{ .GitInfo.Hash }}" style="color: #b3b3b3; text-decoration: none; transition: all 0.2s ease;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">{{ substr
             .GitInfo.Hash 0 8 }}</a>]{{ end }}

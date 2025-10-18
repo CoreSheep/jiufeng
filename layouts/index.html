@@ -1443,15 +1443,17 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(255, 255, 255, 0.95) !important;
   border: none !important;
   color: #2d3436 !important;
-  font-weight: 300;
-  font-size: 0.95rem;
+  font-weight: 300 !important;
+  font-size: 0.95rem !important;
   padding: 0.5rem 1.2rem !important;
   border-radius: 6px !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
   transition: all 0.3s ease !important;
 }
 
-.hero-btn-primary:hover {
+.hero-btn-primary:hover,
+.hero-btn-primary:focus,
+.hero-btn-primary:active {
   background: #666666 !important;
   color: white !important;
   transform: translateY(-2px) !important;
@@ -1461,16 +1463,18 @@ h1, h2, h3, h4, h5, h6 {
 .hero-btn-secondary {
   border: 2px solid #1a1a1a !important;
   color: #1a1a1a !important;
-  font-weight: 300;
-  font-size: 0.95rem;
+  font-weight: 300 !important;
+  font-size: 0.95rem !important;
   padding: 0.5rem 1.2rem !important;
   border-radius: 6px !important;
   background: rgba(26, 26, 26, 0.08) !important;
-  backdrop-filter: none;
+  backdrop-filter: none !important;
   transition: all 0.3s ease !important;
 }
 
-.hero-btn-secondary:hover {
+.hero-btn-secondary:hover,
+.hero-btn-secondary:focus,
+.hero-btn-secondary:active {
   background: #666666 !important;
   border-color: #666666 !important;
   color: white !important;
